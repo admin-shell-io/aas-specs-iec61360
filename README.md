@@ -12,10 +12,10 @@ The specification number is: **IDTA-01003-a**
 
 Feature requests, reports about inconsistencies, mistakes *etc.* are highly
 welcome! Please [submit a new issue](
-https://github.com/admin-shell-io/aas-specs/issues/new
+https://github.com/admin-shell-io/aas-specs-iec61360/issues/new
 ).
 
-If you want to contribute, see [CONTRIBUTING.md](https://github.com/admin-shell-io/aas-specs-iec61360/blob/master/CONTRIBUTING.md). The same contribution rules apply as for [aas-specs](https://github.com/admin-shell-io/aas-specs)
+If you want to contribute, see [CONTRIBUTING.md](https://github.com/admin-shell-io/aas-specs/blob/master/CONTRIBUTING.md). The same contribution rules apply as for [aas-specs](https://github.com/admin-shell-io/aas-specs)
 
 ## License
 
