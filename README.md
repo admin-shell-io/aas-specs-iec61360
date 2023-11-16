@@ -1,10 +1,12 @@
-# IDTA-01003-a Data Specification IEC61360 of the Asset Administration Shell 
+# IDTA-01003-a 
 
 Repository of the Specification of the Asset Administration Shell - Part 3a Data Specification IEC61360
 
 ## Industrial Digital Twin Association (IDTA)
 
 Governance of the specification is done in the working group Open Technology of the [IDTA](https://industrialdigitaltwin.org/en/)
+
+The specification number is: **IDTA-01003-a**
 
 ## Contributing
 
