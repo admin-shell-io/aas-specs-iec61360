@@ -1,4 +1,4 @@
-# IDTA-01003-a 
+# IDTA-01003-a - Data Specification IEC61360
 
 Repository of the Specification of the Asset Administration Shell - Part 3a Data Specification IEC61360
 
