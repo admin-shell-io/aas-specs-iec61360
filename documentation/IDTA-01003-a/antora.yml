@@ -1,0 +1,6 @@
+name: IDTA-01003-a
+title: Specification Asset Administration Shell - Part 3a IEC61360
+version: 'snapshot'
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
