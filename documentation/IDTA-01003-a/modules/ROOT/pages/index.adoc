@@ -1,3 +1,1 @@
-= Specification of the Asset Administration Shell. Part 3 IEC61360
-
-This document specifies the data specification IEC61360 of the Asset Administration Shell.
+image::image1.png[align=center]
