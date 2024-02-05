@@ -18,15 +18,30 @@ Each subclause consists of three parts:
 . new, changed, or removed Constraints w.r.t previous version.
 
 
-====
-Note: before V3.0RC03, the security metamodel was also part of this document. Therefore, security metamodel changes were also listed using the three subclauses as described above.
-====
-
 == Changes V3.1 vs. V3.0
 
 Major Changes:
 * NEW: also support deprecated template ID `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0` (https://github.com/admin-shell-io/aas-specs-iec61360/issues/4[#4])
+* CHANGED: Constraint AASc-3a-050: external reference instead of globale reference 
 * Transfer from .docx to asciidoc 
+
+Minor Changes:
+* Notes "Note: it is recommended to use a global
+reference." were updated to "Note: it is recommended to use an external
+reference." (https://github.com/admin-shell-io/aas-specs-iec61360/issues/5[#5])
+
+.Changes in Metamodel
+[width="100%",cols="7%,12%,15%,66%",options="header",]
+|===
+h|Nc h|V3.1 vs. Part 1 V3.0 h|New, Update, Removed, Reformulated h|Comment
+| | AASc-3a-050 | Update a| External instead of global reference
+
++++Constraint AASc-3a-050+++: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the global reference to the IRI of the corresponding data specification template https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0.
+
+changed to 
+
++++Constraint AASc-3a-050+++: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0.
+|===
 
 == Changes V3.0 vs. Part 1 V2.0.1
 
@@ -47,6 +62,8 @@ Major Changes:
 * CHANGE: LevelType changed from Enumeration to Class, Table added
 * CHANGE: Names containing IEC renamed to camel case using Iec, e.g. DataSpecificationIEC61360
 
+[#_Toc125981052]
+.Changes in Metamodel
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
 |*nc* |*V3.0 vs. Part 1 V2.0.1* |*Comment*
@@ -64,7 +81,7 @@ Some new values added: BLOB, FILE, HTML, IRDI; URL renamed to IRI
 |===
 
 [#_Toc125981051]
-.Changes
+.New Elements in Metamodel
 
 [width="100%",cols="6%,46%,48%",options="header",]
 |===
@@ -94,7 +111,7 @@ Some attribute types changed, see separate entries
 |===
 
 [#_Toc125981052]
-.New Elements in Metamodel
+.Constraints
 
 [width="100%",cols="7%,12%,15%,66%",options="header",]
 |===
