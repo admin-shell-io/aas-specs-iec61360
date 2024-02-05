@@ -16,33 +16,41 @@ Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, d
 
 === Data Specification IEC61360 Template Specification 
 
-[width="100%",cols="20%,20%,20%,40%",options="header",]
+{empty}
+
+[width="100%",cols="20%,20%,20%,40%"]
 |===
-|*Template:* |IEC61360 | |
-|*administration:* |version: 3 |revision: 0 |creator: IDTA
-|*id:* |https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0 | |
-|*dataSpecificationContent:* |DataSpecificationIec61360 | |
-|*Description (EN):* |Data specification template for concept descriptions for properties and values conformant to IEC 61360. | |
+h|*Template:* 3+|IEC61360
+h|*administration:* |version: 3 |revision: 0 |creator: IDTA
+
+h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0` 
+
+\<<deprecated>> `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+
+h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
+h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360. 
 |===
 
-The id of the template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series [AAS-Part1]):
-
-"https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0"
+The id of the template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series [AAS-Part1]). For legacy reasons older models might use the ID starting with "http:" instead of "https:".
 
 This ID will be used in _hasDataSpecification/dataSpecification_.
 
-This namespace has the qualifier "IEC:" Examples: _IEC:DataSpecificationIec61360/preferredName_ or _IEC: DataSpecificationIec61360/levelType/Min_ or _IEC:LevelType/Min_
+This namespace has the qualifier "IEC:" Examples: `IEC:DataSpecificationIec61360/preferredName` or `IEC:DataSpecificationIec61360/levelType/Min` or `IEC:LevelType/Min`
 
 [#_Toc125981064]
 .Metamodel of Data Specification IEC61360
 image::image9.png[align=center]
 
-==== Data Specification IEC61360 Attributes
+{empty}
 
-[width="100%",cols="19%,47%,27%,7%",options="header",]
+=== Data Specification IEC61360 Attributes
+
+{empty}
+
+[width="100%",cols="19%,47%,27%,7%"]
 |===
-|*Class:* |DataSpecificationIec61360 \<<Template>> | |
-|*Explanation:* a|
+h|Class: 3+e|DataSpecificationIec61360 \<<Template>> 
+h|Explanation: 3+a|
 Content of data specification template for concept descriptions for properties, values, and value lists conformant to IEC 61360.
 
 
@@ -67,9 +75,10 @@ Note 2: although it is possible to define a concept description for a value list
 
 +++Constraint AASc-009:+++ If _DataSpecificationIec61360/­dataType_ is one of _INTEGER_MEASURE, REAL_MEASURE, RATIONAL_MEASURE, INTEGER_CURRENCY,_ _REAL_CURRENCY_, then _DataSpecificationIec61360/unit_ or _DataSpecificationIec61360/unitId_ shall be defined.
 
-| |
-|*Inherits from:* |DataSpecificationContent | |
-|*Attribute* |*Explanation* |*Type* |*Card*
+
+|*Inherits from:* 3+|DataSpecificationContent 
+
+h|Attribute h|Explanation h|Type h|Card
 |preferredName a|
 Preferred name in different languages
 
@@ -214,6 +223,7 @@ Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 |LevelType |0..1
 |===
 
+{empty}
 
 ====
 Note 1: IEC 61360 also requires a globally unique identifier for a concept description. This ID is not part of the data specification template. Instead, the _ConceptDescription/id_ as inherited via _Identifiable_ is used. The same applies to administrative information like the version and revision.
@@ -237,7 +247,11 @@ Note 3: the same applies to _ConceptDescription/displayName_ and _DataSpecificat
 Note 4: the same applies to _ConceptDescription/description_ and _DataSpecificationIec61360/definition_.
 ====
 
+{empty}
+
 === Enumeration Data Type IEC61360
+
+{empty}
 
 [#_Toc129706733]
 .Metamodel of Data Type IEC 61360
@@ -245,11 +259,11 @@ image::image10.png[align=center]
 
 [width="100%",cols="30%,70%",options="header",]
 |===
-|*Enumeration:* |DataTypeIec61360
-|*Explanation:* |Enumeration of simple data types for an IEC 61360 concept description using the data specification template _DataSpecificationIec61360_
-|*Set of:* |--
-|*Literal* |*Explanation*
-|DATE a|
+h|Enumeration: |DataTypeIec61360
+h|Explanation: |Enumeration of simple data types for an IEC 61360 concept description using the data specification template _DataSpecificationIec61360_
+h|Set of: |--
+h|Literal h|Explanation
+e|DATE a|
 values containing a calendar date, conformant to ISO 8601:2004
 
 Format yyyy-mm-dd
@@ -262,7 +276,7 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the DATE_
 
 Example from IEC 61360-1:2017: "1999-05-31" is the [DATE] representation of: "31 May 1999".
 
-|STRING a|
+e|STRING a|
 values consisting of a sequence of characters, which cannot be translated into other languages
 
 
@@ -277,7 +291,7 @@ Note 2: IEC61360 does not request to use more specific string types like TRANSLA
 ====
 
 
-|STRING_TRANSLATABLE a|
+e|STRING_TRANSLATABLE a|
 values containing string, but which shall be represented as different strings in different languages
 
 
@@ -286,7 +300,7 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the TRANS
 ====
 
 
-|INTEGER_MEASURE a|
+e|INTEGER_MEASURE a|
 values containing values that are a measure of the type INTEGER. In addition, such a value comes with a physical unit.
 
 
@@ -295,7 +309,7 @@ Note: for details, please refer to [IEC61360-1], specific INTEGER (or INT_TYPE) 
 ====
 
 
-|INTEGER_COUNT a|
+e|INTEGER_COUNT a|
 values containing values of the type INTEGER, but which are no currencies or measures
 
 
@@ -310,7 +324,7 @@ Note 2: it is requested to use the more specific data types in the ASS, if appli
 ====
 
 
-|INTEGER_CURRENCY a|
+e|INTEGER_CURRENCY a|
 values containing values of the type INTEGER, which are currencies
 
 
@@ -319,7 +333,7 @@ Note: for details, please refer to [IEC61360-1], specific INTEGER NUMBER_TYPE, t
 ====
 
 
-|REAL_MEASURE a|
+e|REAL_MEASURE a|
 values containing values that are measures of the type REAL. In addition, such a value comes with a physical unit.
 
 
@@ -328,7 +342,7 @@ Note: for details, please refer to [IEC61360-1], specific REAL NUMBER_TYPE, the 
 ====
 
 
-|REAL_COUNT a|
+e|REAL_COUNT a|
 values containing numbers that can be written as a terminating or non-terminating decimal; i.e. a rational or irrational number, which is neither a currency nor a measures
 
 
@@ -343,7 +357,7 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-|REAL_CURRENCY a|
+e|REAL_CURRENCY a|
 values containing values of the type REAL, which are currencies
 
 
@@ -352,7 +366,7 @@ Note: for details, please refer to [IEC61360-1], specific REAL NUMBER_TYPE, the 
 ====
 
 
-|BOOLEAN a|
+e|BOOLEAN a|
 values representing truth of logic or Boolean algebra (TRUE, FALSE)
 
 
@@ -367,7 +381,7 @@ Note 2: in IEC 61360, the values are Yes and No. In the AAS, the values are TRUE
 ====
 
 
-|IRI a|
+e|IRI a|
 values containing values of the type STRING conformant to Rfc 3987
 
 
@@ -382,7 +396,7 @@ Note 2: However, the AAS supports the more generic IRI. An IRI type particularly
 ====
 
 
-|IRDI a|
+e|IRDI a|
 values conforming to ISO/IEC 11179 series global identifier sequences
 
 
@@ -409,7 +423,7 @@ Note 4: ISO29002_IRDI values are values containing a global identifier that iden
 ====
 
 
-|RATIONAL a|
+e|RATIONAL a|
 Values containing values of the type RATIONAL, which are no measures
 
 Examples: ½, ¾ or 7/2
@@ -426,7 +440,7 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-|RATIONAL_MEASURE a|
+e|RATIONAL_MEASURE a|
 values containing values of the type RATIONAL. In addition, such a value comes with a physical unit.
 
 
@@ -435,7 +449,7 @@ Note: for details, please refer to [IEC61360-1], specific RATIONAL NUMBER_TYPE, 
 ====
 
 
-|TIME a|
+e|TIME a|
 values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
 
 Format hh:mm (ECLASS)
@@ -448,7 +462,7 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the TIME_
 ====
 
 
-|TIMESTAMP a|
+e|TIMESTAMP a|
 values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
 
 Format yyyy-mm-dd hh:mm (ECLASS)
@@ -459,7 +473,7 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the DATE_
 ====
 
 
-|FILE a|
+e|FILE a|
 values containing an address to a file. The values are of the type URI and can represent an absolute or relative path.
 
 
@@ -468,7 +482,7 @@ Note: [IEC61360-1] does not explicitly support the file type. It would map to th
 ====
 
 
-|HTML a|
+e|HTML a|
 Values containing string with any sequence of characters, using the syntax of HTML5 (see W3C Recommendation 28:2014)
 
 
@@ -477,7 +491,7 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the HTML5
 ====
 
 
-|BLOB a|
+e|BLOB a|
 values containing the content of a file. Values may be binaries.
 
 _HTML conformant to HTML5_ is a special blob.
@@ -492,16 +506,20 @@ Note: for details, please refer to [IEC61360-1], BINARY_TYPE
 
 |===
 
+{empty}
+
 === Level Type
+
+{empty}
 
 [#_Toc129706734]
 .Metamodel of Level Type
 image::image11.png[align=center]
 
-[width="100%",cols="20%,47%,24%,9%",options="header",]
+[width="100%",cols="20%,47%,24%,9%]
 |===
-|*Class:* |LevelType | |
-|*Explanation:* a|
+h|*Class:* e|LevelType
+hExplanation:* 3+a|
 Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP, and MAX. True means that the value is available, false means the value is not available.
 
 
@@ -516,13 +534,15 @@ Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 ====
 
 
-| |
-|*Inherits from:* |DataSpecificationContent | |
-|*Attribute* |*Explanation* |*Type* |*Card.*
-|min |Minimum of the value |boolean |1
-|nom |Nominal value (value as designated) |boolean |1
-|typ |Value as typically present |boolean |1
-|max |Maximum of the value |boolean |1
+
+h|Inherits from: 3+|DataSpecificationContent 
+
+h|Attribute h|Explanation h|Type h|Card.
+
+e|min a|Minimum of the value |boolean |1
+e|nom a|Nominal value (value as designated) |boolean |1
+e|typ a|Value as typically present |boolean |1
+e|max e|Maximum of the value |boolean |1
 |===
 
 
@@ -565,10 +585,10 @@ It is not recommended to use level type when defining concept descriptions for P
 .Metamodel of Value List
 image::image12.png[align=center]
 
-[width="100%",cols="22%,44%,23%,11%",options="header",]
+[width="100%",cols="22%,44%,23%,11%"]
 |===
-|*Class:* |ValueList | |
-|*Explanation:* a|
+h|Class: 3+e|ValueList 
+h|Explanation: 3+a|
 A set of value reference pairs
 
 
@@ -577,20 +597,21 @@ Note: for details, please refer to [IEC61360-1], value_list/enumerated_list_of_t
 ====
 
 
-| |
-|*Inherits from:* |-- | |
-|*Attribute* |*Explanation* |*Type* |*Card.*
-|valueReferencePair |A pair of a value together with its global unique ID. |ValueReferencePair |1..*
+h|Inherits from: 3+|-- 
+h|Attribute h|Explanation h|Type h|Card.
+e|valueReferencePair |A pair of a value together with its global unique ID. |ValueReferencePair |1..*
 |===
 
-[width="100%",cols="24%,42%,23%,11%",options="header",]
+{empty}
+
+[width="100%",cols="24%,42%,23%,11%"]
 |===
-|*Class:* |ValueReferencePair | |
-|*Explanation:* |A value reference pair within a value list. Each value has a global unique ID defining its semantic. | |
-|*Inherits from:* |-- | |
-|*Attribute* |*Explanation* |*Type* |*Card.*
-|value |the value of the referenced concept definition of the value in _valueId._ |ValueTypeIec61360 |1
-|valueId a|
+h|Class: 3+e|ValueReferencePair
+h|Explanation: |A value reference pair within a value list. Each value has a global unique ID defining its semantic. | |
+h|Inherits from: |-- | |
+h|Attribute h|Explanation h|Type h|Card.
+e|value |the value of the referenced concept definition of the value in _valueId._ |ValueTypeIec61360 |1
+e|valueId a|
 Global unique ID of the value
 
 
@@ -753,34 +774,38 @@ See _<<#_Ref129879629,Figure 7>>_ Overview Relationship Metamodel Part 1 a & Dat
 
 The following tables recommend using specific categories to distinguish which kind of concept is described. They also give advice on which attributes need to be filled for which category of concept description.
 
+{empty}
+
 [#_Toc125981069]
 .Categories of Concept Descriptions (non-normative)
 image::image13.png[align=center]
 
 
-[width="100%",cols="31%,13%,13%,9%,18%,16%",options="header",]
+[width="100%",cols="31%,13%,13%,9%,18%,16%"]
 |===
-|*Attribute*footnote:[m = mandatory, o = optional, (m) = conditionally mandatory or recommended to be added] |*Property* |*Property* |*Property* |*Multi­Language­Property* |*Range*
-|Category of Concept Description |VALUE |PROPERTY |PROPERTY |PROPERTY |PROPERTY
-|*Category of Submodel­Element­* |*CONSTANT* |*VARIABLE* |*PARAMETER* |*--* |*--*
-|preferredNamefootnote:[Mandatory in at least one language. Preferably, an English preferred name should always be defined.] |m |m |m |m |m
-|shortName |(m) |(m) |(m) |(m) |(m)
-|unit |(m) |(m) |(m) |-- |(m)
-|unitId |(m) |(m) |(m) |-- |(m)
-|sourceOf­Definition |o |o |o |o |o
-|symbol |o |o |o |-- |--
-|dataType |mfootnote:[All IEC 61360 data types except STRING_TRANSLATABLE, IRI, IRDI, HTML, FILE, BLOB.] |m^8^ |m^8^ |STRING_TRANSLATABLE |INTEGER_* or REAL_­*
-|definition |(m) |m |m |m |m
-|valueFormat |o |o |o |-- |o
-|valueList |-- |o |o |-- |--
-|value |m |-- |-- |-- |--
-|valueId |o |-- |-- |-- |--
-|levelType |-- |-- |-- |-- a|
+h|Attribute footnote:[m = mandatory, o = optional, (m) = conditionally mandatory or recommended to be added] h|Property h|Property h|Property h|Multi­Language­Property h|Range
+h|Category of Concept Description h|VALUE h|PROPERTY h|PROPERTY h|PROPERTY h|PROPERTY
+h|Category of Submodel­Element­ h|CONSTANT h|VARIABLE h|PARAMETER h|-- h|--
+e|preferredNamefootnote:[Mandatory in at least one language. Preferably, an English preferred name should always be defined.] |m |m |m |m |m
+e|shortName |(m) |(m) |(m) |(m) |(m)
+e|unit |(m) |(m) |(m) |-- |(m)
+e|unitId |(m) |(m) |(m) |-- |(m)
+e|sourceOf­Definition |o |o |o |o |o
+e|symbol |o |o |o |-- |--
+e|dataType |mfootnote:[All IEC 61360 data types except STRING_TRANSLATABLE, IRI, IRDI, HTML, FILE, BLOB.] |m^8^ |m^8^ |STRING_TRANSLATABLE |INTEGER_* or REAL_­*
+e|definition |(m) |m |m |m |m
+e|valueFormat |o |o |o |-- |o
+e|valueList |-- |o |o |-- |--
+e|value |m |-- |-- |-- |--
+e|valueId |o |-- |-- |-- |--
+e|levelType |-- |-- |-- |-- a|
 Min = true
 
 Max = true
 
 |===
+
+{empty}
 
 [#_Toc129695225]
 .IEC61360 Data Specification Template for Properties and Ranges
@@ -788,7 +813,7 @@ Max = true
 [width="99%",cols="22%,13%,13%,13%,13%,13%,13%",options="header",]
 |===
 |*Attribute**^6^* |*Reference­Element* |*File*footnote:[Template only used until explicit template is available for defining the corresponding types of elements.] |*Blob^9^* |*Capability^9^* |*Relationship­Element^9^* |*AnnotatedRelationship­Element^9^*
-|Category of Concept Description |REFERENCE |DOCUMENT |DOCUMENT |CAPABILITY |RELATIONSHIP |RELATIONSHIP
+h|Category of Concept Description h|REFERENCE h|DOCUMENT h|DOCUMENT h|CAPABILITY h|RELATIONSHIP h|RELATIONSHIP
 |*Category of Submodel­Element­* |*--* |*--* |*--* |*--* |*--* |*--*
 |preferredName^7^ |m |m |m |m |m |m
 |shortName |(m) |(m) |(m) |(m) |(m) |(m)
@@ -805,13 +830,15 @@ Max = true
 |levelType |-- |-- |-- |-- |-- |--
 |===
 
+{empty}
+
 [#_Ref129944411]
 .IEC61360 Data Spec. Template for Other Data Elements,Relationships Elements and Capabilities
 
 [width="99%",cols="25%,19%,12%,16%,12%,16%",options="header",]
 |===
 |*Attribute* |*SubmodelElementList^9^* |*SubmodelElementCollection^9^* |*Operation^9^* |*EventElement^9^* |*Entity^9^*
-|Category of Concept Description |COLLECTION |ENTITY |FUNCTION |EVENT |ENTITY
+h|Category of Concept Description h|COLLECTION h|ENTITY h|FUNCTION h|EVENT h|ENTITY
 |*Category of Submodel­Element­* |*--* |*--* |*--* |*--* |*--*
 |preferredName^7^ |m |m |m |m |m
 |shortName |(m) |(m) |(m) |(m) |(m)
@@ -828,13 +855,15 @@ Max = true
 |levelType |-- |-- |-- |-- |--
 |===
 
+{empty}
+
 [#_Toc129695227]
 .IEC612360 Data Specification Template for Other Submodel Elements
 
 [width="100%",cols="32%,24%,22%,22%",options="header",]
 |===
 |*Attribute* |*Submodel^9^* |*Qualifier^9^* |*SpecificAssetId*
-|Category of Concept Description |APPLICATION_CLASS |QUALIFIER_TYPE |PROPERTY
+h|Category of Concept Description h|APPLICATION_CLASS h|QUALIFIER_TYPE h|PROPERTY
 |*Category of Element* |*--* |*--* |*--*
 |preferredName |m |m |m
 |shortName |(m) |(m) |(m)
@@ -850,6 +879,8 @@ Max = true
 |valueId |-- |-- |--
 |levelType |-- |-- |--
 |===
+
+{empty}
 
 [#_Toc122380240]
 .Other Elements with semanticId
@@ -867,6 +898,7 @@ https://sunye.github.io/ocl/[A class invariant is a constraint that must be true
 Note: these constraints include elements of Part 1, V3.0 of the document series "Details of the Asset Administration Shell" [AAS-Part1].
 ====
 
+{empty}
 
 === Constraints for Data Specification IEC61360
 

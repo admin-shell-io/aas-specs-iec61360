@@ -22,6 +22,11 @@ Each subclause consists of three parts:
 Note: before V3.0RC03, the security metamodel was also part of this document. Therefore, security metamodel changes were also listed using the three subclauses as described above.
 ====
 
+== Changes V3.1 vs. V3.0
+
+Major Changes:
+* NEW: also support deprecated template ID `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0` (https://github.com/admin-shell-io/aas-specs-iec61360/issues/4[#4])
+* Transfer from .docx to asciidoc 
 
 == Changes V3.0 vs. Part 1 V2.0.1
 
