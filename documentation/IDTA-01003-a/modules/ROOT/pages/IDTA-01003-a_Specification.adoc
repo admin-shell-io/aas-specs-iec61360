@@ -1160,17 +1160,5 @@ Note 3: example files can be found here: aas-specs-3.0\schemas\rdf\examples
 ====
 
 
-== Summary and Outlook
 
-This document provides a metamodel for specifying data specification templates for defining concept descriptions for properties and values. These data specification templates are conformant to IEC 61360.
-
-This document is part of the document series "Asset Administration Shell in Detail".
-
-Additional parts of the document series cover (see link:#bib14[[14\]]):
-
-* the information model that is the basis for file exchange and interface payload definition (Part 1),
-* a file exchange format AASX (Part 5),
-* interfaces and APIs for accessing the information of Asset Administration Shells (access, modify, query, and execute information and active functionality; Part 2),
-* security aspects including access control (part 3),
-* physical units as used to define the semantics of quantifiable properties in IEC 61360 (Part 3b).
 
