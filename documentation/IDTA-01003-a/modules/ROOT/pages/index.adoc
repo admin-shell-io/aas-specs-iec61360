@@ -1,1 +1,2 @@
-image::image1.png[align=center]
+== Specification of the Asset Administration Shell
+= Part 3a: Data Specification
