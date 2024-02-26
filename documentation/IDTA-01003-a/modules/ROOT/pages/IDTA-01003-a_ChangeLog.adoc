@@ -21,12 +21,14 @@ Each subclause consists of three parts:
 == Changes V3.1 vs. V3.0
 
 Major Changes:
+
 * NEW: also support deprecated template ID `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0` (https://github.com/admin-shell-io/aas-specs-iec61360/issues/4[#4])
-* CHANGED: Constraint AASc-3a-050: external reference instead of globale reference 
 * Transfer from .docx to asciidoc 
 
-Minor Changes:
-* Notes "Note: it is recommended to use a global
+Bugfixes:
+
+* (Editorial) Constraint AASc-3a-050: external reference instead of globale reference 
+* (Editorial) Notes "Note: it is recommended to use a global
 reference." were updated to "Note: it is recommended to use an external
 reference." (https://github.com/admin-shell-io/aas-specs-iec61360/issues/5[#5])
 
