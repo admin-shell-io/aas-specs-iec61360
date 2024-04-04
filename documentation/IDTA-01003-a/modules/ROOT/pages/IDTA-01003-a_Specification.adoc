@@ -6,8 +6,6 @@ https://creativecommons.org/licenses/by/4.0/).
 
 SPDX-License-Identifier: CC-BY-4.0
 
-Illustrations:
-Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH
 ////
 
 = Specification
@@ -16,22 +14,23 @@ Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, d
 
 === Data Specification IEC61360 Template Specification 
 
+This specification is only valid in combination with IDTA-01001-3-1.
+
 {empty}
 
 [width="100%",cols="20%,20%,20%,40%"]
 |===
 h|*Template:* 3+|IEC61360
-h|*administration:* |version: 3 |revision: 0 |creator: IDTA
+h|*administration:* |version: 3 |revision: 1 |creator: IDTA
 
-h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0` 
+h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1`
 
-\<<deprecated>> `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
 
 h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
 h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360. 
 |===
 
-The id of the template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series [AAS-Part1]). For legacy reasons older models might use the ID starting with "http:" instead of "https:".
+The ID of the data specification template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001-3-1. 
 
 This ID will be used in _hasDataSpecification/dataSpecification_.
 
@@ -902,7 +901,7 @@ Note: these constraints include elements of Part 1, V3.0 of the document series 
 
 === Constraints for Data Specification IEC61360
 
-+++Constraint AASc-3a-004+++: For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/dataType_ is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.
++++Constraint AASc-3a-004+++: For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.
 
 
 ====
@@ -910,7 +909,7 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Det
 ====
 
 
-+++Constraint AASc-3a-005:+++ For a _ConceptDescription_ with _category_ REFERENCE using data specification template IEC61360 (http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/dataType_ shall be one of _STRING, IRI, IRDI._
++++Constraint AASc-3a-005:+++ For a _ConceptDescription_ with _category_ REFERENCE using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ shall be one of _STRING, IRI, IRDI._
 
 
 ====
@@ -918,7 +917,7 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Det
 ====
 
 
-+++Constraint AASc-3a-006+++: For a _ConceptDescription_ with _category_ DOCUMENT using data specification template IEC61360 (http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/dataType_ shall be one of _FILE, BLOB, HTML_.
++++Constraint AASc-3a-006+++: For a _ConceptDescription_ with _category_ DOCUMENT using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ shall be one of _FILE, BLOB, HTML_.
 
 
 ====
@@ -926,19 +925,19 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Det
 ====
 
 
-+++Constraint AASc-3a-007:+++ For a _ConceptDescription_ with _category_ QUALIFIER_TYPE using data specification template IEC61360 (http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/dataType_ is mandatory and shall be defined.
++++Constraint AASc-3a-007:+++ For a _ConceptDescription_ with _category_ QUALIFIER_TYPE using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be defined.
 
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Asset Administration Shell Specification".
 ====
 
 
-+++Constraint AASc-3a-008+++: For a _ConceptDescription_ using data specification template IEC61360 (http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
++++Constraint AASc-3a-008+++: For a _ConceptDescription_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
 
-+++Constraint AASc-3a-003+++: For a _ConceptDescription_ referenced via _ValueList/valueId_ and using data specification template IEC61360 (http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/value_ shall be set.
++++Constraint AASc-3a-003+++: For a _ConceptDescription_ referenced via _ValueList/valueId_ and using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/value_ shall be set.
 
-+++Constraint AASc-3a-050+++: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0.
++++Constraint AASc-3a-050+++: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1.
 
 == Primitive and Simple Data Types (normative)
 
