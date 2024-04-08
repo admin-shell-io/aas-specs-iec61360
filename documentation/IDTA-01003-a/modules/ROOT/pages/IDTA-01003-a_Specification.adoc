@@ -1108,7 +1108,7 @@ Note: see _<<#_Ref129950722,Figure 6>>_
 ====
 
 
-|ValueTypeIec61360 |_string_ with a length of maximum 2000 and minimum of 1 characters. a|
+|ValueTypeIec61360 |_string_ with a length of maximum 2048 and minimum of 1 characters. a|
 "Blue"
 
 "1000"
