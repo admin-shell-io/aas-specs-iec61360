@@ -1059,17 +1059,11 @@ Note 2: for details, please refer to [IEC61360-1], preferred_name
 
 
 a|
-mailto:"max. rotation speed"@EN["max. rotation speed"@EN]
-
-
-====
+"max. rotation speed"@EN
 
 ====
 Note: see _<<#_Toc129706726,Figure 2>>_
 ====
-.
-====
-
 
 |ShortNameTypeIec61360 a|
 _LangStringSet_
