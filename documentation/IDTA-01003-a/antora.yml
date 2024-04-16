@@ -1,6 +1,7 @@
 name: IDTA-01003-a
-title: DRAFT Specification Asset Administration Shell - Part 3a IEC61360
+title: 'Part 3a: Data Specification - IEC61360'
 version: 'snapshot'
+display_version: 'in progress'
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
