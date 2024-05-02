@@ -31,7 +31,7 @@ h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
 h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360. 
 |===
 
-The id of the template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series [AAS-Part1]). For legacy reasons older models might use the ID starting with "http:" instead of "https:".
+The ID of the template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series [AAS-Part1]). For legacy reasons older models might use the ID starting with "http:" instead of "https:".
 
 This ID will be used in _hasDataSpecification/dataSpecification_.
 
@@ -238,13 +238,13 @@ Note 2: _ConceptDescription/idShort_ and _DataSpecificationIec61360/shortName_ a
 
 
 ====
-Note 3: the same applies to _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_.
+Note 3: _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_ are very similar. However, in this case, _preferredName_ is explicitly added to the data specification.
 ====
 
 
 
 ====
-Note 4: the same applies to _ConceptDescription/description_ and _DataSpecificationIec61360/definition_.
+Note 4: _ConceptDescription/description_ and _DataSpecificationIec61360/definition_ are very similar. However, in this case, _definition_ is explicitly added to the data specification.
 ====
 
 {empty}
