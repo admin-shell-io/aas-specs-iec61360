@@ -24,6 +24,7 @@ Major Changes:
 
 * NEW: also support deprecated template ID `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0` (https://github.com/admin-shell-io/aas-specs-iec61360/issues/4[#4])
 * Transfer from .docx to asciidoc 
+* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification
 
 Bugfixes:
 
