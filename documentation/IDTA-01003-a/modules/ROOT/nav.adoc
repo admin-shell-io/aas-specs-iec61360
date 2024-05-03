@@ -11,6 +11,7 @@ Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, d
 ////
 
 * xref:IDTA-01003-a_TermsDefinitionsAbbreviations.adoc[Terms and Definitions]
+* xref:IDTA-01003-a_Preamble.adoc[Preamble]
 * xref:IDTA-01003-a_Intro.adoc[Introduction]
 
 * xref:IDTA-01003-a_Specification.adoc[Specification]
