@@ -21,7 +21,7 @@ Each subclause consists of three parts:
 
 Major changes:
 
-* CHANGE ValueTypeIec61360: increase length from 2000 to 2024 (https://github.com/admin-shell-io/aas-specs/issues/306[#306 of IDTA-01001])
+* CHANGE ValueTypeIec61360: increase length from 2000 to 2048 (https://github.com/admin-shell-io/aas-specs/issues/306[#306 of IDTA-01001])
 
 * increase version in metamodel semantic IDs to /3/1. Update all links to template ID in constraints
 
