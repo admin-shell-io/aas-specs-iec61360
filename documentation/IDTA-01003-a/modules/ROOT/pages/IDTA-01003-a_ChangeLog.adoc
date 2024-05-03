@@ -26,6 +26,7 @@ Major changes:
 * increase version in metamodel semantic IDs to /3/1. Update all links to template ID in constraints
 
 * Transfer from .docx to asciidoc 
+* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification
 
 Minor changes:
 

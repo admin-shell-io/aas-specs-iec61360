@@ -30,7 +30,9 @@ h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
 h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360. 
 |===
 
+
 The ID of the data specification template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001-3-1. 
+
 
 This ID will be used in _hasDataSpecification/dataSpecification_.
 
@@ -237,13 +239,13 @@ Note 2: _ConceptDescription/idShort_ and _DataSpecificationIec61360/shortName_ a
 
 
 ====
-Note 3: the same applies to _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_.
+Note 3: _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_ are very similar. However, in this case, _preferredName_ is explicitly added to the data specification.
 ====
 
 
 
 ====
-Note 4: the same applies to _ConceptDescription/description_ and _DataSpecificationIec61360/definition_.
+Note 4: _ConceptDescription/description_ and _DataSpecificationIec61360/definition_ are very similar. However, in this case, _definition_ is explicitly added to the data specification.
 ====
 
 {empty}
@@ -1058,17 +1060,11 @@ Note 2: for details, please refer to [IEC61360-1], preferred_name
 
 
 a|
-mailto:"max. rotation speed"@EN["max. rotation speed"@EN]
-
-
-====
+"max. rotation speed"@EN
 
 ====
 Note: see _<<#_Toc129706726,Figure 2>>_
 ====
-.
-====
-
 
 |ShortNameTypeIec61360 a|
 _LangStringSet_

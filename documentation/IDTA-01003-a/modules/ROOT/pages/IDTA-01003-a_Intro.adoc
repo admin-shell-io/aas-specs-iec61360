@@ -10,106 +10,6 @@ SPDX-License-Identifier: CC-BY-4.0
 
 
 
-== Preamble
-
-===  Editorial Notes
-
-This document "Specification of the Asset Administration Shell - Part 3a: Data Specification IEC61360", version 3.1 was produced from December 2022 to April 2024 by the Work Stream "Specifications of the Asset Administration Shell" of the Working Group "Open Technology" of the https://industrialdigitaltwin.org[Industrial Digital Twin Association (IDTA)]. It has the number IDTA-01003-a-3-1.
-
-A bugfix version V3.0.1 was published in April 2024.
-
-The document "Details of the Asset Administration Shell – Part 1 – The exchange of information between partners in the value chain of Industie 4.0, V3.0RC02" was split into several parts. One of them is this document, which represents Part 3a and describes a data specification that is defined to be used with the core model as specified in Part 1. This is also why versioning now starts with V3.0: it is only valid in combination with V3.0 of Part 1.
-
-This document, version 3.0, was produced from June 2022 to November 2022 by the sub working group "Asset Administration Shell" of the joint working group of the Plattform Industrie 4.0 working group "Reference Architectures, Standards and Norms" and the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). It is the first release published by the IDTA. It has the number IDTA-01003-a-3-0.
-
-For a complete history, please refer to Part 1 of the https://industrialdigitaltwin.org/en/content-hub/aasspecifications[document series "Details of the Asset Administration Shell"].
-
-For better readability, the abbreviation "I4.0" is consistently used for "Industrie 4.0" in compound terms. The term "Industrie 4.0" continues to be used when standing on its own.
-
-This specification is versioned using https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0] (semver) and follows the semver specification link:#bib13[[13\]].
-
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in https://tools.ietf.org/html/bcp14[BCP 14] https://tools.ietf.org/html/rfc2119[RFC2119] https://tools.ietf.org/html/rfc8174[RFC8174footnote:[https://www.ietf.org/rfc/rfc2119.txt]]:
-
-
-. MUST This word, or the terms "REQUIRED" or "SHALL", mean that the definition is an absolute requirement of the specification.
-. MUST NOT This phrase, or the phrase "SHALL NOT", mean that the definition is an absolute prohibition of the specification.
-. SHOULD This word, or the adjective "RECOMMENDED", mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.
-. SHOULD NOT This phrase, or the phrase "NOT RECOMMENDED", mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label.
-. MAY This word, or the adjective "OPTIONAL", mean that an item is truly optional. One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein, an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
-
-
-
-
-===  Scope of This Document
-
-The Asset Administration Shell (see Part 1 of the document series) allows to define data specification templates. Data specification templates aim to enable interoperability between the partners that agree on the template. A template defines a set of attributes, with each attribute having a clear semantics. This set of attributes corresponds to a (sub-)schema.
-
-This document specifies data specification templates conformant to IEC 61360. IEC 61360 specifies how to define the semantics of single properties or values. The value range of a property can be defined as a value list – an enumeration -, while each of the (coded) values of the value list are treated as single concepts. They are thus suited to be used as data specifications for concept descriptions.
-
-This document assumes familiarity with the concept and specification of the Asset Administration Shell as defined in Part 1.
-
-The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.
-
-Please consult the continuously updated reading guide link:#bib15[[15\]] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
-
-=== Normative References
-
-[AAS-Part1] "The Exchange of information between partners in the value chain of Industrie 4.0", part of document series "Details of the Asset Administration Shell". V3.0. Jan. 2023. Industrial Digital Twin Association.
-
-[IEC61360-1] Standard data element types with associated classification scheme –
-
-Part 1: Definitions – Principles and methods. Edition 4.0 2017-07
-
-[[IEC61360-2]] Standard data element types with associated classification scheme for electronic components. Part 2: EXPRESS dictionary schema. Edition 2012.
-
-[ISO 13584-42] ISO 13584-42:2010, _Industrial automation systems and integration – Parts library – Part 42: Description methodology: Methodology for structuring part families_
-
-=== Structure of the Document
-
-All clauses that are normative have "(normative)" as a suffix in the heading of the clause.
-
-Clause <<#_terms_definitions_and_abbreviations,2>> provides terms and definitions as well as abbreviations, both for abbreviations used in the document and for abbreviations that may be used for elements of the metamodel defined in this document.
-
-Clause <<#_introduction,3>> gives a short introduction of Asset Administration Shell types and how this document is related to them.
-
-Clause <<#_general,4>> explains the purpose of the data specification template specified in this document by giving examples of existing data dictionaries.
-
-Clause <<#_predefined_data_specification_templates,5>> shows how the data specification template is related to Part 1 and its elements.
-
-Clause <<#_predefined_template_for_iec61360_properties_value_lists_and_values_normative,6>> is the main normative part of the document. It specifies the data specification templates supporting IEC 61360.
-
-Clause <<#_mapping_iec_61360_data_types_to_xsd_data_types,7>> explains how data types of IEC 61360 are mapped to data types of values as introduced in Part 1.
-
-Clause <<#_category_of_concept_descriptions,8>> introduces categories for concept descriptions and how they are used in combination with the data specification template IEC61360. The constraints as defined in Clause also mainly refer to the rules on how these categories should be applied.
-
-
-====
-Note: since categories are deprecated since V3.0, Clause <<#_category_of_concept_descriptions,8>> can also be skipped.
-====
-
-
-Clause <<#_primitive_and_simple_data_types_normative,10>> specifies the data types used in the data specification.
-
-Clause Error: Reference source not found provides information on the exchange of information compliant to this specification in existing data formats like XML, AutomationML, OPC UA information models, JSON or RDF.
-
-Finally, Clause <<#_summary_and_outlook,12>> summarizes the content and gives an outlook on future work.
-
-The Annex contains additional background information on the Asset Administration Shell (_<<#_background_information,Annex A>>_). It also provides information about UML (_<<#_legend_for_uml_modelling,Annex D>>_) and the tables used to specify UML classes as used in this specification (_<<#_templates_for_uml_tables,Annex C>>_). _<<#_backus_naur_form,Annex B>>_ introduces the Backus-Naur-Form used in the document series.
-
-Metamodel changes compared to previous versions are described in _<<#_Toc129945523,Annex E>>_.
-
-The bibliography can be found in Error: Reference source not found.
-
-===  Working Principles
-
-The work is based on the following principle: keep it simple but do not simplify if it affects interoperability.
-
-The partners represented in the Industrial Digital Twin Association (IDTA), as well as in the Plattform Industrie 4.0 and associations such as ZVEI, VDMA, VDI/ VDE and Bitkom, ensure that there is broad sectoral coverage of process, hybrid, and factory automation and in terms of integrating information technology (IT) and operational technology (OT).
-
-Design alternatives were intensively discussed within the working group. An extensive feedback process of this document series is additionally performed within the working groups of Plattform Industrie 4.0 and IDTA.
-
-Guiding principle for the specification was to provide detailed information, which can be easily implemented also by small and medium-sized enterprises.
-
 ==  Introduction
 
 This document is part of the series "Details of the Asset Administration Shell" that provide the specifications for interoperable usage of the Asset Administration Shell.
@@ -197,8 +97,7 @@ image::image8.png[align=center]
 
 IEC 61360 is a standard that describes how to define the semantics of properties in a data dictionary. Part 1 does not prescribe how to define a concept description; it only supports the definition of concept descriptions. To do so, a data specification template needs to be assigned to the concept description. Which data specification is made available is defined via _HasDataSpecification/dataSpecification_.
 
-The legend for understanding the UML diagrams and the table specification of the classes is explained in _<<#_templates_for_uml_tables,Annex C>>_ and _<<#_legend_for_uml_modelling,Annex D>>_.
-
+The legend for understanding the UML diagrams and the table specification of the classes is explained in xref:sharedAnnex/IDTA-01xxx_UMLTemplates.adoc[] and xref:sharedAnnex/IDTA-01xxx_UML.adoc[].
 
 ====
 Note: an xmi representation of the UML model can be found in the repository "aas-specs" in the github project admin-shell-io: https://github.com/admin-shell-io/aas-specs/.

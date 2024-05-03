@@ -8,6 +8,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ////
 
+
 ////
 :page-partial:
 
@@ -17,3 +18,4 @@ SPDX-License-Identifier: CC-BY-4.0
 * xref:./sharedAnnex/IDTA-01xxx_UML.adoc[UML]
 * xref:./sharedAnnex/IDTA-01xxx_UMLTemplates.adoc[UML Table Templates]
 
+////

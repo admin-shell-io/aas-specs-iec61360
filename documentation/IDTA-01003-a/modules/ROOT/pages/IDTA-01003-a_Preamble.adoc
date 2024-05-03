@@ -1,0 +1,80 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+== Preamble
+
+===  Scope of This Document
+
+The Asset Administration Shell (see Part 1a of the document series) allows to define data specification templates. Data specification templates aim to enable interoperability between the partners that agree on the template. A template defines a set of attributes, with each attribute having a clear semantics. This set of attributes corresponds to a (sub-)schema.
+
+This document specifies data specification templates conformant to IEC 61360. IEC 61360 specifies how to define the semantics of single properties or values. The value range of a property can be defined as a value list – an enumeration -, while each of the (coded) values of the value list are treated as single concepts. They are thus suited to be used as data specifications for concept descriptions.
+
+This document assumes familiarity with the concept and specification of the Asset Administration Shell as defined in Part 1.
+
+The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way. Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.
+
+Please consult the continuously updated reading guide link:#bib15[[15\]] for an overview of documents on the Asset Administration Shell. The reading guide gives advice on which documents should be read depending on the role of the reader.
+
+=== Normative References
+
+[AAS-Part1] "The Exchange of information between partners in the value chain of Industrie 4.0", part of document series "Details of the Asset Administration Shell". V3.0. Jan. 2023. Industrial Digital Twin Association.
+
+[IEC61360-1] Standard data element types with associated classification scheme – Part 1: Definitions – Principles and methods. Edition 4.0 2017-07
+
+[IEC61360-2] Standard data element types with associated classification scheme for electronic components. Part 2: EXPRESS dictionary schema. Edition 2012.
+
+[ISO 13584-42] ISO 13584-42:2010, "Industrial automation systems and integration – Parts library – Part 42: Description methodology: Methodology for structuring part families"
+
+=== Structure of the Document
+
+All clauses that are normative have "(normative)" as a suffix in the heading of the clause.
+
+xref:IDTA-01003-a_TermsDefinitionsAbbreviations.adoc[] provides terms and definitions as well as abbreviations, both for abbreviations used in the document and for abbreviations that may be used for elements of the metamodel defined in this document.
+
+xref:IDTA-01003-a_Intro.adoc[Introduction] gives a short introduction of Asset Administration Shell types and how this document is related to them.
+
+xref:IDTA-01003-a_Intro.adoc#general[General] explains the purpose of the data specification template specified in this document by giving examples of existing data dictionaries.
+
+xref:IDTA-01003-a_Intro.adoc#predefined-data-specification-templates[Predefined Data Specification Templates] shows how the data specification template is related to Part 1 and its elements.
+
+xref:IDTA-01003-a_Specification.adoc[] is the main normative part of the document. It specifies the data specification templates supporting IEC 61360.
+
+xref:IDTA-01003-a_Specification.adoc#mapping-iec-61360-data-types-to-xsd-data-types[Mapping IEC 61360 Data Types to XSD Data Types] explains how data types of IEC 61360 are mapped to data types of values as introduced in Part 1.
+
+xref:IDTA-01003-a_Specification.adoc#category-of-concept-descriptions[Category of Concept Descriptions] introduces categories for concept descriptions and how they are used in combination with the data specification template IEC61360. The constraints as defined in xref:IDTA-01003-a_Specification.adoc#cross-constraints-and-invariants-for-predefined-data-specifications-normative[Cross-Constraints and Invariants for Predefined Data Specifications (normative)] also mainly refer to the rules on how these categories should be applied.
+
+
+====
+Note: since categories are deprecated since V3.0, xref:IDTA-01003-a_Specification.adoc#category-of-concept-descriptions[Category of Concept Descriptions] can also be skipped.
+====
+
+
+xref:IDTA-01003-a_Specification.adoc#primitive-and-simple-data-types-normative[Primitive and Simple Data Types (normative)] specifies the data types used in the data specification.
+
+xref:IDTA-01003-a_Specification.adoc#mappings-to-data-formats-to-share-i40-compliant-information-normative[Mappings to Data Formats to Share I4.0-Compliant Information (normative)] provides information on the exchange of information compliant to this specification in existing data formats like XML, AutomationML, OPC UA information models, JSON or RDF.
+
+Finally, xref:IDTA-01003-a_SummaryOutlook.adoc[] summarizes the content and gives an outlook on future work.
+
+The Annex contains additional background information on the Asset Administration Shell (xref:Annex/IDTA-01003-a_Background.adoc[]). It also provides information about UML (xref:sharedAnnex/IDTA-01xxx_UML.adoc[]) and the tables used to specify UML classes as used in this specification (xref:sharedAnnex/IDTA-01xxx_UMLTemplates.adoc[]). xref:sharedAnnex/IDTA-01xxx_BackusNaurForm.adoc[] introduces the Backus-Naur-Form used in the document series.
+
+Metamodel changes compared to previous versions are described in xref:IDTA-01003-a_ChangeLog.adoc[].
+
+The bibliography can be found in xref:IDTA-01003-a_Bibliography.adoc[].
+
+===  Working Principles
+
+The work is based on the following principle: keep it simple but do not simplify if it affects interoperability.
+
+The partners represented in the Industrial Digital Twin Association (IDTA), as well as in the Plattform Industrie 4.0 and associations such as ZVEI, VDMA, VDI/ VDE and Bitkom, ensure that there is broad sectoral coverage of process, hybrid, and factory automation and in terms of integrating information technology (IT) and operational technology (OT).
+
+Design alternatives were intensively discussed within the working group. An extensive feedback process of this document series is additionally performed within the working groups of Plattform Industrie 4.0 and IDTA.
+
+Guiding principle for the specification was to provide detailed information, which can be easily implemented also by small and medium-sized enterprises.
+
