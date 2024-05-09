@@ -31,6 +31,7 @@ Bugfixes:
 * (Editorial) Notes "Note: it is recommended to use a global
 reference." were updated to "Note: it is recommended to use an external
 reference." (https://github.com/admin-shell-io/aas-specs-iec61360/issues/5[#5])
+* (Editorial) Examples corrected for `IEC:DataSpecificationIec61360/levelType/Min` and `IEC:LevelType/Min` (min with small letter)
 
 .Changes in Metamodel
 [width="100%",cols="7%,12%,15%,66%",options="header",]

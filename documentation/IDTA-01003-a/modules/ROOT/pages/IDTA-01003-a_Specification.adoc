@@ -35,7 +35,7 @@ The ID of the template was derived conformant to the rules for semantic IDs for 
 
 This ID will be used in _hasDataSpecification/dataSpecification_.
 
-This namespace has the qualifier "IEC:" Examples: `IEC:DataSpecificationIec61360/preferredName` or `IEC:DataSpecificationIec61360/levelType/Min` or `IEC:LevelType/Min`
+This namespace has the qualifier "IEC:" Examples: `IEC:DataSpecificationIec61360/preferredName` or `IEC:DataSpecificationIec61360/levelType/min` or `IEC:LevelType/min`
 
 [#_Toc125981064]
 .Metamodel of Data Specification IEC61360
