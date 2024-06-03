@@ -49,10 +49,11 @@ SPDX-License-Identifier: CC-BY-4.0
 [13] T. Preston-Werner "Semantic Versioning". Version 2.0.0. Accessed: 2020-11-13. [Online] Available: https://semver.org/spec/v2.0.0.html
 
 [#bib14]
-[14] "Details of the Asset Administration Shell – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces". Part 2. See link:#bib22[[22\]].
+[14] IDTA-01002 "Specification of the Asset Administration Shell Part 2 – Application Programming Interfaces". See xref:IDTA-01xxx_Bibliography.adoc#bib22[[22\]].
 
 [#bib15]
-[15] "Asset Administration Shell. Reading Guide". Plattform Industrie 4.0 in cooperation with IDTA. November 2020. See link:#bib22[[22\]].
+[15] "Asset Administration Shell. Reading Guide". Industrial Digital Twin Association. November 2022. [Online] Available: https://industrialdigitaltwin.org/en/wp-content/uploads/sites/2/2022/12/2022-12-07_IDTA_AAS-Reading-Guide.pdf
+
 
 [#bib16]
 [16] Top Level Project "Eclipse Digital Twin" Available: https://projects.eclipse.org/projects/dt
@@ -73,7 +74,8 @@ SPDX-License-Identifier: CC-BY-4.0
 [21] "Registered AAS Submodel Templates". Industrial Digital Twin Association. Available: https://industrialdigitaltwin.org/en/content-hub/submodels
 
 [#bib22]
-[22] "Asset Administration Shell Specifications – Quicklinks to Different Versions & Reading Guide". [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Standardartikel/specification-administrationshell.html
+[22] "Asset Administration Shell Specifications". [Online]. Available: https://industrialdigitaltwin.org/en/content-hub/aasspecifications
+
 
 [#bib23]
 [23] (German) "I4.0-Sprache. Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-Sprache", Discussion Paper. Plattform Industrie 4.0 [Online] Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
