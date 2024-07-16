@@ -12,7 +12,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ===  Scope of This Document
 
-The Asset Administration Shell (see Part 1a of the document series) allows to define data specification templates. Data specification templates aim to enable interoperability between the partners that agree on the template. A template defines a set of attributes, with each attribute having a clear semantics. This set of attributes corresponds to a (sub-)schema.
+The Asset Administration Shell (see Part 1 of the document series, IDTA-01001) allows to define data specification templates. Data specification templates aim to enable interoperability between the partners that agree on the template. A template defines a set of attributes, with each attribute having a clear semantics. This set of attributes corresponds to a (sub-)schema.
 
 This document specifies data specification templates conformant to IEC 61360. IEC 61360 specifies how to define the semantics of single properties or values. The value range of a property can be defined as a value list – an enumeration -, while each of the (coded) values of the value list are treated as single concepts. They are thus suited to be used as data specifications for concept descriptions.
 
@@ -24,7 +24,7 @@ Please consult the continuously updated reading guide link:#bib15[[15\]] for an 
 
 === Normative References
 
-[AAS-Part1] "The Exchange of information between partners in the value chain of Industrie 4.0", part of document series "Details of the Asset Administration Shell". V3.0. Jan. 2023. Industrial Digital Twin Association.
+[IDTA-01001] "Specification of the Asset Administration Shell. Part 1: Metamodel", IDTA-01001-3-1. Industrial Digital Twin Association.
 
 [IEC61360-1] Standard data element types with associated classification scheme – Part 1: Definitions – Principles and methods. Edition 4.0 2017-07
 

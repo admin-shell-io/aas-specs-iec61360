@@ -8,6 +8,8 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ////
 
+include::includes/constraints.adoc[]
+
 = Specification
 
 == Predefined Template for IEC61360 Properties, Value Lists, and Values (normative)
@@ -23,7 +25,16 @@ This specification is only valid in combination with IDTA-01001-3-1.
 h|*Template:* 3+|IEC61360
 h|*administration:* |version: 3 |revision: 1 |creator: IDTA
 
-h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1`
+h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`
+
+
+\<<deprecated>> `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+
+\<<deprecated>> `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+
+\<<deprecated>> `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
+
+\<<deprecated>> `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
 
 
 h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
@@ -59,9 +70,10 @@ Content of data specification template for concept descriptions for properties, 
 Note: for details, please refer to [IEC61360-1], property, value_list and term
 ====
 
-
+{aasc3a010}
+////
 +++Constraint AASc-010+++: If _DataSpecificationIec61360/value_ is not empty, _DataSpecificationIec61360/valueList_ shall be empty, and vice versa.
-
+////
 
 ====
 Note 1: it is also possible that both _DataSpecificationIec61360/value_ and _SpecificationIec61360/valueList_ are empty. This is the case for concept descriptions that define the semantics of a property but do not have an enumeration (_valueList)_ as data type.
@@ -73,9 +85,10 @@ Note 1: it is also possible that both _DataSpecificationIec61360/value_ and _Spe
 Note 2: although it is possible to define a concept description for a value list, it is not possible to reuse this value list. It is only possible to directly add a value list as data type to a specific semantic definition of a property.
 ====
 
-
-+++Constraint AASc-009:+++ If _DataSpecificationIec61360/­dataType_ is one of _INTEGER_MEASURE, REAL_MEASURE, RATIONAL_MEASURE, INTEGER_CURRENCY,_ _REAL_CURRENCY_, then _DataSpecificationIec61360/unit_ or _DataSpecificationIec61360/unitId_ shall be defined.
-
+{aasc3a009}
+////
++++Constraint AASc-009:+++ If _DataSpecificationIec61360/dataType_ is one of _INTEGER_MEASURE, REAL_MEASURE, RATIONAL_MEASURE, INTEGER_CURRENCY,_ _REAL_CURRENCY_, then _DataSpecificationIec61360/unit_ or _DataSpecificationIec61360/unitId_ shall be defined.
+////
 
 |*Inherits from:* 3+|DataSpecificationContent 
 
@@ -88,8 +101,10 @@ Preferred name in different languages
 Note: for details, please refer to [IEC61360-1], preferred_name
 ====
 
-
-+++Constraint AASc-002+++: _Data­Specification­Iec61360­/preferredName_ shall be provided at least in English.
+{aasc3a002}
+////
++++Constraint AASc-002+++: _DataSpecificationIec61360/preferredName_ shall be provided at least in English.
+////
 
 |PreferredNameTypeIec61360 |1
 |shortName a|
@@ -136,7 +151,7 @@ Note 2: it is recommended to use an external reference ID.
 
 
 |Reference |0..1
-|sourceOf­Definition a|
+|sourceOfDefinition a|
 Source of definition
 
 
@@ -219,7 +234,7 @@ Value represented by up to four variants of a numeric value in a specific role: 
 ====
 Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 ====
-(MIN,NOM,TYP,MAX)
+
 
 |LevelType |0..1
 |===
@@ -552,29 +567,18 @@ Note: This is how the AAS deals with the following combinations of level types:
 ====
 
 
+* Case 1: If all attributes are false, the concept is mapped to a Property and level type is ignored.
+
+* Case2: If a maximum of one attribute is set to true, the concept is mapped to a Property.
+
+* Case 3: If min and max are set to true, the concept is mapped to a Range.
 
 
-
-____
-If all attributes are false, the concept is mapped to a Property and level type is ignored.
-____
+* Case 4: If more than one attribute is set to true, does not include min and max only (see second case), the concept is mapped to a _SubmodelElementCollection_ with the corresponding number of Properties. Example: If the attributes min and nom are set to true, the concept is mapped to a _SubmodelElementCollection_ with two Properties: min and nom. The data type of both Properties is the same.
 
 
-____
-If a maximum of one attribute is set to true, the concept is mapped to a Property.
-____
+In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type. Otherwise, the semantics is not described in a unique way. In link:#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path]. 
 
-
-____
-If min and max are set to true, the concept is mapped to a Range.
-____
-
-
-____
-If more than one attribute is set to true, does not include min and max only (see second case), the concept is mapped to a _SubmodelElementCollection_ with the corresponding number of Properties. Example: If the attributes min and nom are set to true, the concept is mapped to a _SubmodelElementCollection_ with two Properties: min and nom. The data type of both Properties is the same.
-____
-
-In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type. Otherwise, the semantics is not described in a unique way. In link:#bib27[[27\]], IRDI paths are introduced. However, no rules of how to map IRDI paths to __Reference__s for semanticIds have yet been defined.
 
 It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max). This is considered to be a deprecated way of defining property sets. See also link:#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
 
@@ -636,6 +640,7 @@ Examples for the different IEC 61360 data types can be found here: https://eclas
 [width="100%",cols="31%,30%,39%",options="header",]
 |===
 |*Data Type IEC 61360* |*xsd Value Type*footnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._ 
+
 ====
 Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).] |*Example Values IEC 61360*footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value. The IRDI example for STRING was moved to IRDI.]
 ====
@@ -784,16 +789,16 @@ image::image13.png[align=center]
 
 [width="100%",cols="31%,13%,13%,9%,18%,16%"]
 |===
-h|Attribute footnote:[m = mandatory, o = optional, (m) = conditionally mandatory or recommended to be added] h|Property h|Property h|Property h|Multi­Language­Property h|Range
+h|Attribute footnote:[m = mandatory, o = optional, (m) = conditionally mandatory or recommended to be added] h|Property h|Property h|Property h|MultiLanguageProperty h|Range
 h|Category of Concept Description h|VALUE h|PROPERTY h|PROPERTY h|PROPERTY h|PROPERTY
-h|Category of Submodel­Element­ h|CONSTANT h|VARIABLE h|PARAMETER h|-- h|--
+h|Category of SubmodelElement h|CONSTANT h|VARIABLE h|PARAMETER h|-- h|--
 e|preferredNamefootnote:[Mandatory in at least one language. Preferably, an English preferred name should always be defined.] |m |m |m |m |m
 e|shortName |(m) |(m) |(m) |(m) |(m)
 e|unit |(m) |(m) |(m) |-- |(m)
 e|unitId |(m) |(m) |(m) |-- |(m)
-e|sourceOf­Definition |o |o |o |o |o
+e|sourceOfDefinition |o |o |o |o |o
 e|symbol |o |o |o |-- |--
-e|dataType |mfootnote:[All IEC 61360 data types except STRING_TRANSLATABLE, IRI, IRDI, HTML, FILE, BLOB.] |m^8^ |m^8^ |STRING_TRANSLATABLE |INTEGER_* or REAL_­*
+e|dataType |mfootnote:[All IEC 61360 data types except STRING_TRANSLATABLE, IRI, IRDI, HTML, FILE, BLOB.] |m^8^ |m^8^ |STRING_TRANSLATABLE |INTEGER_* or REAL_*
 e|definition |(m) |m |m |m |m
 e|valueFormat |o |o |o |-- |o
 e|valueList |-- |o |o |-- |--
@@ -813,14 +818,14 @@ Max = true
 
 [width="99%",cols="22%,13%,13%,13%,13%,13%,13%",options="header",]
 |===
-|*Attribute**^6^* |*Reference­Element* |*File*footnote:[Template only used until explicit template is available for defining the corresponding types of elements.] |*Blob^9^* |*Capability^9^* |*Relationship­Element^9^* |*AnnotatedRelationship­Element^9^*
+|*Attribute**^6^* |*ReferenceElement* |*File*footnote:[Template only used until explicit template is available for defining the corresponding types of elements.] |*Blob^9^* |*Capability^9^* |*RelationshipElement^9^* |*AnnotatedRelationshipElement^9^*
 h|Category of Concept Description h|REFERENCE h|DOCUMENT h|DOCUMENT h|CAPABILITY h|RELATIONSHIP h|RELATIONSHIP
-|*Category of Submodel­Element­* |*--* |*--* |*--* |*--* |*--* |*--*
+|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--* |*--*
 |preferredName^7^ |m |m |m |m |m |m
 |shortName |(m) |(m) |(m) |(m) |(m) |(m)
 |unit |-- |-- |-- |-- |-- |--
 |unitId |-- |-- |-- |-- |-- |--
-|sourceOf­Definition |o |o |o |o |o |o
+|sourceOfDefinition |o |o |o |o |o |o
 |symbol |-- |-- |-- |-- |-- |--
 |dataType |string or Iri or Irdi or Icid or iso29002Irdi |file |blob or html5 |-- |-- |--
 |definition |m |m |m |m |m |m
@@ -840,12 +845,12 @@ h|Category of Concept Description h|REFERENCE h|DOCUMENT h|DOCUMENT h|CAPABILITY
 |===
 |*Attribute* |*SubmodelElementList^9^* |*SubmodelElementCollection^9^* |*Operation^9^* |*EventElement^9^* |*Entity^9^*
 h|Category of Concept Description h|COLLECTION h|ENTITY h|FUNCTION h|EVENT h|ENTITY
-|*Category of Submodel­Element­* |*--* |*--* |*--* |*--* |*--*
+|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--*
 |preferredName^7^ |m |m |m |m |m
 |shortName |(m) |(m) |(m) |(m) |(m)
 |unit |-- |-- |-- |-- |--
 |unitId |-- |-- |-- |-- |--
-|sourceOf­Definition |o |o |o |o |o
+|sourceOfDefinition |o |o |o |o |o
 |symbol |-- |-- |-- |-- |--
 |dataType |-- |-- |-- |-- |--
 |definition |m |m |m |m |m
@@ -896,50 +901,63 @@ https://sunye.github.io/ocl/[A class invariant is a constraint that must be true
 
 
 ====
-Note: these constraints include elements of Part 1, V3.0 of the document series "Details of the Asset Administration Shell" [AAS-Part1].
+Note: these constraints include elements of Part 1 Metamodel, IDTA-01001. 
 ====
 
 {empty}
 
 === Constraints for Data Specification IEC61360
 
+{aasc3a004}
+////
 +++Constraint AASc-3a-004+++: For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.
-
-
-====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
-====
-
-
-+++Constraint AASc-3a-005:+++ For a _ConceptDescription_ with _category_ REFERENCE using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ shall be one of _STRING, IRI, IRDI._
-
+////
 
 ====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
 ====
 
+{aasc3a005}
+////
++++Constraint AASc-3a-004+++: For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.
+////
 
+====
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+====
+
+{aasc3a006}
+////
 +++Constraint AASc-3a-006+++: For a _ConceptDescription_ with _category_ DOCUMENT using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ shall be one of _FILE, BLOB, HTML_.
-
+////
 
 ====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
 ====
 
-
+{aasc3a007}
+////
 +++Constraint AASc-3a-007:+++ For a _ConceptDescription_ with _category_ QUALIFIER_TYPE using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be defined.
-
+////
 
 ====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Asset Administration Shell Specification".
 ====
 
-
+{aasc3a008}
+////
 +++Constraint AASc-3a-008+++: For a _ConceptDescription_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
+////
 
+{aasc3a003}
+////
 +++Constraint AASc-3a-003+++: For a _ConceptDescription_ referenced via _ValueList/valueId_ and using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/value_ shall be set.
+////
 
+{aasc3a050}
+////
 +++Constraint AASc-3a-050+++: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1.
+////
 
 == Primitive and Simple Data Types (normative)
 
@@ -1003,7 +1021,7 @@ The realization of a technology depend on the serialization rules.
 
 
 ====
-Note: as defined in Part 1, [AAS-Part1].
+Note: as defined in Part 1 Metamode, IDTA-01001.
 ====
 
 
@@ -1022,9 +1040,11 @@ In rdf:
 
 In JSON:
 
+[source,json,linenums]
+----
 "description": [
 
-  \{
+  {
 
       "language":"en", 
 
@@ -1032,7 +1052,7 @@ In JSON:
 
   },
 
-  \{
+  {
 
 "language":"de",
 
@@ -1041,6 +1061,7 @@ In JSON:
    }
 
 ]
+----
 
 |PreferredNameTypeIec61360 a|
 _LangStringSet_
@@ -1118,75 +1139,9 @@ Note: see _<<#_Ref129950722,Figure 6>>_
 
 === General
 
-Part 1 of the document series introduces the need for different serialization formats and described when which format is used. Part 1 also introduces the implementation guide for embedded data specifications. Hence, only the links to the different schemas derived for the formats XML, JSON, and RDF are provided in the following. Further information can be found in [AAS-Part1].
-
-=== XML
-
-The metamodel of an Asset Administration Shell needs to be serialized for import and export scenarios. XML is a possible serialization format.
-
-
-====
-Note 1: the xml schema (.xsd files) is maintained in the repository "aas-spec" of the github project admin-shell-io link:#bib25[[25\]]: aas-specs-3.0\schemas\xml.
-====
-
-
-
-====
-Note 2: the mapping rules of how to derive the xml schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\xml\Readme.md#xml-mappingrules.
-====
-
-
-
-====
-Note 3: example files can be found here: aas-specs-3.0\schemas\xml\examples.
-====
-
-
-===  JSON
-
-JSONfootnote:[see: https://tools.ietf.org/html/rfc8259 or https://www.ecma-international.org/publications/standards/Ecma-404.htm] (JavaScript Object Notation) is a further serialization format that serializes the metamodel of an Assest Administration Shell for import and export scenarios.
-
-Additionally, JSON format is used to describe the payload in the http/REST API for active Asset Administration Shells link:#bib14[[14\]].
-
-
-====
-Note 1: the JSON schema (.json files) is maintained in the repository "aas-spec" of the github project admin-shell-io link:#bib25[[25\]]: h aas-specs-3.0\schemas\json
-====
-
-
-
-====
-Note 2: the mapping rules of how to derive the JSON schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\json\Readme.md#json-mappingrules
-====
-
-
-
-====
-Note 3: example files can be found here: aas-specs-3.0\schemas\json\examples.
-====
-
-
-===  RDF
-
-The Resource Description Framework (RDF) link:#bib26[[26\]] is the recommended standard of the W3C to unambiguously model and present semantic data. RDF documents are structured in the form of triples, consisting of subjects, relations, and objects. The resulting model is often interpreted as a graph, with the subject and object elements as the nodes and the relations as the graph edges.
-
-
-====
-Note 1: the RDF scheme/OWL files (.ttl files) are maintained in the repository "aas-spec" of the github project admin-shell-io link:#bib25[[25\]]: aas-specs-3.0\schemas\rdf
-====
-
-
-
-====
-Note 2: the mapping rules of how to derive the RDF schema from the technology-neutral metamodel as defined in this specification can be found here: aas-specs-3.0\schemas\rdf\Readme.md#rdf-mappingrules
-====
-
-
-
-====
-Note 3: example files can be found here: aas-specs-3.0\schemas\rdf\examples
-====
-
+Part 1 of this document series (IDTA-01001) introduces different serialization formats: XML, JSON and RDF. 
+Part 1 also introduces the implementation guide for embedded data specifications. 
+This is why the different formats are described in IDTA-01001.
 
 
 
