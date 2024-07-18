@@ -146,7 +146,7 @@ reference." (https://github.com/admin-shell-io/aas-specs-iec61360/issues/5[#5])
 .New, Changed or Removed Constraints in V3.0.1
 [width="100%",cols="7%,12%,15%,66%",options="header",]
 |===
-h|nc h|V3.0 vs. V3.0.1 h|New, Update, Removed, Reformulated h|Comment
+h|nc h|V3.0.1 vs. V3.0 h|New, Update, Removed, Reformulated h|Comment
 
 | | AASc-3a-003 | Update a| Change http to https
 
