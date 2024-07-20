@@ -1,8 +1,6 @@
-= DRAFT DRAFT DRAFT DRAFT DRAFT 
-
-== Specification of the Asset Administration Shell
-
 = Part 3a: Data Specification Template IEC 61360 (IDTA-01003-a)
+
+*Specification of the Asset Administration Shell*
 
 ====
 This specification is part of the https://industrialdigitaltwin.org/en/content-hub/aasspecifications[Asset Administration Shell Specification series].
@@ -28,7 +26,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 Contact: https://industrialdigitaltwin.org/en/contact[IDTA]
 
-Sources: https://github.com/admin-shell-io/aas-specs-iec61360[github]
+Sources: https://github.com/admin-shell-io/aas-specs-iec61360[GitHub]
 
 Feedback:
 
@@ -40,7 +38,7 @@ Feedback:
 
 This document, version 3.1, was produced from Dec. 2022 on by the Workstream "Asset Administration Shell Specifications" of the working group o "Open Technology" of the Industrial Digital Twin Association (IDTA). 
 
-The document "Details of the Asset Administration Shell – Part 1 – The exchange of information between partners in the value chain of Industie 4.0, V3.0RC02" was split into several parts. One of them is this document, which represents Part 3a and describes a data specification that is defined to be used with the core model as specified in Part 1. This is also why versioning now starts with V3.0: it is only valid in combination with V3.0 of Part 1.
+The document "Details of the Asset Administration Shell – Part 1 – The exchange of information between partners in the value chain of Industrie 4.0, V3.0RC02" was split into several parts. One of them is this document, which represents Part 3a and describes a data specification that is defined to be used with the core model as specified in Part 1. This is also why versioning now starts with V3.0: it is only valid in combination with V3.0 of Part 1.
 
 Version 3.0 of this document was produced from June 2022 to November 2022 by the sub working group "Asset Administration Shell" of the joint working group of the Plattform Industrie 4.0 working group "Reference Architectures, Standards and Norms" and the "Open Technology" working group of the Industrial Digital Twin Association (IDTA). It is the first release published by the IDTA.
 

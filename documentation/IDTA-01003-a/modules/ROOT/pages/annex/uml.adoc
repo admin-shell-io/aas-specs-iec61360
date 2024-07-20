@@ -15,7 +15,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 This annex explains the UML elements used in this specification. For more information, please refer to the comprehensive literature available for UML. The formal specification can be found in xref:IDTA-01xxx_Bibliography.adoc#bib35[[35\]].
 
-Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represents the end of binary associations, see also Figure 70. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. xref:IDTA-01xxx_Bibliography.adoc#bib35[[35\]]”]
+Figure 63 shows a class with name "Class1" and an attribute with name "attr" of type _Class2_. Attributes are owned by the class. Some of these attributes may represent the end of binary associations, see also Figure 70. In this case, the instance of _Class2_ is navigable via the instance of the owning class _Class1_.footnote:[„Navigability notation was often used in the past according to an informal convention, whereby non-navigable ends were assumed to be owned by the Association whereas navigable ends were assumed to be owned by the Classifier at the opposite end. This convention is now deprecated. Aggregation type, navigability, and end ownership are separate concepts, each with their own explicit notation. Association ends owned by classes are always navigable, while those owned by associations may be navigable or not. xref:IDTA-01xxx_Bibliography.adoc#bib35[[35\]]”]
 
 .Class
 image::image64.png[]
@@ -129,7 +129,7 @@ In UML, the convention is to name associations and aggregations in singular form
 
 
 ====
-Note: a plural form of the name of attributes with cardinality >=1 may be needed in some serializations (e.g. in JSON). In this case, it is recommended to add an "s". In case of resulting incorrect English (e.g. isCaseOf isCaseOfs), it must be decided whether or not to support such exceptions.
+Note: a plural form of the name of attributes with cardinality >=1 may be needed in some serializations (e.g. in JSON). In this case, it is recommended to add an "s". In case of resulting incorrect English (e.g. isCaseOf isCaseOfs), it must be decided whether to support such exceptions.
 ====
 
 
@@ -195,7 +195,7 @@ image::image83.png[]
 Figure 84 depicts different graphical notations for enumerations in combination with inheritance. On the left side "Enumeration1" additionally contains the literals as defined by "Enumeration2".
 
 ====
-Note 1: the direction of inheritance is opposite to the one for class inheritance. This can be seen at the right side of Figure 84 that defines the same enumeration but without inheritance.
+Note 1: the direction of inheritance is opposite to the one for class inheritance. This can be seen on the right side of Figure 84 that defines the same enumeration but without inheritance.
 ====
 
 .Graphical Representation for Enumeration with Inheritance

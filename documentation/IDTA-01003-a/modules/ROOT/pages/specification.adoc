@@ -766,7 +766,7 @@ Note: for details, please see Part 1 of the document series "Details of the Asse
 
 
 ====
-Note: the attribute category of referables was set to deprecated in V3.0 of Part 1. Hence this clause informs about the meaning, in case applications are still using the attribute category.
+Note: the attribute category of referables was set to deprecated in V3.0 of Part 1. Hence, this clause informs about the meaning, in case applications are still using the attribute category.
 ====
 
 

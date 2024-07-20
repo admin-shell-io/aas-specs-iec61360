@@ -59,7 +59,7 @@ SPDX-License-Identifier: CC-BY-4.0
 [16] Top Level Project "Eclipse Digital Twin" Available: https://projects.eclipse.org/projects/dt
 
 [#bib17]
-[17] OPC 30270: OPC UA for Asset Administrastion Shell (AAS). 2021-06-04. [Online]. Available: https://reference.opcfoundation.org/v104/I4AAS/v100/docs/
+[17] OPC 30270: OPC UA for Asset Administration Shell (AAS). 2021-06-04. [Online]. Available: https://reference.opcfoundation.org/v104/I4AAS/v100/docs/
 
 [#bib18]
 [18] OPC Unified Architecture Specification. Part 5 Information Model. [Online]. Available: https://opcfoundation.org/developer-tools/specifications-unified-architecture
