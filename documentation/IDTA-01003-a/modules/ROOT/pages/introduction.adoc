@@ -97,5 +97,5 @@ image::image8.png[align=center]
 
 IEC 61360 is a standard that describes how to define the semantics of properties in a data dictionary. Part 1 does not prescribe how to define a concept description; it only supports the definition of concept descriptions. To do so, a data specification template needs to be assigned to the concept description. Which data specification is made available is defined via _HasDataSpecification/dataSpecification_.
 
-The legend for understanding the UML diagrams and the table specification of the classes is explained in xref:sharedAnnex/IDTA-01xxx_UMLTemplates.adoc[] and xref:sharedAnnex/IDTA-01xxx_UML.adoc[].
+The legend for understanding the UML diagrams and the table specification of the classes is explained in xref:annex/uml-templates.adoc[] and xref:annex/uml.adoc[].
 

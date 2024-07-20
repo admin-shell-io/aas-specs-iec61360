@@ -10,22 +10,22 @@ Illustrations:
 Plattform Industrie 4.0; Anna Salari, Publik. Agentur für Kommunikation GmbH, designed by Publik. Agentur für Kommunikation GmbH
 ////
 
-* xref:IDTA-01003-a_TermsDefinitionsAbbreviations.adoc[Terms and Definitions]
-* xref:IDTA-01003-a_Preamble.adoc[Preamble]
-* xref:IDTA-01003-a_Intro.adoc[Introduction]
+* xref:terms-definitions-and-abbreviations.adoc[Terms and Definitions]
+* xref:preamble.adoc[Preamble]
+* xref:introduction.adoc[Introduction]
 
-* xref:IDTA-01003-a_Specification.adoc[Specification]
+* xref:specification.adoc[Specification]
 
-* xref:IDTA-01003-a_SummaryOutlook.adoc[Summary and Outlook]
+* xref:summary-and-outlook.adoc[Summary and Outlook]
 
 
-* xref:./Annex/nav_annex.adoc[Annex]
-** xref:./Annex/IDTA-01003-a_Background.adoc[Background]
-** xref:./sharedAnnex/IDTA-01xxx_BackusNaurForm.adoc[Backus Naur Form]
-** xref:./sharedAnnex/IDTA-01xxx_UML.adoc[UML]
-** xref:./sharedAnnex/IDTA-01xxx_UMLTemplates.adoc[UML Table Templates]
-** xref:./Annex/IDTA-01003-a_HandlingConstraints.adoc[Handling Constraints]
+* xref:./annex/nav-annex.adoc[Annex]
+** xref:./annex/background.adoc[Background]
+** xref:annex/backus-naur-form.adoc[Backus Naur Form]
+** xref:annex/uml.adoc[UML]
+** xref:annex/uml-templates.adoc[UML Table Templates]
+** xref:./annex/handling-constraints.adoc[Handling Constraints]
 
-* xref:IDTA-01003-a_ChangeLog.adoc[Change Log]
-* xref:IDTA-01003-a_Bibliography.adoc[Bibliography]
+* xref:changelog.adoc[Change Log]
+* xref:bibliography.adoc[Bibliography]
 
