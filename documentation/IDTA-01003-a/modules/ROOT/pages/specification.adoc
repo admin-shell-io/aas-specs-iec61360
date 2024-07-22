@@ -49,7 +49,6 @@ This ID will be used in _hasDataSpecification/dataSpecification_.
 
 This namespace has the qualifier "IEC:" Examples: `IEC:DataSpecificationIec61360/preferredName` or `IEC:DataSpecificationIec61360/levelType/min` or `IEC:LevelType/min`
 
-[#_Toc125981064]
 .Metamodel of Data Specification IEC61360
 image::image9.png[align=center]
 
@@ -71,9 +70,6 @@ Note: for details, please refer to [IEC61360-1], property, value_list and term
 ====
 
 {aasc3a010}
-////
-+++Constraint AASc-010+++: If _DataSpecificationIec61360/value_ is not empty, _DataSpecificationIec61360/valueList_ shall be empty, and vice versa.
-////
 
 ====
 Note 1: it is also possible that both _DataSpecificationIec61360/value_ and _SpecificationIec61360/valueList_ are empty. This is the case for concept descriptions that define the semantics of a property but do not have an enumeration (_valueList)_ as data type.
@@ -86,9 +82,6 @@ Note 2: although it is possible to define a concept description for a value list
 ====
 
 {aasc3a009}
-////
-+++Constraint AASc-009:+++ If _DataSpecificationIec61360/dataType_ is one of _INTEGER_MEASURE, REAL_MEASURE, RATIONAL_MEASURE, INTEGER_CURRENCY,_ _REAL_CURRENCY_, then _DataSpecificationIec61360/unit_ or _DataSpecificationIec61360/unitId_ shall be defined.
-////
 
 |*Inherits from:* 3+|DataSpecificationContent 
 
@@ -102,9 +95,6 @@ Note: for details, please refer to [IEC61360-1], preferred_name
 ====
 
 {aasc3a002}
-////
-+++Constraint AASc-002+++: _DataSpecificationIec61360/preferredName_ shall be provided at least in English.
-////
 
 |PreferredNameTypeIec61360 |1
 |shortName a|
@@ -269,7 +259,6 @@ Note 4: _ConceptDescription/description_ and _DataSpecificationIec61360/definiti
 
 {empty}
 
-[#_Toc129706733]
 .Metamodel of Data Type IEC 61360
 image::image10.png[align=center]
 
@@ -528,7 +517,6 @@ Note: for details, please refer to [IEC61360-1], BINARY_TYPE
 
 {empty}
 
-[#_Toc129706734]
 .Metamodel of Level Type
 image::image11.png[align=center]
 
@@ -586,7 +574,6 @@ It is not recommended to use level type when defining concept descriptions for P
 
 "_ValueList_" allows to define an enumeration type for a property. The value list is a set of value reference pairs.
 
-[#_Toc129706735]
 .Metamodel of Value List
 image::image12.png[align=center]
 
@@ -628,6 +615,7 @@ Note: it is recommended to use an external reference.
 |Reference |1
 |===
 
+[#mapping-iec-61360-data-types-to-xsd-data-types]
 == Mapping IEC 61360 Data Types to XSD Data Types
 
 Using a concept description requires mapping the data type of the concept description to a conformant type in xsd (for example in _Property/valueType_).
@@ -635,7 +623,6 @@ Using a concept description requires mapping the data type of the concept descri
 Examples for the different IEC 61360 data types can be found here: https://eclass.eu/support/technical-specification/structure-and-elements/value.
 
 
-[#_Toc129706736]
 .Mapping IEC 61360 Data Types to xsd Data Types
 [width="100%",cols="31%,30%,39%",options="header",]
 |===
@@ -762,6 +749,7 @@ Note: for details, please see Part 1 of the document series "Details of the Asse
 |
 |===
 
+[#category-of-concept-descriptions]
 == Category of Concept Descriptions 
 
 
@@ -770,23 +758,24 @@ Note: the attribute category of referables was set to deprecated in V3.0 of Part
 ====
 
 
-Although the IEC 61360 attributes listed in this template are defined for properties and values only, it is also possible to use the template for other definitions as long as no specific data specifications for concept descriptions for these elements are available. This is shown in _<<#_Toc129695225,Table 2>>_, _<<#_Ref129944411,Table 3>>_ and _<<#_Toc122380240,Table 5>>_.
+Although the IEC 61360 attributes listed in this template are defined for properties and values only, it is also possible to use the template for other definitions as long as no specific data specifications for concept descriptions for these elements are available. This is shown in <<table-iec61360-properties-ranges>>, <<table-iec61360-other-data-elements>> and <<table-other-elements-with-semid>>.
 
 For the meaning of the content attributes of the IEC 61360 data specification template, please refer to IEC 61360 and/or ECLASS.
 
 The data specification template can be used to describe both properties and values.
 
-See _<<#_Ref129879629,Figure 7>>_ Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 on how data specification templates are related to concept descriptions. _<<#_Toc125981069,Figure 12>>_ lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
+See xref:introduction.adoc#image-rel-metamodel-iec61360[Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360] on how data specification templates are related to concept descriptions. <<image-categories-cds>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
 
 The following tables recommend using specific categories to distinguish which kind of concept is described. They also give advice on which attributes need to be filled for which category of concept description.
 
 {empty}
 
-[#_Toc125981069]
 .Categories of Concept Descriptions (non-normative)
+[[image-categories-cds]]
 image::image13.png[align=center]
 
-
+.IEC61360 Data Specification Template for Properties and Ranges
+[[table-iec61360-properties-ranges]]
 [width="100%",cols="31%,13%,13%,9%,18%,16%"]
 |===
 h|Attribute footnote:[m = mandatory, o = optional, (m) = conditionally mandatory or recommended to be added] h|Property h|Property h|Property h|MultiLanguageProperty h|Range
@@ -813,9 +802,8 @@ Max = true
 
 {empty}
 
-[#_Toc129695225]
-.IEC61360 Data Specification Template for Properties and Ranges
-
+.IEC61360 Data Spec. Template for Other Data Elements,Relationships Elements and Capabilities
+[[table-iec61360-other-data-elements]]
 [width="99%",cols="22%,13%,13%,13%,13%,13%,13%",options="header",]
 |===
 |*Attribute**^6^* |*ReferenceElement* |*File*footnote:[Template only used until explicit template is available for defining the corresponding types of elements.] |*Blob^9^* |*Capability^9^* |*RelationshipElement^9^* |*AnnotatedRelationshipElement^9^*
@@ -838,9 +826,8 @@ h|Category of Concept Description h|REFERENCE h|DOCUMENT h|DOCUMENT h|CAPABILITY
 
 {empty}
 
-[#_Ref129944411]
-.IEC61360 Data Spec. Template for Other Data Elements,Relationships Elements and Capabilities
-
+.IEC612360 Data Specification Template for Other Submodel Elements
+[[table-iec61360-other-submodel-elements]]
 [width="99%",cols="25%,19%,12%,16%,12%,16%",options="header",]
 |===
 |*Attribute* |*SubmodelElementList^9^* |*SubmodelElementCollection^9^* |*Operation^9^* |*EventElement^9^* |*Entity^9^*
@@ -863,9 +850,8 @@ h|Category of Concept Description h|COLLECTION h|ENTITY h|FUNCTION h|EVENT h|ENT
 
 {empty}
 
-[#_Toc129695227]
-.IEC612360 Data Specification Template for Other Submodel Elements
-
+.Other Elements with semanticId
+[[table-other-elements-with-semid]]
 [width="100%",cols="32%,24%,22%,22%",options="header",]
 |===
 |*Attribute* |*Submodel^9^* |*Qualifier^9^* |*SpecificAssetId*
@@ -888,9 +874,8 @@ h|Category of Concept Description h|APPLICATION_CLASS h|QUALIFIER_TYPE h|PROPERT
 
 {empty}
 
-[#_Toc122380240]
-.Other Elements with semanticId
 
+[#cross-constraints-and-invariants-for-predefined-data-specifications-normative]
 == Cross-Constraints and Invariants for Predefined Data Specifications (normative)
 
 === General
@@ -909,68 +894,47 @@ Note: these constraints include elements of Part 1 Metamodel, IDTA-01001.
 === Constraints for Data Specification IEC61360
 
 {aasc3a004}
-////
-+++Constraint AASc-3a-004+++: For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.
-////
 
 ====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
 ====
 
 {aasc3a005}
-////
-+++Constraint AASc-3a-004+++: For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.
-////
 
 ====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
 ====
 
 {aasc3a006}
-////
-+++Constraint AASc-3a-006+++: For a _ConceptDescription_ with _category_ DOCUMENT using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ shall be one of _FILE, BLOB, HTML_.
-////
 
 ====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
 ====
 
 {aasc3a007}
-////
-+++Constraint AASc-3a-007:+++ For a _ConceptDescription_ with _category_ QUALIFIER_TYPE using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/dataType_ is mandatory and shall be defined.
-////
 
 ====
 Note: categories are deprecated since V3.0 of Part 1 of the document series "Asset Administration Shell Specification".
 ====
 
 {aasc3a008}
-////
-+++Constraint AASc-3a-008+++: For a _ConceptDescription_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
-////
 
 {aasc3a003}
-////
-+++Constraint AASc-3a-003+++: For a _ConceptDescription_ referenced via _ValueList/valueId_ and using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1), _DataSpecificationIec61360/value_ shall be set.
-////
 
 {aasc3a050}
-////
-+++Constraint AASc-3a-050+++: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1.
-////
 
+[#primitive-and-simple-data-types-normative]
 == Primitive and Simple Data Types (normative)
 
 === Predefined Simple Data Types
 
 The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  link:https://www.w3.org/XML/Core/[XML Schema Definition] (XSD) 
-as its basic data types footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema]. For an overview of the types used in this document, see _<<#_Toc129695229,Table 6>>_. Their definition is outside the scope of this document.
+as its basic data types footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema]. For an overview of the types used in this document, see <<table-simple-data-types>>. Their definition is outside the scope of this document.
 
 The meaning and format of xsd types is specified in https://www.w3.org/XML/Schema. The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
 
-[#_Toc129695229]
 .Simple Data Types Used in Metamodel
-
+[[table-simple-data-types]]
 [width="100%",cols="12%,18%,40%,30%",options="header",]
 |===
 |*Source* |*Basic Data Type* |*Value Range* |*Sample Values*
@@ -983,8 +947,10 @@ Simple data types start with a small letter.
 
 === Basic and Primitive Data Types
 
-_<<#_Toc24975154,Table 7>>_ lists the Primitives used in the metamodel. Primitive data types start with a capital letter.
+<<table-primitive-data-types>> lists the Primitives used in the metamodel. Primitive data types start with a capital letter.
 
+.Primitive DataTypes Used in Metamodel
+[[table-primitive-data-types]]
 [width="100%",cols="27%,31%,42%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
@@ -998,7 +964,7 @@ a|
 
 
 ====
-Note: see _<<#_Toc129706726,Figure 2>>_
+Note: see xref:introduction.adoc#image-property-eclass[Figure]
 ====
 
 
@@ -1084,7 +1050,7 @@ a|
 "max. rotation speed"@EN
 
 ====
-Note: see _<<#_Toc129706726,Figure 2>>_
+Note: see xref:introduction.adoc#image-property-eclass[Figure]
 ====
 
 |ShortNameTypeIec61360 a|
@@ -1103,7 +1069,7 @@ a|
 
 
 ====
-Note: See _<<#_Ref129950722,Figure 6>>_
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[Figure]
 ====
 
 
@@ -1121,7 +1087,7 @@ a|
 
 
 ====
-Note: see _<<#_Ref129950722,Figure 6>>_
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[Figure]
 ====
 
 
@@ -1132,9 +1098,8 @@ Note: see _<<#_Ref129950722,Figure 6>>_
 
 |===
 
-[#_Toc24975154]
-.Primitive DataTypes Used in Metamodel
 
+[#mappings-to-data-formats-to-share-i40-compliant-information-normative]
 == Mappings to Data Formats to Share I4.0-Compliant Information (normative)
 
 === General

@@ -16,10 +16,10 @@ This document is part of the series "Specification of the Asset Administration S
 
 This part defines a technology-neutral specification of a data specification template, enabling the description of concept descriptions conformant to IEC 61360 in UML. This UML meta model serves as the basis for deriving several different formats for exchanging Asset Administration Shells, e.g. for XML, JSON, RDF as described in Part 1 of the document series (IDTA-01001). Data Specification Templates are implemented using the embedded data specification approach. This means, that the implementation is part of the overall schemas as defined for IDTA-01001.
 
-_<<#_Toc129706725,Figure 1>>_ shows the different ways of exchanging information via Asset Administration Shells. This part of the "Specification of the Asset Administration Shell" series is the basis for all of these types of information exchange.
+<<image-types-of-info-exchange-aas>> shows the different ways of exchanging information via Asset Administration Shells. This part of the "Specification of the Asset Administration Shell" series is the basis for all of these types of information exchange.
 
-[#_Toc129706725]
 .Types of Information Exchange via Asset Administration Shells
+[[image-types-of-info-exchange-aas]]
 image::image2.jpeg[align=center]
 
 File exchange (1) is described in Part 5 of this document series (IDTA-01005).
@@ -30,6 +30,7 @@ The I4.0 language (3) is based on the information metamodel specified in Part 1 
 
 Part 3 is not a single document. Instead, it is an own series of documents, each featuring a specific use case that is supported by the specified data specification templates.
 
+[#general]
 == General
 
 === Introduction
@@ -48,37 +49,39 @@ Note: for details on how to use the data specifications and for further explanat
 
 The following subclauses show some examples from these existing data dictionaries to ease understanding of the data specification templates.
 
+[#concept-descriptions]
 === Concept Descriptions for Properties and Values 
 
 The data specification template IEC 61360 introduces additional attributes to define the semantics – i.e. a concept description – of a property or a value based on IEC 61360.
 
 IEC 61360 requests to use IRDIs for the identification of a concept. The Asset Administration Shell allows to use other identifiers besides IRDI. The IRDI, the unique identifier of an IEC 61360 property or value, maps to ConceptDescription/id.
 
-_<<#_Toc129706726,Figure 2>>_ to _<<#_Toc129706729,Figure 5>>_ show examples from ECLASS. _<<#_Toc129706727,Figure 3>>_ shows a property with enumeration type. One of the values in this enumeration is shown in _<<#_Toc129706728,Figure 4>>_, each value has its own unique ID. The unique identifier of a value (_<<#_Toc129706728,Figure 4>>_) is also used for _Property/valueId._
+<<image-property-eclass>> to <<image-value-eclass-advanced>> show examples from ECLASS. <<image-property-value-list-eclass>> shows a property with enumeration type. One of the values in this enumeration is shown in <<image-value-eclass>>, each value has its own unique ID. The unique identifier of a value (<<image-value-eclass>>) is also used for _Property/valueId._
 
-_<<#_Ref129950722,Figure 6>> shows an example from IEC CDD for a concept description of a _Property_ with usage of Level Type (in this example level type MIN, MAX and NOM, see data type). This is a short form of defining a collection of three properties with the same data type and semantics except for the level.
+<<image-property-level-type-iec-cdd>> shows an example from IEC CDD for a concept description of a _Property_ with usage of Level Type (in this example level type MIN, MAX and NOM, see data type). This is a short form of defining a collection of three properties with the same data type and semantics except for the level.
 
 
-[#_Toc129706726]
 .Example Property From ECLASS
+[[image-property-eclass]]
 image::image3.png[align=center]
 
-[#_Toc129706727]
 .Example Property Description with Value List from ECLASS
+[[image-property-value-list-eclass]]
 image::image4.png[align=center]
 
-[#_Toc129706728]
 .Example Value Description from ECLASS
+[[image-value-eclass]]
 image::image5.png[align=center]
 
-[#_Toc129706729]
 .Example Value Description from ECLASS Advanced (Editor Modus)
+[[image-value-eclass-advanced]]
 image::image6.png[align=center]
 
-[#_Ref129950722]
 .Example for Property with Level Type from IEC CDD
+[[image-property-level-type-iec-cdd]]
 image::image7.png[align=center]
 
+[#predefined-data-specification-templates]
 == Predefined Data Specification Templates 
 
 === Overview
@@ -89,10 +92,10 @@ There is one data specification template supporting IEC 61360 [IEC61360-1]:
 
 * _DataSpecificationIec61360:_ defining concept descriptions for both properties and coded values.
 
-_<<#_Ref129879629,Figure 7>>_ Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 gives an overview of the data specification template and how it is used in combination with the information model as defined in Part 1 of the document series, namely  _DataSpecification_, _DataSpecificationContent,_ and _ConceptDescription_.
+<<image-rel-metamodel-iec61360>> Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360 gives an overview of the data specification template and how it is used in combination with the information model as defined in Part 1 of the document series, namely  _DataSpecification_, _DataSpecificationContent,_ and _ConceptDescription_.
 
-[#_Ref129879629]
 .Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360
+[[image-rel-metamodel-iec61360]]
 image::image8.png[align=center]
 
 IEC 61360 is a standard that describes how to define the semantics of properties in a data dictionary. Part 1 does not prescribe how to define a concept description; it only supports the definition of concept descriptions. To do so, a data specification template needs to be assigned to the concept description. Which data specification is made available is defined via _HasDataSpecification/dataSpecification_.

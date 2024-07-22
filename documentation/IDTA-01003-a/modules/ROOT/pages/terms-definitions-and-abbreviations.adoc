@@ -8,14 +8,9 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ////
 
-[[part3a-terms-and-definitions]]
-= Terms, Definitions and Abbreviations
-
-
 [[terms-and-definitions]]
 = Terms, Definitions and Abbreviations
 
-[glossary]
 == Terms and Definitions
 
 ====

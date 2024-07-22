@@ -51,7 +51,6 @@ Minor changes:
 
 * editorial
 
-[#_Toc125981053]
 .Changes in Metamodel V3.1
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
@@ -199,7 +198,6 @@ Major Changes:
 * CHANGE: LevelType changed from Enumeration to Class, Table added
 * CHANGE: Names containing IEC renamed to camel case using Iec, e.g. DataSpecificationIEC61360
 
-[#_Toc125981052]
 .Changes in Metamodel V3.0
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
@@ -217,7 +215,6 @@ Some new values added: BLOB, FILE, HTML, IRDI; URL renamed to IRI
 |x |ValueReferencePair/value |Type changed from ValueDataType to string
 |===
 
-[#_Toc125981051]
 .New Elements in Metamodel V3.0
 
 [width="100%",cols="6%,46%,48%",options="header",]
@@ -247,7 +244,6 @@ Some attribute types changed, see separate entries
 | |ValueTypeIec61360 |New type for values
 |===
 
-[#_Toc125981052]
 .New, Changed or Removed Constraints in V3.0
 
 [width="100%",cols="7%,12%,15%,66%",options="header",]
@@ -292,7 +288,6 @@ Bugfixes:
 * Renaming constraints relevant for concept descriptions from AASd- to AASc-
 
 
-[#_Toc125981054]
 .Changes in Metamodel V3.0
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
@@ -309,7 +304,6 @@ Bugfixes:
 |x |ValueReferencePair/value |Type changed from string to ShortNameTypeIec61360 with limited max. length
 |===
 
-[#_Toc129695235]
 .New, Changed or Removed Constraints in V3.0
 
 [width="100%",cols="7%,12%,15%,66%",options="header",]
