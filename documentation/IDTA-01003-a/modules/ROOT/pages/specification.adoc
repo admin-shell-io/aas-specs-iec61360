@@ -28,13 +28,17 @@ h|*administration:* |version: 3 |revision: 1 |creator: IDTA
 h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`
 
 
-\<<deprecated>> `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+\<<deprecated>>
+`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
 
-\<<deprecated>> `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+\<<deprecated>>
+`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
 
-\<<deprecated>> `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
+\<<deprecated>>
+`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
 
-\<<deprecated>> `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
+\<<deprecated>>
+`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
 
 
 h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
@@ -83,7 +87,7 @@ It is only possible to directly add a value list as data type to a specific sema
 
 {aasc3a009}
 
-|*Inherits from:* 3+|DataSpecificationContent
+h|Inherits from: 3+|DataSpecificationContent
 
 h|Attribute h|Explanation h|Type h|Card
 |preferredName a|
@@ -262,7 +266,7 @@ However, in this case, _definition_ is explicitly added to the data specificatio
 .Metamodel of Data Type IEC 61360
 image::image10.png[align=center]
 
-[width="100%",cols="30%,70%",options="header",]
+[width="100%",cols="30%,70%",]
 |===
 h|Enumeration: |DataTypeIec61360
 h|Explanation: |Enumeration of simple data types for an IEC 61360 concept description using the data specification template _DataSpecificationIec61360_
@@ -538,8 +542,8 @@ image::image11.png[align=center]
 
 [width="100%",cols="20%,47%,24%,9%]
 |===
-h|*Class:* e|LevelType
-hExplanation:* 3+a|
+h|Class: 3+e|LevelType
+h|Explanation: 3+a|
 Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP, and MAX.
 True means that the value is available, false means the value is not available.
 
