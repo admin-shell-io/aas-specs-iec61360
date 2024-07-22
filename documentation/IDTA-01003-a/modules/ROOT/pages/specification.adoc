@@ -38,12 +38,10 @@ h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificatio
 
 
 h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
-h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360. 
+h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360.
 |===
 
-
-The ID of the data specification template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001-3-1. 
-
+The ID of the data specification template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001-3-1.
 
 This ID will be used in _hasDataSpecification/dataSpecification_.
 
@@ -60,7 +58,7 @@ image::image9.png[align=center]
 
 [width="100%",cols="19%,47%,27%,7%"]
 |===
-h|Class: 3+e|DataSpecificationIec61360 \<<Template>> 
+h|Class: 3+e|DataSpecificationIec61360 \<<Template>>
 h|Explanation: 3+a|
 Content of data specification template for concept descriptions for properties, values, and value lists conformant to IEC 61360.
 
@@ -72,18 +70,20 @@ Note: for details, please refer to [IEC61360-1], property, value_list and term
 {aasc3a010}
 
 ====
-Note 1: it is also possible that both _DataSpecificationIec61360/value_ and _SpecificationIec61360/valueList_ are empty. This is the case for concept descriptions that define the semantics of a property but do not have an enumeration (_valueList)_ as data type.
+Note 1: it is also possible that both _DataSpecificationIec61360/value_ and _SpecificationIec61360/valueList_ are empty.
+This is the case for concept descriptions that define the semantics of a property but do not have an enumeration (_valueList)_ as data type.
 ====
 
 
 
 ====
-Note 2: although it is possible to define a concept description for a value list, it is not possible to reuse this value list. It is only possible to directly add a value list as data type to a specific semantic definition of a property.
+Note 2: although it is possible to define a concept description for a value list, it is not possible to reuse this value list.
+It is only possible to directly add a value list as data type to a specific semantic definition of a property.
 ====
 
 {aasc3a009}
 
-|*Inherits from:* 3+|DataSpecificationContent 
+|*Inherits from:* 3+|DataSpecificationContent
 
 h|Attribute h|Explanation h|Type h|Card
 |preferredName a|
@@ -232,25 +232,25 @@ Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 {empty}
 
 ====
-Note 1: IEC 61360 also requires a globally unique identifier for a concept description. This ID is not part of the data specification template. Instead, the _ConceptDescription/id_ as inherited via _Identifiable_ is used. The same applies to administrative information like the version and revision.
+Note 1: IEC 61360 also requires a globally unique identifier for a concept description.
+This ID is not part of the data specification template.
+Instead, the _ConceptDescription/id_ as inherited via _Identifiable_ is used.
+The same applies to administrative information like the version and revision.
 ====
 
-
-
 ====
-Note 2: _ConceptDescription/idShort_ and _DataSpecificationIec61360/shortName_ are very similar. However, in this case, _shortName_ is explicitly added to the data specification.
-====
-
-
-
-====
-Note 3: _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_ are very similar. However, in this case, _preferredName_ is explicitly added to the data specification.
+Note 2: _ConceptDescription/idShort_ and _DataSpecificationIec61360/shortName_ are very similar.
+However, in this case, _shortName_ is explicitly added to the data specification.
 ====
 
-
+====
+Note 3: _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_ are very similar.
+However, in this case, _preferredName_ is explicitly added to the data specification.
+====
 
 ====
-Note 4: _ConceptDescription/description_ and _DataSpecificationIec61360/definition_ are very similar. However, in this case, _definition_ is explicitly added to the data specification.
+Note 4: _ConceptDescription/description_ and _DataSpecificationIec61360/definition_ are very similar.
+However, in this case, _definition_ is explicitly added to the data specification.
 ====
 
 {empty}
@@ -292,7 +292,8 @@ Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the NON
 
 
 ====
-Note 2: IEC61360 does not request to use more specific string types like TRANSLATBLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE. It is requested to use the more specific data types in the ASS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
+Note 2: IEC61360 does not request to use more specific string types like TRANSLATBLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
+It is requested to use the more specific data types in the ASS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
 ====
 
 
@@ -306,7 +307,8 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the TRANS
 
 
 e|INTEGER_MEASURE a|
-values containing values that are a measure of the type INTEGER. In addition, such a value comes with a physical unit.
+values containing values that are a measure of the type INTEGER.
+In addition, such a value comes with a physical unit.
 
 
 ====
@@ -319,7 +321,8 @@ values containing values of the type INTEGER, but which are no currencies or mea
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the INT_TYPE (or just INTEGER). For more specific data types, INTEGER_MEASURE_TYPE or INTEGER_CURRENCY_TYPE may be used.
+Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the INT_TYPE (or just INTEGER).
+For more specific data types, INTEGER_MEASURE_TYPE or INTEGER_CURRENCY_TYPE may be used.
 ====
 
 
@@ -339,7 +342,8 @@ Note: for details, please refer to [IEC61360-1], specific INTEGER NUMBER_TYPE, t
 
 
 e|REAL_MEASURE a|
-values containing values that are measures of the type REAL. In addition, such a value comes with a physical unit.
+values containing values that are measures of the type REAL.
+In addition, such a value comes with a physical unit.
 
 
 ====
@@ -352,7 +356,8 @@ values containing numbers that can be written as a terminating or non-terminatin
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the REAL_TYPE. For more specific data types REAL_MEASURE_TYPE or REAL_CURRENCY_TYPE may be used.
+Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the REAL_TYPE.
+For more specific data types REAL_MEASURE_TYPE or REAL_CURRENCY_TYPE may be used.
 ====
 
 
@@ -382,7 +387,8 @@ Note 1: for details, please refer to [IEC61360-1], BOOLEAN_TYPE.
 
 
 ====
-Note 2: in IEC 61360, the values are Yes and No. In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
+Note 2: in IEC 61360, the values are Yes and No.
+In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
 ====
 
 
@@ -397,7 +403,9 @@ Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the URI
 
 
 ====
-Note 2: However, the AAS supports the more generic IRI. An IRI type particularly allows to express a URL or a URI. If the IRI represents an address to a file, FILE shall be used.
+Note 2: However, the AAS supports the more generic IRI.
+An IRI type particularly allows to express a URL or a URI.
+If the IRI represents an address to a file, FILE shall be used.
 ====
 
 
@@ -424,7 +432,9 @@ Note 3: ICID values are values conformant to an IRDI, where the delimiter betwee
 
 
 ====
-Note 4: ISO29002_IRDI values are values containing a global identifier that identifies an administrated item in a registry. The structure of this identifier complies with the identifier syntax defined in ISO/TS 29002-5. The identifier shall fulfil the requirements specified in ISO/TS 29002-5 for an “international registration data identifier” (IRDI).
+Note 4: ISO29002_IRDI values are values containing a global identifier that identifies an administrated item in a registry.
+The structure of this identifier complies with the identifier syntax defined in ISO/TS 29002-5.
+The identifier shall fulfil the requirements specified in ISO/TS 29002-5 for an “international registration data identifier” (IRDI).
 ====
 
 
@@ -446,7 +456,8 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 
 
 e|RATIONAL_MEASURE a|
-values containing values of the type RATIONAL. In addition, such a value comes with a physical unit.
+values containing values of the type RATIONAL.
+In addition, such a value comes with a physical unit.
 
 
 ====
@@ -479,11 +490,13 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the DATE_
 
 
 e|FILE a|
-values containing an address to a file. The values are of the type URI and can represent an absolute or relative path.
+values containing an address to a file.
+The values are of the type URI and can represent an absolute or relative path.
 
 
 ====
-Note: [IEC61360-1] does not explicitly support the file type. It would map to the URI_TYPE.
+Note: [IEC61360-1] does not explicitly support the file type.
+It would map to the URI_TYPE.
 ====
 
 
@@ -497,11 +510,14 @@ Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the HTML5
 
 
 e|BLOB a|
-values containing the content of a file. Values may be binaries.
+values containing the content of a file.
+Values may be binaries.
 
 _HTML conformant to HTML5_ is a special blob.
 
-In IEC61360, _binary_ is a sequence of bits, each bit being represented by "0" and "1" only. A binary is a blob. However, a blob may also contain other source code.
+In IEC61360, _binary_ is a sequence of bits, each bit being represented by "0" and "1" only.
+A binary is a blob.
+However, a blob may also contain other source code.
 
 
 ====
@@ -524,7 +540,8 @@ image::image11.png[align=center]
 |===
 h|*Class:* e|LevelType
 hExplanation:* 3+a|
-Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP, and MAX. True means that the value is available, false means the value is not available.
+Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP, and MAX.
+True means that the value is available, false means the value is not available.
 
 
 ====
@@ -532,14 +549,14 @@ Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 ====
 
 
-EXAMPLE from [IEC61360-1]: in case of a property which is of the LEVEL_TYPE min/max − 
+EXAMPLE from [IEC61360-1]: in case of a property which is of the LEVEL_TYPE min/max −
 ====
 Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
 ====
 
 
 
-h|Inherits from: 3+|DataSpecificationContent 
+h|Inherits from: 3+|DataSpecificationContent
 
 h|Attribute h|Explanation h|Type h|Card.
 
@@ -549,11 +566,9 @@ e|typ a|Value as typically present |boolean |1
 e|max e|Maximum of the value |boolean |1
 |===
 
-
 ====
 Note: This is how the AAS deals with the following combinations of level types:
 ====
-
 
 * Case 1: If all attributes are false, the concept is mapped to a Property and level type is ignored.
 
@@ -562,24 +577,29 @@ Note: This is how the AAS deals with the following combinations of level types:
 * Case 3: If min and max are set to true, the concept is mapped to a Range.
 
 
-* Case 4: If more than one attribute is set to true, does not include min and max only (see second case), the concept is mapped to a _SubmodelElementCollection_ with the corresponding number of Properties. Example: If the attributes min and nom are set to true, the concept is mapped to a _SubmodelElementCollection_ with two Properties: min and nom. The data type of both Properties is the same.
+* Case 4: If more than one attribute is set to true, does not include min and max only (see second case), the concept is mapped to a _SubmodelElementCollection_ with the corresponding number of Properties.
+Example: If the attributes min and nom are set to true, the concept is mapped to a _SubmodelElementCollection_ with two Properties: min and nom.
+The data type of both Properties is the same.
 
+In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type.
+Otherwise, the semantics is not described in a unique way.
+In link:#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
 
-In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type. Otherwise, the semantics is not described in a unique way. In link:#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path]. 
-
-
-It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max). This is considered to be a deprecated way of defining property sets. See also link:#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max).
+This is considered to be a deprecated way of defining property sets.
+See also link:#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
 
 === Value List Attributes
 
-"_ValueList_" allows to define an enumeration type for a property. The value list is a set of value reference pairs.
+"_ValueList_" allows to define an enumeration type for a property.
+The value list is a set of value reference pairs.
 
 .Metamodel of Value List
 image::image12.png[align=center]
 
 [width="100%",cols="22%,44%,23%,11%"]
 |===
-h|Class: 3+e|ValueList 
+h|Class: 3+e|ValueList
 h|Explanation: 3+a|
 A set of value reference pairs
 
@@ -589,7 +609,7 @@ Note: for details, please refer to [IEC61360-1], value_list/enumerated_list_of_t
 ====
 
 
-h|Inherits from: 3+|-- 
+h|Inherits from: 3+|--
 h|Attribute h|Explanation h|Type h|Card.
 e|valueReferencePair |A pair of a value together with its global unique ID. |ValueReferencePair |1..*
 |===
@@ -622,14 +642,14 @@ Using a concept description requires mapping the data type of the concept descri
 
 Examples for the different IEC 61360 data types can be found here: https://eclass.eu/support/technical-specification/structure-and-elements/value.
 
-
 .Mapping IEC 61360 Data Types to xsd Data Types
 [width="100%",cols="31%,30%,39%",options="header",]
 |===
-|*Data Type IEC 61360* |*xsd Value Type*footnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._ 
+|*Data Type IEC 61360* |*xsd Value Type*footnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._
 
 ====
-Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).] |*Example Values IEC 61360*footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value. The IRDI example for STRING was moved to IRDI.]
+Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).] |*Example Values IEC 61360*footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value.
+The IRDI example for STRING was moved to IRDI.]
 ====
 
 |DATE |xs:date |1979-01-15
@@ -752,13 +772,13 @@ Note: for details, please see Part 1 of the document series "Details of the Asse
 [#category-of-concept-descriptions]
 == Category of Concept Descriptions 
 
-
 ====
-Note: the attribute category of referables was set to deprecated in V3.0 of Part 1. Hence, this clause informs about the meaning, in case applications are still using the attribute category.
+Note: the attribute category of referables was set to deprecated in V3.0 of Part 1.
+Hence, this clause informs about the meaning, in case applications are still using the attribute category.
 ====
 
-
-Although the IEC 61360 attributes listed in this template are defined for properties and values only, it is also possible to use the template for other definitions as long as no specific data specifications for concept descriptions for these elements are available. This is shown in <<table-iec61360-properties-ranges>>, <<table-iec61360-other-data-elements>> and <<table-other-elements-with-semid>>.
+Although the IEC 61360 attributes listed in this template are defined for properties and values only, it is also possible to use the template for other definitions as long as no specific data specifications for concept descriptions for these elements are available.
+This is shown in <<table-iec61360-properties-ranges>>, <<table-iec61360-other-data-elements>> and <<table-other-elements-with-semid>>.
 
 For the meaning of the content attributes of the IEC 61360 data specification template, please refer to IEC 61360 and/or ECLASS.
 
@@ -766,7 +786,8 @@ The data specification template can be used to describe both properties and valu
 
 See xref:introduction.adoc#image-rel-metamodel-iec61360[Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360] on how data specification templates are related to concept descriptions. <<image-categories-cds>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
 
-The following tables recommend using specific categories to distinguish which kind of concept is described. They also give advice on which attributes need to be filled for which category of concept description.
+The following tables recommend using specific categories to distinguish which kind of concept is described.
+They also give advice on which attributes need to be filled for which category of concept description.
 
 {empty}
 
@@ -874,7 +895,6 @@ h|Category of Concept Description h|APPLICATION_CLASS h|QUALIFIER_TYPE h|PROPERT
 
 {empty}
 
-
 [#cross-constraints-and-invariants-for-predefined-data-specifications-normative]
 == Cross-Constraints and Invariants for Predefined Data Specifications (normative)
 
@@ -884,9 +904,8 @@ This clause documents constraints in the context of the predefined data specific
 
 https://sunye.github.io/ocl/[A class invariant is a constraint that must be true for all instances of a class at any time.]
 
-
 ====
-Note: these constraints include elements of Part 1 Metamodel, IDTA-01001. 
+Note: these constraints include elements of Part 1 Metamodel, IDTA-01001.
 ====
 
 {empty}
@@ -928,10 +947,12 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Ass
 
 === Predefined Simple Data Types
 
-The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  link:https://www.w3.org/XML/Core/[XML Schema Definition] (XSD) 
-as its basic data types footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema]. For an overview of the types used in this document, see <<table-simple-data-types>>. Their definition is outside the scope of this document.
+The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  link:https://www.w3.org/XML/Core/[XML Schema Definition] (XSD) as its basic data types footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema].
+For an overview of the types used in this document, see <<table-simple-data-types>>.
+Their definition is outside the scope of this document.
 
-The meaning and format of xsd types is specified in https://www.w3.org/XML/Schema. The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
+The meaning and format of xsd types is specified in https://www.w3.org/XML/Schema.
+The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
 
 .Simple Data Types Used in Metamodel
 [[table-simple-data-types]]
@@ -947,7 +968,8 @@ Simple data types start with a small letter.
 
 === Basic and Primitive Data Types
 
-<<table-primitive-data-types>> lists the Primitives used in the metamodel. Primitive data types start with a capital letter.
+<<table-primitive-data-types>> lists the Primitives used in the metamodel.
+Primitive data types start with a capital letter.
 
 .Primitive DataTypes Used in Metamodel
 [[table-primitive-data-types]]
@@ -1098,14 +1120,13 @@ Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[Figure]
 
 |===
 
-
 [#mappings-to-data-formats-to-share-i40-compliant-information-normative]
 == Mappings to Data Formats to Share I4.0-Compliant Information (normative)
 
 === General
 
-Part 1 of this document series (IDTA-01001) introduces different serialization formats: XML, JSON and RDF. 
-Part 1 also introduces the implementation guide for embedded data specifications. 
+Part 1 of this document series (IDTA-01001) introduces different serialization formats: XML, JSON and RDF.
+Part 1 also introduces the implementation guide for embedded data specifications.
 This is why the different formats are described in IDTA-01001.
 
 
