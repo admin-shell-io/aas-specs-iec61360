@@ -6,7 +6,7 @@
 This specification is part of the https://industrialdigitaltwin.org/en/content-hub/aasspecifications[Asset Administration Shell Specification series].
 ====
 
-NOTE: We do not provide a web version of the specification for version 3.0.1.
+NOTE: We do not provide a web version of the specification for version 3.0.
 Please download and use the PDF version of the document instead.
 
 link:https://industrialdigitaltwin.org/wp-content/uploads/2023/04/IDTA-01003-a-3-0_SpecificationAssetAdministrationShell_Part3a_DataSpecification_IEC61360.pdf[Download the specification in PDF format]
