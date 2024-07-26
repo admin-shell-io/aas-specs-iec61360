@@ -667,7 +667,7 @@ _Mapped to MultiLanguageProperty, i.e. type MultiLanguageText_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -724,7 +724,7 @@ xs:string _or mapped to ReferenceElement_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -746,7 +746,7 @@ _Mapped to submodel element File, i.e. type PathType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -756,7 +756,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -766,7 +766,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -919,19 +919,19 @@ Note: these constraints include elements of Part 1 Metamodel, IDTA-01001.
 {aasc3a004}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 {aasc3a005}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 {aasc3a006}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 {aasc3a007}
