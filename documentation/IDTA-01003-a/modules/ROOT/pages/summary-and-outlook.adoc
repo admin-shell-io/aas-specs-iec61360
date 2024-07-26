@@ -10,7 +10,8 @@ SPDX-License-Identifier: CC-BY-4.0
 
 = Summary and Outlook
 
-This document provides a metamodel for specifying data specification templates for defining concept descriptions for properties and values. These data specification templates are conformant to IEC 61360.
+This document provides a metamodel for specifying data specification templates for defining concept descriptions for properties and values.
+These data specification templates are conformant to IEC 61360.
 
 This document is part of the document series "Specification of the Asset Administration Shell".
 

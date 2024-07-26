@@ -12,22 +12,21 @@ SPDX-License-Identifier: CC-BY-4.0
 
 == General
 
-This Annex lists the changes from version to version of the metamodel together with major changes in the overall document. Non-backward compatible changes (nc) are marked as such.
+This Annex lists the changes from version to version of the metamodel together with major changes in the overall document.
+Non-backward compatible changes (nc) are marked as such.
 
 nc="x" means not backward compatible, if no value is added in the table, the change is backward compatible.
 
-nc="(x)" means that the change made was implicitly contained or stated in the document before and is now being formalized. Therefore, the change is considered to be backward compatible.
+nc="(x)" means that the change made was implicitly contained or stated in the document before and is now being formalized.
+Therefore, the change is considered to be backward compatible.
 
 Changes for the data specification templates of the metamodel are listed in separate tables each.
 
 Each subclause consists of three parts:
 
-
 * changes w.r.t. previous version,
 * new elements in metamodel w.r..t previous version,
 * new, changed, or removed Constraints w.r.t previous version.
-
-
 
 == Changes V3.1 vs. V3.0.2
 
@@ -36,22 +35,22 @@ Major changes:
 * CHANGE ValueTypeIec61360: increase length from 2000 to 2048 (https://github.com/admin-shell-io/aas-specs/issues/306[#306 of IDTA-01001])
 
 ////
-* increase version in metamodel semantic IDs to /3/1. Update all links to template ID in constraints
+* increase version in metamodel semantic IDs to /3/1.
+Update all links to template ID in constraints
 ////
 
-* Transfer from .docx to asciidoc 
+* Transfer from .docx to asciidoc
 
 * Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification
 
 Minor changes:
 
-* add sentence (again) stating that the template ID is conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series 
+* add sentence (again) stating that the template ID is conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series
 
 * added note: This specification is only valid in combination with IDTA-01001-3-1.
 
 * editorial
 
-[#_Toc125981053]
 .Changes in Metamodel V3.1
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
@@ -59,15 +58,11 @@ Minor changes:
 | |ValueTypeIec61360 | Change length of data type from 2000 to 2048
 |===
 
-
-
-
-
 == Changes V3.0.2 vs. V3.0.1
 
 Bugfixes:
 
-* all constraints corrected that mention data specification template ID: instead of complete version "3/0" only major version "3" 
+* all constraints corrected that mention data specification template ID: instead of complete version "3/0" only major version "3"
 
 + added note in Annex “Handling of Constraints”: If a constraint is mentioning the id of the Template, then the same constraints shall also be valid for deprecated data specification template IDs
 
@@ -102,7 +97,8 @@ AASc-3a-007: For a _ConceptDescription_ with _category_ QUALIFIER_TYPE using dat
 
 | | AASc-3a-008 | Update a| Now `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`
 
-AASc-3a-008: For a _ConceptDescription_ using data specification template IEC61360 (`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
+AASc-3a-008: For a _ConceptDescription_ using data specification template IEC61360 (`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English.
+Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
 
 | | AASc-009 | Renamed a| renamed to AASc-3a-009
 
@@ -114,34 +110,26 @@ AASc-3a-008: For a _ConceptDescription_ using data specification template IEC613
 AASc-3a-050: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`.
 |===
 
-
-
-
 == Changes V3.0.1 vs. V3.0
 
 Bugfixes:
 
-* also support deprecated data specification template IDs  (https://github.com/admin-shell-io/aas-specs-iec61360/issues/4[#4], https://github.com/admin-shell-io/aas-specs-iec61360/issues/2[#2])
+* also support deprecated data specification template IDs (https://github.com/admin-shell-io/aas-specs-iec61360/issues/4[#4], https://github.com/admin-shell-io/aas-specs-iec61360/issues/2[#2])
 
-** `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0` 
-** `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0` 
-** `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0` 
+** `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+** `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
+** `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
 
 * For backward compatibility of future versions of this specification the ID of data specification template and value of attribute “id” of DataSpecification are now distinguished: Therefore  `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`  is also deprecated and `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`  shall be used instead
 
 
 * corrected examples for qualifier of namespace IEC (min instead of Min for enumeration LevelType)
 
-* removed sentence stating that the template ID is conformant to the rules for semantic IDs for data specifications as defined in 
-Part 1 (IDTA-01001-3-0) of the document series: this is not the case but the ID will not be changed 
+* removed sentence stating that the template ID is conformant to the rules for semantic IDs for data specifications as defined in Part 1 (IDTA-01001-3-0) of the document series: this is not the case but the ID will not be changed
 
-* (Editorial) Constraint AASc-3a-050: external reference instead of globale reference 
+* (Editorial) Constraint AASc-3a-050: external reference instead of globale reference
 
-* (Editorial) Notes "Note: it is recommended to use a global
-reference." were updated to "Note: it is recommended to use an external
-reference." (https://github.com/admin-shell-io/aas-specs-iec61360/issues/5[#5])
-
-
+* (Editorial) Notes "Note: it is recommended to use a global reference." were updated to "Note: it is recommended to use an external reference." (https://github.com/admin-shell-io/aas-specs-iec61360/issues/5[#5])
 
 .New, Changed or Removed Constraints in V3.0.1
 [width="100%",cols="7%,12%,15%,66%",options="header",]
@@ -170,14 +158,13 @@ AASc-3a-007: For a _ConceptDescription_ with _category_ QUALIFIER_TYPE using dat
 
 | | AASc-3a-008 | Update a| Change http to https
 
-AASc-3a-008: For a _ConceptDescription_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
+AASc-3a-008: For a _ConceptDescription_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English.
+Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
 
 | | AASc-3a-050 | Update a| Change http to https and External instead of global reference
 
 AASc-3a-050: If the _DataSpecificationContent_ _DataSpecificationIec61360_ is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0.
 |===
-
-
 
 == Changes V3.0 vs. Part 1 V2.0.1
 
@@ -199,7 +186,6 @@ Major Changes:
 * CHANGE: LevelType changed from Enumeration to Class, Table added
 * CHANGE: Names containing IEC renamed to camel case using Iec, e.g. DataSpecificationIEC61360
 
-[#_Toc125981052]
 .Changes in Metamodel V3.0
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
@@ -217,9 +203,7 @@ Some new values added: BLOB, FILE, HTML, IRDI; URL renamed to IRI
 |x |ValueReferencePair/value |Type changed from ValueDataType to string
 |===
 
-[#_Toc125981051]
 .New Elements in Metamodel V3.0
-
 [width="100%",cols="6%,46%,48%",options="header",]
 |===
 |*nc* |*V3.0 vs. Part 1 V2.0.1 New Elements* |*Comment*
@@ -247,9 +231,7 @@ Some attribute types changed, see separate entries
 | |ValueTypeIec61360 |New type for values
 |===
 
-[#_Toc125981052]
 .New, Changed or Removed Constraints in V3.0
-
 [width="100%",cols="7%,12%,15%,66%",options="header",]
 |===
 |*Nc* |*V3.0 vs. Part 1 V2.0.1* |*New, Update, Removed, Reformulated* |*Comment*
@@ -263,13 +245,12 @@ Constraint AASc-3a-002: DataSpecificationIec61360/preferredName shall be provide
 |(x) |AASc-3a-005 |New a|Constraint AASc-005: For a ConceptDescription with category REFERENCE using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), DataSpecificationIec61360/dataType is STRING by default.
 |(x) |AASc-3a-006 |New a|Constraint AASc-006: For a ConceptDescription with category DOCUMENT using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), DataSpecificationIec61360/dataType shall be one of the following values: STRING or URL.
 |(x) |AASc-3a-007 |New a|Constraint AASc-007: For a ConceptDescription with category QUALIFIER_TYPE using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), DataSpecificationIec61360/dataType is mandatory and shall be defined.
-|(x) |AASc-3a-008 |New a|Constraint AASc-3a-008: For a ConceptDescription using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), DataSpecificationIec61360/definition is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. DataSpecificationIec61360/value is defined.
+|(x) |AASc-3a-008 |New a|Constraint AASc-3a-008: For a ConceptDescription using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), DataSpecificationIec61360/definition is mandatory and shall be defined at least in English.
+Exception: the concept description describes a value, i.e. DataSpecificationIec61360/value is defined.
 |(x) |AASc-3a-009 |New a|Constraint AASc-009: If DataSpecificationIec61360/dataType is one of INTEGER_MEASURE, REAL_MEASURE, RATIONAL_MEASURE, INTEGER_CURRENCY, REAL_CURRENCY, then DataSpecificationIec61360/unit or DataSpecificationIec61360/unitId shall be defined.
 |(x) |AASc-3a-010 |New a|Constraint AASc-010: If DataSpecificationIec61360/value is not empty, DataSpecificationIec61360/valueList shall be empty, and vice versa
 | |AASc-3a-050 |New a|Constraint AASc-050: If the DataSpecificationContent DataSpecificationIec61360 is used for an element, the value of HasDataSpecification/dataSpecification shall contain the global reference to the IRI of the corresponding data specification template \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0
 |===
-
-
 
 == Changes V3.0 vs. Part 1 V3.0RC02
 
@@ -291,8 +272,6 @@ Bugfixes:
 * IEC 61360 Data Specification Template for Properties and Ranges: footnote corrected, data types like Iso29002Irdi and Icid are subsumed in IRDI, no camel case writing but capital letters and underscore
 * Renaming constraints relevant for concept descriptions from AASd- to AASc-
 
-
-[#_Toc125981054]
 .Changes in Metamodel V3.0
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
@@ -309,9 +288,7 @@ Bugfixes:
 |x |ValueReferencePair/value |Type changed from string to ShortNameTypeIec61360 with limited max. length
 |===
 
-[#_Toc129695235]
 .New, Changed or Removed Constraints in V3.0
-
 [width="100%",cols="7%,12%,15%,66%",options="header",]
 |===
 |*Nc* |*V3.0 vs. Part 1 V3.0RC02* |*New, Update, Removed, Reformulated* |*Comment*
@@ -335,7 +312,8 @@ Constraint AASc-3a-003: For a _ConceptDescription_ referenced via _ValueList/val
 | |AASc-3a-008 |New a|
 Renamed from AASc-008 to AASc-3a-008 and changed to no longer contain category
 
-+++Constraint AASc-3a-008+++: For a _ConceptDescription_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
++++Constraint AASc-3a-008+++: For a _ConceptDescription_ using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0), _DataSpecificationIec61360/definition_ is mandatory and shall be defined at least in English.
+Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.
 
 | |AASc-009 |New |Renamed from AASc-009 to AASc-3a-009, + update renamed elements + editorial changes
 | |AASc-010 |New |Renamed from AASc-010 to AASc-3a-010, + update renamed elements + editorial changes

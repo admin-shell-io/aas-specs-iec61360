@@ -1,0 +1,69 @@
+= Background Information
+
+== General
+
+This clause provides general information about sources of information and relevant concepts for the data specification under consideration, as well as its usage in the context of the Asset Administration Shell.
+It is not normative.
+
+=== Data Elements (Part 1)
+
+.Metamodel of Data Elements (Part 1)
+[[image-data-elements]]
+image::image14.png[align=center]
+
+The data specification template IEC61360 is relevant for the definition of concept descriptions for data elements (<<image-data-elements>>).
+Submodel Elements inherit from _hasSemantics_, i.e. they have a semanticId and optionally some additional supplementary semantic IDs (<<image-has-semantics>>).
+
+xref:introduction.adoc#image-rel-metamodel-iec61360[Figure Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360] gives an overview of the relationship of concept descriptions (_ConceptDescription_) and data specifications (DataSpecification, _DataSpecificationContent_ and _HasDataSpecification_) from Part 1 for this concrete data specification template.
+
+.Metamodel of HasSemantics (Part 1)
+[[image-has-semantics]]
+image::image15.png[align=center]
+
+Clause xref:specification.adoc#category-of-concept-descriptions[Category of Concept Descriptions] describes how to use the data specification template to describe further of the metamodel as specified in Part 1 that may also have semantics assigned to them (by inheriting from HasSemantics): Submodel, all other SubmodelElements, SpecificAssetId, Qualifier, and Extension.
+In these cases, the preferred name and the definition are mainly used to provide a minimum of information on what the corresponding value is about.
+
+== Examples
+
+<<image-property-max-rotation-speed>> shows an example of a property with idShort "MaxRotationSpeed" with a semantic ID referring to a concept description "MaxRotationSpeed".
+The concept description shows that MaxRotationSpeed is a quantitative property because the data type is one of *_MEASURE, namely INTEGER_MEASURE.
+In this case, the definition of a physical unit is mandatory.
+It is "1/min" for MaxRotationSpeed.
+A unique ID is also provided for this physical unit.
+Concept descriptions for physical units are described e.g. in Part 4b of this document series on the Details of the Asset Administration Shell.
+
+The type INTEGER_MEASURE of the concept description is mapped to xs:integer of the property.
+
+.Example Quantitative Property MaxRotationSpeed in AASX Package Explorer
+[[image-property-max-rotation-speed]]
+image::image16.png[align=center]
+
+<<image-property-with-enum>> shows a property "CoolingType".
+Its semanticId references a concept description that defines a value list (_DataSpecificationIec612360/valueList_) with two values BAB657 and BAB611.
+
+[#_Toc129706741]
+.Example Property with Enumeration in AASX Package Explorer
+[[image-property-with-enum]]
+image::image17.png[align=center]
+
+<<image-example-cd>> shows the concept description for the value BAB657 that was used in the enumeration in <<image-property-with-enum>>.
+Most attributes are not relevant (see Clause xref:specification.adoc#category-of-concept-descriptions[Category of Concept Descriptions]).
+However, it is mandatory to set the attribute _DataSpecificationIec61360/value_, the _preferredName_ (open circuit, external cooling), and the data type (for enumeration, the data type is typically just STRING).
+
+.Example Value Concept Description in AASX Package Explorer
+[[image-example-cd]]
+image::image18.png[align=center]
+
+=== Referencing (Part 1)
+
+Besides the abstract class _HasSemantics,_ the referencing concept explained in Part 1 is also relevant (<<image-reference>>).
+In the case of the data specification template IEC61360, the only relevant key types are "GlobalReference" and "ConceptDescription".
+In case the concept description is a shadow copy of an existing data dictionary and uses the same ID, it is recommended to use the Global Reference for the _DataSpecificationIec61360/unitId_ or _ValueReferencePair/valueId_.
+Otherwise, a model reference with _Key/type_ equal to _ConceptDescription_ is used.
+
+The same applies to _HasSemantics/semanticId_ and semantic IDs in _HasSemantics/supplementalSemanticIds._
+
+.Metamodel of Reference (Part 1)
+[[image-reference]]
+image::image19.png[align=center]
+
