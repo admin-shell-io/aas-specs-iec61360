@@ -63,18 +63,15 @@ The data specification template IEC 61360 introduces additional attributes to de
 
 IEC 61360 requests to use IRDIs for the identification of a concept.
 The Asset Administration Shell allows to use other identifiers besides IRDI.
-The IRDI, the unique identifier of an IEC 61360 property or value, maps to ConceptDescription/id.
-
-<<image-property-eclass>> to <<image-value-eclass-advanced>> show examples from ECLASS. <<image-property-value-list-eclass>> shows a property with enumeration type.
-One of the values in this enumeration is shown in <<image-value-eclass>>, each value has its own unique ID.
-The unique identifier of a value (<<image-value-eclass>>) is also used for _Property/valueId._
-
-<<image-property-level-type-iec-cdd>> shows an example from IEC CDD for a concept description of a _Property_ with usage of Level Type (in this example level type MIN, MAX and NOM, see data type).
-This is a short form of defining a collection of three properties with the same data type and semantics except for the level.
+The IRDI, the unique identifier of an IEC 61360 property or value, maps to _ConceptDescription/id_.
 
 .Example Property From ECLASS
 [[image-property-eclass]]
 image::image3.png[align=center]
+
+<<image-property-eclass>> to <<image-value-eclass-advanced>> show examples from ECLASS. <<image-property-value-list-eclass>> shows a property with enumeration type.
+One of the values in this enumeration is shown in <<image-value-eclass>>, each value has its own unique ID.
+The unique identifier of a value (<<image-value-eclass>>) is also used for _Property/valueId._
 
 .Example Property Description with Value List from ECLASS
 [[image-property-value-list-eclass]]
@@ -87,6 +84,9 @@ image::image5.png[align=center]
 .Example Value Description from ECLASS Advanced (Editor Modus)
 [[image-value-eclass-advanced]]
 image::image6.png[align=center]
+
+<<image-property-level-type-iec-cdd>> shows an example from IEC CDD for a concept description of a _Property_ with usage of Level Type (in this example level type MIN, MAX and NOM, see data type).
+This is a short form of defining a collection of three properties with the same data type and semantics except for the level.
 
 .Example for Property with Level Type from IEC CDD
 [[image-property-level-type-iec-cdd]]
