@@ -189,11 +189,6 @@ element of a _Submodel_
 
 _[SOURCE: IEC 63278-1:2023]_
 
-*SubmodelElement*::
-
-element of a _Submodel_
-
-_[SOURCE: IEC 63278-1:2023]_
 
 ==  Abbreviations Used in Document
 
