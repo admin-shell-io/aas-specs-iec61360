@@ -297,7 +297,7 @@ Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]
 
 ====
 Note 2: IEC61360 does not request to use more specific string types like TRANSLATBLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
-It is requested to use the more specific data types in the ASS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
+It is requested to use the more specific data types in the AAS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
 ====
 
 
@@ -332,7 +332,7 @@ For more specific data types, INTEGER_MEASURE_TYPE or INTEGER_CURRENCY_TYPE may 
 
 
 ====
-Note 2: it is requested to use the more specific data types in the ASS, if applicable.
+Note 2: it is requested to use the more specific data types in the AAS, if applicable.
 ====
 
 
