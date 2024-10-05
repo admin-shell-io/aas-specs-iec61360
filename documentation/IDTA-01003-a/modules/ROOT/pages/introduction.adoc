@@ -46,6 +46,8 @@ The known data dictionaries ECLASS and IEC CDD are based on this standard.
 The data specification templates specified in this document make it possible to directly use concept descriptions as standardized in these data dictionaries.
 Additionally, concept descriptions, which do not (yet) exist in these data dictionaries, can be defined using the same schema.
 
+For guidance how to use ECLASS concept definitions in combination with the Asset Administration Shell including this data specification template see link:#bib28[[28\]].
+
 Concept descriptions, whether defined externally in existing data dictionaries or internally as part of the Asset Administration Shell environment, are the foundation for defining submodel templates link:#bib24[[24\]] link:#bib16[[16\]].
 
 IEC 61360-1:2017 is largely compliant to IEC 61360-2:2012 and ISO 3584-42:2010.
