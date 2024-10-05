@@ -567,7 +567,7 @@ h|Attribute h|Explanation h|Type h|Card.
 e|min a|Minimum of the value |boolean |1
 e|nom a|Nominal value (value as designated) |boolean |1
 e|typ a|Value as typically present |boolean |1
-e|max e|Maximum of the value |boolean |1
+e|max a|Maximum of the value |boolean |1
 |===
 
 ====
