@@ -41,7 +41,7 @@ Update all links to template ID in constraints
 
 * Transfer from .docx to asciidoc
 
-* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification
+* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification + add new term "coded value" (from Part 1)
 
 Minor changes:
 

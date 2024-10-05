@@ -70,6 +70,14 @@ Note 3 to entry: the impact manifests itself in a measurable effect within the p
 
 _[SOURCE: Glossary Industrie 4.0, minor changes]_
 
+
+*coded value*::
+
+value that can be looked up in a dictionary and can be translated
+
+_[SOURCE: link:https://eclass.eu/support/technical-specification/data-model/conceptual-data-model[ECLASS] footnote:[In IEC61360:2017, this refers to a "term" of a value list]]_
+
+
 *identifier (ID)*::
 
 identity information that unambiguously distinguishes one entity from another one in a given domain
