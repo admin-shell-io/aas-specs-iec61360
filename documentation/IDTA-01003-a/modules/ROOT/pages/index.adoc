@@ -37,7 +37,9 @@ Feedback:
 
 ==  Editorial Notes
 
-This document, version 3.1, was produced from Dec. 2022 on by the Workstream "Asset Administration Shell Specifications" of the working group o "Open Technology" of the Industrial Digital Twin Association (IDTA).
+=== History
+
+This document, version 3.1, was produced from Dec. 2022 on by the Workstream "Asset Administration Shell Specifications" of the working group "Open Technology" of the Industrial Digital Twin Association (IDTA).
 
 The document "Details of the Asset Administration Shell – Part 1 – The exchange of information between partners in the value chain of Industrie 4.0, V3.0RC02" was split into several parts.
 One of them is this document, which represents Part 3a and describes a data specification that is defined to be used with the core model as specified in Part 1.
