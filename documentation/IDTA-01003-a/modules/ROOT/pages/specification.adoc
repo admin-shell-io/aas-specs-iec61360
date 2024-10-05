@@ -397,7 +397,7 @@ In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
 
 
 e|IRI a|
-values containing values of the type STRING conformant to Rfc 3987
+values containing values of the type STRING conformant to https://datatracker.ietf.org/doc/html/rfc3987[Rfc 3987]
 
 
 ====
