@@ -553,7 +553,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-EXAMPLE from xref:preamble.adoc#IEC61360-1[[IEC61360-1\]]: in case of a property which is of the LEVEL_TYPE min/max −
+
 ====
 Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], LEVEL_TYPE
 ====
