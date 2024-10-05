@@ -32,17 +32,21 @@ The reading guide gives advice on which documents should be read depending on th
 
 === Normative References
 
+[#IDTA-01001]
 [IDTA-01001] "Specification of the Asset Administration Shell.
 Part 1: Metamodel", IDTA-01001-3-1.
 Industrial Digital Twin Association.
 
+[#IEC61360-1]
 [IEC61360-1] Standard data element types with associated classification scheme – Part 1: Definitions – Principles and methods.
 Edition 4.0 2017-07
 
+[#IEC61360-2]
 [IEC61360-2] Standard data element types with associated classification scheme for electronic components.
 Part 2: EXPRESS dictionary schema.
 Edition 2012.
 
+[#IEC61360-2]
 [ISO 13584-42] ISO 13584-42:2010, "Industrial automation systems and integration – Parts library – Part 42: Description methodology: Methodology for structuring part families"
 
 === Structure of the Document
