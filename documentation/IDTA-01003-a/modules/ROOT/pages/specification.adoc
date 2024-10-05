@@ -649,12 +649,17 @@ Examples for the different IEC 61360 data types can be found here: https://eclas
 .Mapping IEC 61360 Data Types to xsd Data Types
 [width="100%",cols="31%,30%,39%",options="header",]
 |===
-|*Data Type IEC 61360* |*xsd Value Type*footnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._
+h|Data Type IEC 61360 
+h|xsd Value Typefootnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._
 
-====
-Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).] |*Example Values IEC 61360*footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value.
+Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute 
+because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).
+
+]
+
+h|Example Values IEC 61360footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value.
 The IRDI example for STRING was moved to IRDI.]
-====
+
 
 |DATE |xs:date |1979-01-15
 |STRING |xs:string a|
