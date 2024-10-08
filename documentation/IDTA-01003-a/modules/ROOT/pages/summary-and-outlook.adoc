@@ -15,7 +15,7 @@ These data specification templates are conformant to IEC 61360.
 
 This document is part of the document series "Specification of the Asset Administration Shell".
 
-Additional parts of the document series cover (see link:#bib14[[14\]]):
+Additional parts of the document series cover (see link:bibliography.adoc#bib14[[14\]]):
 
 * the information model that is the basis for file exchange and interface payload definition (IDTA-01001, Part 1),
 * interfaces and APIs for accessing the information of Asset Administration Shells (access, modify, query, and execute information and active functionality) (IDTA-01002, Part 2),

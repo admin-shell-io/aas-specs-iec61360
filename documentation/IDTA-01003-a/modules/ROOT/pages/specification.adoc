@@ -587,11 +587,11 @@ The data type of both Properties is the same.
 
 In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type.
 Otherwise, the semantics is not described in a unique way.
-In link:#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
+In link:bibliography.adoc#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
 
 It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max).
 This is considered to be a deprecated way of defining property sets.
-See also link:#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+See also link:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
 
 === Value List Attributes
 
