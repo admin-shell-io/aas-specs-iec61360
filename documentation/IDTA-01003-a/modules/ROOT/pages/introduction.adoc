@@ -15,7 +15,7 @@ SPDX-License-Identifier: CC-BY-4.0
 This document is part of the series "Specification of the Asset Administration Shell" that provide the specifications for interoperable usage of the Asset Administration Shell.
 
 This part defines a technology-neutral specification of a data specification template, enabling the description of concept descriptions conformant to IEC 61360 in UML.
-This UML meta model serves as the basis for deriving several different formats for exchanging Asset Administration Shells, e.g. for XML, JSON, RDF as described in Part 1 of the document series (IDTA-01001).
+This UML metamodel serves as the basis for deriving several different formats for exchanging Asset Administration Shells, e.g. for XML, JSON, RDF as described in Part 1 of the document series (IDTA-01001).
 Data Specification Templates are implemented using the embedded data specification approach.
 This means, that the implementation is part of the overall schemas as defined for IDTA-01001.
 
@@ -50,7 +50,7 @@ For guidance how to use ECLASS concept definitions in combination with the Asset
 
 Concept descriptions, whether defined externally in existing data dictionaries or internally as part of the Asset Administration Shell environment, are the foundation for defining submodel templates link:bibliography.adoc#bib24[[24\]] link:bibliography.adoc#bib16[[16\]].
 
-IEC 61360-1:2017 is largely compliant to IEC 61360-2:2012 and ISO 3584-42:2010.
+IEC 61360-1:2017 is largely compliant to IEC 61360-2:2012 and ISO 13584-42:2010.
 
 ====
 Note: for details on how to use the data specifications and for further explanations, please refer directly to IEC 61360.
@@ -99,7 +99,7 @@ image::image7.png[align=center]
 
 === Overview
 
-A data specification template specifies which additional attributes shall be added to an element instance that are not part of the meta model.
+A data specification template specifies which additional attributes shall be added to an element instance that are not part of the metamodel.
 Typically, data specification templates have a specific scope.
 For example, templates for concept descriptions differ from templates for operations, etc.
 More than one data specification template can be defined and used for an element instance.

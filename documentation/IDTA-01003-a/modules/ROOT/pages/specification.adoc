@@ -296,7 +296,7 @@ Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]
 
 
 ====
-Note 2: IEC61360 does not request to use more specific string types like TRANSLATBLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
+Note 2: IEC61360 does not request to use more specific string types like TRANSLATABLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
 It is requested to use the more specific data types in the AAS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
 ====
 
@@ -1109,9 +1109,9 @@ _string_
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format.
+The value format is based on ISO 13584-42 and IEC 61360-2.
 ====
-. The value format is based on ISO 13584-42 and IEC 61360-2.
 
 a|
 "NR3..3.3ES2"

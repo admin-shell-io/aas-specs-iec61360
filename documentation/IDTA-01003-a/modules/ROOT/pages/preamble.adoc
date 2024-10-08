@@ -46,7 +46,7 @@ Edition 4.0 2017-07
 Part 2: EXPRESS dictionary schema.
 Edition 2012.
 
-[#IEC61360-2]
+[#ISO-13584-42]
 [ISO 13584-42] ISO 13584-42:2010, "Industrial automation systems and integration – Parts library – Part 42: Description methodology: Methodology for structuring part families"
 
 === Structure of the Document
