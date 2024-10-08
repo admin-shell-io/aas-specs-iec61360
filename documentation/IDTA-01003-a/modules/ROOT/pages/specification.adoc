@@ -194,7 +194,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-|xref:ValueFormatIec61360[ValueFormatIec61360] |0..1
+|xref:ValueFormatTypeIec61360[ValueFormatTypeIec61360] |0..1
 |valueList a|
 Enumerated list of allowed values
 
@@ -985,7 +985,7 @@ Primitive data types start with a capital letter.
 [width="100%",cols="27%,31%,42%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
-|DefinitionTypeIec61360 a|
+|[[DefinitionTypeIec61360]]DefinitionTypeIec61360 a|
 _LangStringSet_
 
 Each langString within the array of strings has a length of maximum 1023 and a minimum of 1 characters.
