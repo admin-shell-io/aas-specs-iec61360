@@ -194,7 +194,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-|xref:ValueFormatIec61360[ValueFormatIec61360] |0..1
+|xref:ValueFormatTypeIec61360[ValueFormatTypeIec61360] |0..1
 |valueList a|
 Enumerated list of allowed values
 
@@ -296,7 +296,7 @@ Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]
 
 
 ====
-Note 2: IEC61360 does not request to use more specific string types like TRANSLATBLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
+Note 2: IEC61360 does not request to use more specific string types like TRANSLATABLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
 It is requested to use the more specific data types in the AAS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
 ====
 
@@ -587,11 +587,11 @@ The data type of both Properties is the same.
 
 In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type.
 Otherwise, the semantics is not described in a unique way.
-In link:#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
+In link:bibliography.adoc#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
 
 It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max).
 This is considered to be a deprecated way of defining property sets.
-See also link:#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+See also link:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
 
 === Value List Attributes
 
@@ -985,7 +985,7 @@ Primitive data types start with a capital letter.
 [width="100%",cols="27%,31%,42%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
-|DefinitionTypeIec61360 a|
+|[[DefinitionTypeIec61360]]DefinitionTypeIec61360 a|
 _LangStringSet_
 
 Each langString within the array of strings has a length of maximum 1023 and a minimum of 1 characters.
@@ -1109,9 +1109,9 @@ _string_
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format.
+The value format is based on ISO 13584-42 and IEC 61360-2.
 ====
-. The value format is based on ISO 13584-42 and IEC 61360-2.
 
 a|
 "NR3..3.3ES2"
