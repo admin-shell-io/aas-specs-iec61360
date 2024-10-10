@@ -41,11 +41,11 @@ h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificatio
 `\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
 
 
-h|*dataSpecificationContent:* |DataSpecificationIec61360 | |
+h|*dataSpecificationContent:* 3+|DataSpecificationIec61360 
 h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360.
 |===
 
-The ID of the data specification template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001-3-1.
+The ID of the data specification template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001.
 
 This ID will be used in _hasDataSpecification/dataSpecification_.
 
@@ -68,7 +68,7 @@ Content of data specification template for concept descriptions for properties, 
 
 
 ====
-Note: for details, please refer to [IEC61360-1], property, value_list and term
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], property, value_list and term
 ====
 
 {aasc3a010}
@@ -95,28 +95,28 @@ Preferred name in different languages
 
 
 ====
-Note: for details, please refer to [IEC61360-1], preferred_name
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], preferred_name
 ====
 
 {aasc3a002}
 
-|PreferredNameTypeIec61360 |1
+|xref:PreferredNameTypeIec61360[PreferredNameTypeIec61360] |1
 |shortName a|
 Short name
 
 
 ====
-Note: for details, please refer to [IEC61360-1], short_name
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], short_name
 ====
 
 
-|ShortNameTypeIec61360 |0..1
+|xref:ShortNameTypeIec61360[ShortNameTypeIec61360] |0..1
 |unit a|
 Unit in case of a quantitative property
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], unit_in_text
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], unit_in_text
 ====
 
 
@@ -134,7 +134,7 @@ Unit and unitId need to be consistent if both attributes are set
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], unit_of_measure
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], unit_of_measure
 ====
 
 
@@ -150,7 +150,7 @@ Source of definition
 
 
 ====
-Note: for details, please refer to [IEC61360-1], source_document_of_definition
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], source_document_of_definition
 ====
 
 
@@ -160,7 +160,7 @@ Symbol
 
 
 ====
-Note: for details, please refer to [IEC61360-1], preferred_letter_symbol
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], preferred_letter_symbol
 ====
 
 
@@ -170,37 +170,37 @@ Data Type
 
 
 ====
-Note: for details, please refer to [IEC61360-1], data_type
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], data_type
 ====
 
 
-|DataTypeIec61360 |0..1
+|xref:DataTypeIec61360[DataTypeIec61360] |0..1
 |definition a|
 Definition in different languages
 
 
 ====
-Note: for details, please refer to [IEC61360-1], definition
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], definition
 ====
 
 
-|DefinitionTypeIec61360 |0..1
+|xref:DefinitionTypeIec61360[DefinitionTypeIec61360] |0..1
 |valueFormat a|
 Value Format
 
 
 ====
-Note: for details, please refer to [IEC61360-1], value_format
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format
 ====
 
 
-|ValueFormatIec61360 |0..1
+|xref:ValueFormatTypeIec61360[ValueFormatTypeIec61360] |0..1
 |valueList a|
 Enumerated list of allowed values
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], enumerated_list_of_terms.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], enumerated_list_of_terms.
 ====
 
 
@@ -210,27 +210,27 @@ Note 2: for ease of usage, the value list is modelled as value/valueId list in t
 ====
 
 
-|ValueList |0..1
+|xref:ValueList[ValueList] |0..1
 |value a|
 Value (typically within a value list)
 
 
 ====
-Note: for details, please refer to [IEC61360-1], term/preferred_letter_symbol_in_text
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], term/preferred_letter_symbol_in_text
 ====
 
 
-|ValueTypeIec61360 |0..1
+|xref:ValueTypeIec61360[ValueTypeIec61360] |0..1
 |levelType a|
 Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP and MAX.
 
 
 ====
-Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], LEVEL_TYPE
 ====
 
 
-|LevelType |0..1
+|xref:LevelType[LevelType] |0..1
 |===
 
 {empty}
@@ -268,7 +268,7 @@ image::image10.png[align=center]
 
 [width="100%",cols="30%,70%",]
 |===
-h|Enumeration: |DataTypeIec61360
+h|Enumeration: |[[DataTypeIec61360]]DataTypeIec61360
 h|Explanation: |Enumeration of simple data types for an IEC 61360 concept description using the data specification template _DataSpecificationIec61360_
 h|Set of: |--
 h|Literal h|Explanation
@@ -279,7 +279,7 @@ Format yyyy-mm-dd
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the DATE_TYPE.
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the DATE_TYPE.
 ====
 
 
@@ -290,14 +290,14 @@ values consisting of a sequence of characters, which cannot be translated into o
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the NON_TRANSLATABLE_STRING_TYPE.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the NON_TRANSLATABLE_STRING_TYPE.
 ====
 
 
 
 ====
-Note 2: IEC61360 does not request to use more specific string types like TRANSLATBLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
-It is requested to use the more specific data types in the ASS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
+Note 2: IEC61360 does not request to use more specific string types like TRANSLATABLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
+It is requested to use the more specific data types in the AAS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
 ====
 
 
@@ -306,7 +306,7 @@ values containing string, but which shall be represented as different strings in
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the TRANSLATABLE_STRING_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the TRANSLATABLE_STRING_TYPE
 ====
 
 
@@ -316,7 +316,7 @@ In addition, such a value comes with a physical unit.
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific INTEGER (or INT_TYPE) NUMBER_TYPE, the INT_MEASURE_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific INTEGER (or INT_TYPE) NUMBER_TYPE, the INT_MEASURE_TYPE
 ====
 
 
@@ -325,14 +325,14 @@ values containing values of the type INTEGER, but which are no currencies or mea
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the INT_TYPE (or just INTEGER).
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific NUMBER_TYPE, the INT_TYPE (or just INTEGER).
 For more specific data types, INTEGER_MEASURE_TYPE or INTEGER_CURRENCY_TYPE may be used.
 ====
 
 
 
 ====
-Note 2: it is requested to use the more specific data types in the ASS, if applicable.
+Note 2: it is requested to use the more specific data types in the AAS, if applicable.
 ====
 
 
@@ -341,7 +341,7 @@ values containing values of the type INTEGER, which are currencies
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific INTEGER NUMBER_TYPE, the INT_CURRENCY_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific INTEGER NUMBER_TYPE, the INT_CURRENCY_TYPE
 ====
 
 
@@ -351,7 +351,7 @@ In addition, such a value comes with a physical unit.
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific REAL NUMBER_TYPE, the REAL_MEASURE_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific REAL NUMBER_TYPE, the REAL_MEASURE_TYPE
 ====
 
 
@@ -360,7 +360,7 @@ values containing numbers that can be written as a terminating or non-terminatin
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the REAL_TYPE.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific NUMBER_TYPE, the REAL_TYPE.
 For more specific data types REAL_MEASURE_TYPE or REAL_CURRENCY_TYPE may be used.
 ====
 
@@ -376,7 +376,7 @@ values containing values of the type REAL, which are currencies
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific REAL NUMBER_TYPE, the REAL_CURRENCY_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific REAL NUMBER_TYPE, the REAL_CURRENCY_TYPE
 ====
 
 
@@ -385,7 +385,7 @@ values representing truth of logic or Boolean algebra (TRUE, FALSE)
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], BOOLEAN_TYPE.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], BOOLEAN_TYPE.
 ====
 
 
@@ -397,11 +397,11 @@ In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
 
 
 e|IRI a|
-values containing values of the type STRING conformant to Rfc 3987
+values containing values of the type STRING conformant to https://datatracker.ietf.org/doc/html/rfc3987[Rfc 3987]
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the URI_TYPE.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the URI_TYPE.
 ====
 
 
@@ -418,7 +418,7 @@ values conforming to ISO/IEC 11179 series global identifier sequences
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific STRING_TYPE, the IRDI_STRING.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the IRDI_STRING.
 ====
 
 
@@ -449,7 +449,7 @@ Examples: ½, ¾ or 7/2
 
 
 ====
-Note 1: for details, please refer to [IEC61360-1], specific NUMBER_TYPE, the RATIONAL_TYPE.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific NUMBER_TYPE, the RATIONAL_TYPE.
 ====
 
 
@@ -465,7 +465,7 @@ In addition, such a value comes with a physical unit.
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific RATIONAL NUMBER_TYPE, the RATIONAL_MEASURE_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific RATIONAL NUMBER_TYPE, the RATIONAL_MEASURE_TYPE
 ====
 
 
@@ -478,7 +478,7 @@ Example from IEC 61360-1:2017: "13:20:00-05:00" is the [TIME] representation of:
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the TIME_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the TIME_TYPE
 ====
 
 
@@ -489,7 +489,7 @@ Format yyyy-mm-dd hh:mm (ECLASS)
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the DATE_TIME_TYPE.
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the DATE_TIME_TYPE.
 ====
 
 
@@ -499,7 +499,7 @@ The values are of the type URI and can represent an absolute or relative path.
 
 
 ====
-Note: [IEC61360-1] does not explicitly support the file type.
+Note: xref:preamble.adoc#IEC61360-1[[IEC61360-1\]] does not explicitly support the file type.
 It would map to the URI_TYPE.
 ====
 
@@ -509,7 +509,7 @@ Values containing string with any sequence of characters, using the syntax of HT
 
 
 ====
-Note: for details, please refer to [IEC61360-1], specific STRING_TYPE, the HTML5_TYPE.
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the HTML5_TYPE.
 ====
 
 
@@ -525,7 +525,7 @@ However, a blob may also contain other source code.
 
 
 ====
-Note: for details, please refer to [IEC61360-1], BINARY_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], BINARY_TYPE
 ====
 
 
@@ -542,20 +542,20 @@ image::image11.png[align=center]
 
 [width="100%",cols="20%,47%,24%,9%]
 |===
-h|Class: 3+e|LevelType
+h|Class: 3+e|[[LevelType]]LevelType
 h|Explanation: 3+a|
 Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP, and MAX.
 True means that the value is available, false means the value is not available.
 
 
 ====
-Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], LEVEL_TYPE
 ====
 
 
-EXAMPLE from [IEC61360-1]: in case of a property which is of the LEVEL_TYPE min/max −
+
 ====
-Note: for details, please refer to [IEC61360-1], LEVEL_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], LEVEL_TYPE
 ====
 
 
@@ -567,7 +567,7 @@ h|Attribute h|Explanation h|Type h|Card.
 e|min a|Minimum of the value |boolean |1
 e|nom a|Nominal value (value as designated) |boolean |1
 e|typ a|Value as typically present |boolean |1
-e|max e|Maximum of the value |boolean |1
+e|max a|Maximum of the value |boolean |1
 |===
 
 ====
@@ -587,11 +587,11 @@ The data type of both Properties is the same.
 
 In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type.
 Otherwise, the semantics is not described in a unique way.
-In link:#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
+In link:bibliography.adoc#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
 
 It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max).
 This is considered to be a deprecated way of defining property sets.
-See also link:#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+See also link:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
 
 === Value List Attributes
 
@@ -603,30 +603,30 @@ image::image12.png[align=center]
 
 [width="100%",cols="22%,44%,23%,11%"]
 |===
-h|Class: 3+e|ValueList
+h|Class: 3+e|[[ValueList]]ValueList
 h|Explanation: 3+a|
 A set of value reference pairs
 
 
 ====
-Note: for details, please refer to [IEC61360-1], value_list/enumerated_list_of_terms.
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_list/enumerated_list_of_terms.
 ====
 
 
 h|Inherits from: 3+|--
 h|Attribute h|Explanation h|Type h|Card.
-e|valueReferencePair |A pair of a value together with its global unique ID. |ValueReferencePair |1..*
+e|valueReferencePair |A pair of a value together with its global unique ID. |xref:ValueReferencePair[ValueReferencePair] |1..*
 |===
 
 {empty}
 
 [width="100%",cols="24%,42%,23%,11%"]
 |===
-h|Class: 3+e|ValueReferencePair
+h|Class: 3+e|[[ValueReferencePair]]ValueReferencePair
 h|Explanation: |A value reference pair within a value list. Each value has a global unique ID defining its semantic. | |
 h|Inherits from: |-- | |
 h|Attribute h|Explanation h|Type h|Card.
-e|value |the value of the referenced concept definition of the value in _valueId._ |ValueTypeIec61360 |1
+e|value |the value of the referenced concept definition of the value in _valueId._ |xref:ValueTypeIec61360[ValueTypeIec61360] |1
 e|valueId a|
 Global unique ID of the value
 
@@ -649,12 +649,17 @@ Examples for the different IEC 61360 data types can be found here: https://eclas
 .Mapping IEC 61360 Data Types to xsd Data Types
 [width="100%",cols="31%,30%,39%",options="header",]
 |===
-|*Data Type IEC 61360* |*xsd Value Type*footnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._
+h|Data Type IEC 61360 
+h|xsd Value Typefootnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._
 
-====
-Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).] |*Example Values IEC 61360*footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value.
+Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute 
+because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).
+
+]
+
+h|Example Values IEC 61360footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value.
 The IRDI example for STRING was moved to IRDI.]
-====
+
 
 |DATE |xs:date |1979-01-15
 |STRING |xs:string a|
@@ -667,7 +672,7 @@ _Mapped to MultiLanguageProperty, i.e. type MultiLanguageText_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -724,7 +729,7 @@ xs:string _or mapped to ReferenceElement_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -746,7 +751,7 @@ _Mapped to submodel element File, i.e. type PathType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -756,7 +761,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -766,7 +771,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Details of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 
@@ -919,19 +924,19 @@ Note: these constraints include elements of Part 1 Metamodel, IDTA-01001.
 {aasc3a004}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 {aasc3a005}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 {aasc3a006}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Details of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
 ====
 
 {aasc3a007}
@@ -980,17 +985,17 @@ Primitive data types start with a capital letter.
 [width="100%",cols="27%,31%,42%",options="header",]
 |===
 |*Primitive* |*Definition* |*Value Examples*
-|DefinitionTypeIec61360 a|
+|[[DefinitionTypeIec61360]]DefinitionTypeIec61360 a|
 _LangStringSet_
 
-Each langString within the array of strings has a length of maximum 1,023 and a minimum of 1 characters.
+Each langString within the array of strings has a length of maximum 1023 and a minimum of 1 characters.
 
 a|
 "Greatest permissible rotation speed with which the motor or feeding unit may be operated."
 
 
 ====
-Note: see xref:introduction.adoc#image-property-eclass[Figure]
+Note: see xref:introduction.adoc#image-property-eclass[Figure 2. Example Property from ECLASS]
 ====
 
 
@@ -1009,11 +1014,11 @@ Note 2: a langString is a string value tagged with a language code.
 ====
 
 
-The realization of a technology depend on the serialization rules.
+The realization of a langString depends on the serialization rules for a technology.
 
 
 ====
-Note: as defined in Part 1 Metamode, IDTA-01001.
+Note: as defined in Part 1 Metamodel, IDTA-01001.
 ====
 
 
@@ -1055,7 +1060,7 @@ In JSON:
 ]
 ----
 
-|PreferredNameTypeIec61360 a|
+|[[PreferredNameTypeIec61360]]PreferredNameTypeIec61360 a|
 _LangStringSet_
 
 Each _string_ with a length of maximum 255 and minimum of 1 characters.
@@ -1068,7 +1073,7 @@ Note 1: it is advised to keep the length of the name limited to 35 characters.
 
 
 ====
-Note 2: for details, please refer to [IEC61360-1], preferred_name
+Note 2: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], preferred_name
 ====
 
 
@@ -1076,17 +1081,17 @@ a|
 "max. rotation speed"@EN
 
 ====
-Note: see xref:introduction.adoc#image-property-eclass[Figure]
+Note: see xref:introduction.adoc#image-property-eclass[Figure 2. Example Property from ECLASS]
 ====
 
-|ShortNameTypeIec61360 a|
+|[[ShortNameTypeIec61360]]ShortNameTypeIec61360 a|
 _LangStringSet_
 
 Each _string_ with a length of maximum 18 and a minimum of 1 characters.
 
 
 ====
-Note: for details, please refer to [IEC61360-1], short_name
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], short_name
 ====
 
 
@@ -1095,29 +1100,29 @@ a|
 
 
 ====
-Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[Figure]
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[Figure 6. Example for Property with Level Type from IEC CDD]
 ====
 
 
-|ValueFormatTypeIec61360 a|
+|[[ValueFormatTypeIec61360]]ValueFormatTypeIec61360 a|
 _string_
 
 
 ====
-Note: for details, please refer to [IEC61360-1], value_format
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format.
+The value format is based on ISO 13584-42 and IEC 61360-2.
 ====
-. The value format is based on ISO 13584-42 and IEC 61360-2.
 
 a|
 "NR3..3.3ES2"
 
 
 ====
-Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[Figure]
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[https://portal.bosch.com/]
 ====
 
 
-|ValueTypeIec61360 |_string_ with a length of maximum 2048 and minimum of 1 characters. a|
+|[[ValueTypeIec61360]]ValueTypeIec61360 |_string_ with a length of maximum 2048 and minimum of 1 characters. a|
 "Blue"
 
 "1000"

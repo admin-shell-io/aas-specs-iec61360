@@ -18,7 +18,7 @@ SPDX-License-Identifier: CC-BY-4.0
 This glossary applies only within the context of this document.
 ====
 
-If available, definitions were taken from IEC 63278-1 Edition 1.0 2023-12.
+If available, definitions were taken from IEC 63278-1 Edition 1.0 2023-12 or IEC 61360-1 Edition 4.0 2017-07.
 
 *application*::
 
@@ -70,6 +70,14 @@ Note 3 to entry: the impact manifests itself in a measurable effect within the p
 
 _[SOURCE: Glossary Industrie 4.0, minor changes]_
 
+
+*coded value*::
+
+value that can be looked up in a dictionary and can be translated
+
+_[SOURCE: link:https://eclass.eu/support/technical-specification/data-model/conceptual-data-model[ECLASS] footnote:[In IEC61360:2017, this refers to a "term" of a value list]]_
+
+
 *identifier (ID)*::
 
 identity information that unambiguously distinguishes one entity from another one in a given domain
@@ -93,7 +101,7 @@ Note 1 to entry: additional information about the nature of the value can be obt
 _Property_ information object to which the value belongs.
 ====
 
-_[SOURCE:IEC 61360-1_2017]_
+_[SOURCE: IEC 61360-1:2017]_
 
 *maximum value*::
 
@@ -108,7 +116,7 @@ Note 1 to entry: additional information about the nature of the value can be obt
 _Property_ information object to which the value belongs.
 ====
 
-_[SOURCE:IEC 61360-1_2017]_
+_[SOURCE: IEC 61360-1:2017]_
 
 *nominal value*::
 
@@ -119,7 +127,7 @@ Note 1 to entry: additional information about the nature of the value can be obt
 _Property_ information object to which the value belongs.
 ====
 
-_[SOURCE:IEC 61360-1_2017]_
+_[SOURCE: IEC 61360-1:2017]_
 
 *non-quantitative property*::
 
@@ -175,7 +183,7 @@ _[SOURCE: according to ISO/IEC Guide 77-2] as well as [SOURCE: according to Glos
 
 property with a numerical value representing a physical quantity, a quantity of information or a count of objects
 
-_[SOURCE: IEC 61360-1_2017 – based on IEC 61360-2:2012, 3.40, modified – "data element type" is replaced by "property"]_
+_[SOURCE: IEC 61360-1:2017 – based on IEC 61360-2:2012, 3.40, modified – "data element type" is replaced by "property"]_
 
 *Submodel*::
 
@@ -189,11 +197,6 @@ element of a _Submodel_
 
 _[SOURCE: IEC 63278-1:2023]_
 
-*SubmodelElement*::
-
-element of a _Submodel_
-
-_[SOURCE: IEC 63278-1:2023]_
 
 ==  Abbreviations Used in Document
 
@@ -202,13 +205,10 @@ _[SOURCE: IEC 63278-1:2023]_
 |*Abbreviation* |*Description*
 |AAS |Asset Administration Shell
 |AASX |Package file format for the Asset Administration Shell
-|AML |AutomationML
 |API |Application Programming Interface
-|BITKOM |Bundesverband Informationswirtschaft, Telekommunikation und neue Medien e. V.
 |BLOB |Binary Large Object
 |CDD |Common Data Dictionary
 |GUID |Globally unique identifier
-|I4.0 |Industrie 4.0
 |ID |Identifier
 |IDTA |Industrial Digital Twin Association
 |IEC |International Electrotechnical Commission
@@ -217,15 +217,9 @@ _[SOURCE: IEC 63278-1:2023]_
 |ISO |International Organization for Standardization
 |JSON |JavaScript Object Notation
 |MIME |Multipurpose Internet Mail Extensions
-|OPC |Open Packaging Conventions (ECMA-376, ISO/IEC 29500-2)
-|OPCF |OPC Foundation
-|OPC UA |OPC Unified Architecture
 |PDF |Portable Document Format
-|RAMI4.0 |Reference Architecture Model Industrie 4.0
 |RDF |Resource Description Framework
-|REST |Representational State Transfer
 |RFC |Request for Comment
-|SOA |Service Oriented Architecture
 |UML |Unified Modelling Language
 |URI |Uniform Resource Identifier
 |URL |Uniform Resource Locator
