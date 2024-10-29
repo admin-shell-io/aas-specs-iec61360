@@ -52,7 +52,10 @@ This ID will be used in _hasDataSpecification/dataSpecification_.
 This namespace has the qualifier "IEC:" Examples: `IEC:DataSpecificationIec61360/preferredName` or `IEC:DataSpecificationIec61360/levelType/min` or `IEC:LevelType/min`
 
 .Metamodel of Data Specification IEC61360
-image::image9.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/dataspec-iec61360.puml[]
+....
 
 {empty}
 
@@ -264,7 +267,10 @@ However, in this case, _definition_ is explicitly added to the data specificatio
 {empty}
 
 .Metamodel of Data Type IEC 61360
-image::image10.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/datatype-iec61360.puml[]
+....
 
 [width="100%",cols="30%,70%",]
 |===
@@ -538,7 +544,10 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 {empty}
 
 .Metamodel of Level Type
-image::image11.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/level-type.puml[]
+....
 
 [width="100%",cols="20%,47%,24%,9%]
 |===
@@ -599,7 +608,10 @@ See also link:bibliography.adoc#bib27[[27\]], where one proposal on how to deal 
 The value list is a set of value reference pairs.
 
 .Metamodel of Value List
-image::image12.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/value-list.puml[]
+....
 
 [width="100%",cols="22%,44%,23%,11%"]
 |===
@@ -802,7 +814,10 @@ They also give advice on which attributes need to be filled for which category o
 
 .Categories of Concept Descriptions (non-normative)
 [[image-categories-cds]]
-image::image13.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/concept-description-categories.puml[]
+....
 
 .IEC61360 Data Specification Template for Properties and Ranges
 [[table-iec61360-properties-ranges]]

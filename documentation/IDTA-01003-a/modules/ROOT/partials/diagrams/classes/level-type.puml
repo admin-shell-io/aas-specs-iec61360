@@ -1,0 +1,8 @@
+@startuml
+class LevelType {
+  +min: boolean
+  +max: boolean
+  +nom: boolean
+  +typ: boolean
+}
+@enduml

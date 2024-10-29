@@ -112,7 +112,10 @@ This specification template _DataSpecificationIec61360:_ supports concept defini
 
 .Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360
 [[image-rel-metamodel-iec61360]]
-image::image8.png[align=center]
+[plantuml, 65-inheritance, svg]
+....
+include::partial$diagrams/rel-metamodel-iec61360.puml[]
+....
 
 IEC 61360 is a standard that describes how to define the semantics of properties in a data dictionary.
 Part 1 does not prescribe how to define a concept description; it only supports the definition of concept descriptions.
