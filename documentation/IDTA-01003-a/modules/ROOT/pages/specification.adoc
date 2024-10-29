@@ -793,7 +793,7 @@ For the meaning of the content attributes of the IEC 61360 data specification te
 
 The data specification template can be used to describe both properties and values.
 
-See xref:introduction.adoc#image-rel-metamodel-iec61360[Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360] on how data specification templates are related to concept descriptions. <<image-categories-cds>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
+See xref:introduction.adoc#image-rel-metamodel-iec61360[Overview Relationship Metamodel Part 1 & Data Specifications IEC 61360] on how data specification templates are related to concept descriptions. <<image-categories-cds>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
 
 The following tables recommend using specific categories to distinguish which kind of concept is described.
 They also give advice on which attributes need to be filled for which category of concept description.
