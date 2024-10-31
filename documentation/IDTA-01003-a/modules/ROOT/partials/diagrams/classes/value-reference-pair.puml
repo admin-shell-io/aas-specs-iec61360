@@ -1,0 +1,6 @@
+@startuml
+class ValueReferencePair {
+  +value: ValueTypeIec61360
+  +valueId: Reference
+}
+@enduml

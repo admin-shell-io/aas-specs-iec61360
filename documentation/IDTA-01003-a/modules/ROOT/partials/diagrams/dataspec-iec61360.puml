@@ -1,0 +1,13 @@
+@startuml
+!$classes = "https://raw.githubusercontent.com/admin-shell-io/aas-specs-iec61360/IDTA-01003-a-3-1_working/documentation/IDTA-01003-a/modules/ROOT/partials/diagrams/classes"
+
+!include $classes/data-specification-iec61360.puml
+!include $classes/level-type.puml
+!include $classes/value-reference-pair.puml
+!include $classes/enum-datatype-iec61360.puml
+
+DataSpecificationIec61360 ..> ValueList
+DataSpecificationIec61360 ..> LevelType
+ValueList *-- "1..*" ValueReferencePair
+DataSpecificationIec61360 .> DataTypeIEC61360
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+!$classes = "https://raw.githubusercontent.com/admin-shell-io/aas-specs-iec61360/IDTA-01003-a-3-1_working/documentation/IDTA-01003-a/modules/ROOT/partials/diagrams/classes"
+
+!include $classes/enum-concept-description-categories.puml
+@enduml

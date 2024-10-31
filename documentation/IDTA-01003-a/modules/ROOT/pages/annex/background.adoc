@@ -9,7 +9,10 @@ It is not normative.
 
 .Metamodel of Data Elements (Part 1)
 [[image-data-elements]]
-image::image14.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/data-element.puml[]
+....
 
 The data specification template IEC61360 is relevant for the definition of concept descriptions for data elements (<<image-data-elements>>).
 Submodel Elements inherit from _hasSemantics_, i.e. they have a semanticId and optionally some additional supplementary semantic IDs (<<image-has-semantics>>).
@@ -18,7 +21,10 @@ xref:introduction.adoc#image-rel-metamodel-iec61360[Figure Overview Relationship
 
 .Metamodel of HasSemantics (Part 1)
 [[image-has-semantics]]
-image::image15.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/has-semantics.puml[]
+....
 
 Clause xref:specification.adoc#category-of-concept-descriptions[Category of Concept Descriptions] describes how to use the data specification template to describe further of the metamodel as specified in Part 1 that may also have semantics assigned to them (by inheriting from HasSemantics): Submodel, all other SubmodelElements, SpecificAssetId, Qualifier, and Extension.
 In these cases, the preferred name and the definition are mainly used to provide a minimum of information on what the corresponding value is about.
@@ -65,5 +71,8 @@ The same applies to _HasSemantics/semanticId_ and semantic IDs in _HasSemantics/
 
 .Metamodel of Reference (Part 1)
 [[image-reference]]
-image::image19.png[align=center]
+[plantuml, svg]
+....
+include::partial$diagrams/reference-metamodel.puml[]
+....
 
