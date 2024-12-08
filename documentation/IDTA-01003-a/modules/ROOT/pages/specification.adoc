@@ -969,8 +969,8 @@ The simple type "langString" is specified in the Resource Description Framework 
 [width="100%",cols="12%,18%,40%,30%",options="header",]
 |===
 |*Source* |*Basic Data Type* |*Value Range* |*Sample Values*
-|xsd |boolean |true, false |true, false
-|xsd |string |Character string (but not all Unicode character strings) |"Hello world", "Καλημέρα κόσμε",ハローワールド"
+|xsd |https://www.w3.org/TR/xmlschema-2/#boolean[boolean] |true, false |true, false
+|xsd |https://www.w3.org/TR/xmlschema-2/#string[string] |Character string (but not all Unicode character strings) |"Hello world", "Καλημέρα κόσμε",ハローワールド"
 |rdf |langString |Strings with language tags |"Hello"@en, "Hallo"@de. Note that this is written in RDF/Turtle syntax, and that only "Hello" and "Hallo" are the actual values.
 |===
 
