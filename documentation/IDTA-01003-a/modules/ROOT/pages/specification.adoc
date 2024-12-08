@@ -957,11 +957,11 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Ass
 
 === Predefined Simple Data Types
 
-The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  link:https://www.w3.org/XML/Core/[XML Schema Definition] (XSD) as its basic data types footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema].
+The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  XML Schema Definition (XSD) as its basic data types.
 For an overview of the types used in this document, see <<table-simple-data-types>>.
 Their definition is outside the scope of this document.
 
-The meaning and format of xsd types is specified in https://www.w3.org/XML/Schema.
+The meaning and format of xsd types is specified in XML Schema 1.0 (https://www.w3.org/TR/xmlschema-2).
 The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
 
 .Simple Data Types Used in Metamodel
