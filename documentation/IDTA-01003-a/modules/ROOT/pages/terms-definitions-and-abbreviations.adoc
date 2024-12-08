@@ -16,9 +16,10 @@ SPDX-License-Identifier: CC-BY-4.0
 ====
 [.underline]#Please note#: the definitions of terms are only valid in a certain context.
 This glossary applies only within the context of this document.
-====
+
 
 If available, definitions were taken from IEC 63278-1 Edition 1.0 2023-12 or IEC 61360-1 Edition 4.0 2017-07.
+====
 
 *application*::
 

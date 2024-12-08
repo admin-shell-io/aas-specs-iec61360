@@ -41,7 +41,16 @@ Update all links to template ID in constraints
 
 * Transfer from .docx to asciidoc
 
-* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification + add new term "coded value" (from Part 1)
+* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification 
+	- (Update Source) Asset Administration Shell
+	- (Removed) class
+	- (New) coded value (from Part 1)
+	- (Removed) concept
+	- (Removed) enumeration
+	- (Removed) qualifier
+	- (Update) Submodel
+	- (Update Source) SubmodelElement
+
 
 Minor changes:
 
@@ -62,9 +71,8 @@ Minor changes:
 
 Bugfixes:
 
-* all constraints corrected that mention data specification template ID: instead of complete version "3/0" only major version "3"
-
-+ added note in Annex “Handling of Constraints”: If a constraint is mentioning the id of the Template, then the same constraints shall also be valid for deprecated data specification template IDs
+* all constraints corrected that mention data specification template ID: instead of complete version "3/0" only major version "3", additionally
+  added note in Annex “Handling of Constraints”: If a constraint is mentioning the id of the Template, then the same constraints shall also be valid for deprecated data specification template IDs
 
 * change numbering of constraints that do not yet had "-3a" in their name
 
