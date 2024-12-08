@@ -51,6 +51,9 @@ Update all links to template ID in constraints
 	- (Update) Submodel
 	- (Update Source) SubmodelElement
 
+Bugfixes:
+
+* correct link to used XML Schema definition 1.0 (consistent to Part 1)
 
 Minor changes:
 
