@@ -283,7 +283,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-Example from IEC 61360-1:2017: "1999-05-31" is the [DATE] representation of: "31 May 1999".
+Example from IEC 61360-1:2017: "1999-05-31" is the DATE representation of: "31 May 1999".
 
 e|STRING a|
 values consisting of a sequence of characters, which cannot be translated into other languages
@@ -346,8 +346,9 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 e|REAL_MEASURE a|
-values containing values that are measures of the type REAL.
-In addition, such a value comes with a physical unit.
+values containing values that are measures of the type REAL
+
+In addition, such a value comes with a physical unit
 
 
 ====
@@ -587,11 +588,11 @@ The data type of both Properties is the same.
 
 In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type.
 Otherwise, the semantics is not described in a unique way.
-In link:bibliography.adoc#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
+In xref:bibliography.adoc#bib27[[27\]], IRDI-Paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
 
 It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max).
 This is considered to be a deprecated way of defining property sets.
-See also link:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+See also xref:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
 
 === Value List Attributes
 
