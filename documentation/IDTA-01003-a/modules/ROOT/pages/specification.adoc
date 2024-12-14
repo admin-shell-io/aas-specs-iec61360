@@ -45,9 +45,8 @@ h|*dataSpecificationContent:* 3+|DataSpecificationIec61360
 h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360.
 |===
 
-The ID of the data specification template was derived conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001.
-
-This ID will be used in _hasDataSpecification/dataSpecification_.
+The ID of the data specification template was derived conformant to the grammar for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001 with the exception that the minor version was excluded because this ID is also part of the instances of Asset Administration Shells: 
+This ID is used in _hasDataSpecification/dataSpecification_.
 
 This namespace has the qualifier "IEC:" Examples: `IEC:DataSpecificationIec61360/preferredName` or `IEC:DataSpecificationIec61360/levelType/min` or `IEC:LevelType/min`
 
@@ -1213,7 +1212,7 @@ a|
 
 
 ====
-Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[https://portal.bosch.com/]
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[]
 ====
 
 

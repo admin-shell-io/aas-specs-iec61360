@@ -59,7 +59,9 @@ Bugfixes:
 
 Minor changes:
 
-* add sentence (again) stating that the template ID is conformant to the rules for semantic IDs for data specifications as defined in Part 1 of the document series
+* add sentence  stating that the template ID is conformant to the grammar for semantic IDs for data specifications as defined in Part 1 of the document series except that minor version is not included
+
+* add note that semantic identifiers for classes, attributes, enumations etc. defined in this document are conformatn to grammar as defined in Part 1 of the document series
 
 * added note: This specification is only valid in combination with IDTA-01001-3-1.
 
@@ -67,7 +69,7 @@ Minor changes:
 
 * removed Subclause "Working Principles"
 
-* editorial (including (https://github.com/admin-shell-io/aas-specs-iec61360/issues/10[#10], https://github.com/admin-shell-io/aas-specs-iec61360/issues/3[#3])
+* editorial (including https://github.com/admin-shell-io/aas-specs-iec61360/issues/10[#10], https://github.com/admin-shell-io/aas-specs-iec61360/issues/3[#3])
 
 .Changes in Metamodel V3.1
 [width="100%",cols="7%,53%,40%",options="header",]

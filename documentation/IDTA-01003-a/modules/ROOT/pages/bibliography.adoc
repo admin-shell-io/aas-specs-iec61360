@@ -10,6 +10,11 @@ SPDX-License-Identifier: CC-BY-4.0
 [bibliography]
 = Bibliography
 
+[#bib12]
+[12] "OMG Unified Modelling Language (OMG UML)".
+Version 2.5.1. December 2017. 
+[Online]. 
+Available: https://www.omg.org/spec/UML/2.5.1
 
 [#bib13]
 [13] T. Preston-Werner "Semantic Versioning".
@@ -20,19 +25,12 @@ Version 2.0.0. Accessed: 2020-11-13.
 [14] IDTA-01002 "Specification of the Asset Administration Shell Part 2 – Application Programming Interfaces".
 See xref:bibliography.adoc#bib22[[22\]].
 
-[#bib12]
-[12] "OMG Unified Modelling Language (OMG UML)".
-Version 2.5.1. December 2017. 
-[Online]. 
-Available: https://www.omg.org/spec/UML/2.5.1
-
 [#bib15]
-[15] "Asset Administration Shell.
-Reading Guide".
+[15] "Asset Administration Shell. Reading Guide".
 Industrial Digital Twin Association.
-November 2022. 
+November 2024. 
 [Online].
-Available: https://industrialdigitaltwin.org/en/wp-content/uploads/sites/2/2022/12/2022-12-07_IDTA_AAS-Reading-Guide.pdf
+Available: https://industrialdigitaltwin.org/wp-content/uploads/2024/11/2024-11_IDTA_AAS-Reading-Guide.pdf
 
 [#bib16]
 [16] Top Level Project "Eclipse Digital Twin" Available: https://projects.eclipse.org/projects/dt

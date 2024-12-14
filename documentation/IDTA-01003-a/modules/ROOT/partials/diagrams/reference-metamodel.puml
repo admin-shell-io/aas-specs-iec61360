@@ -6,5 +6,5 @@
 
 Reference .> ReferenceTypes
 Reference ..> Key
-Key .> KeyTypes
+Key ..> KeyTypes
 @enduml
