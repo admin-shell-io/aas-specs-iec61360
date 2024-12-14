@@ -21,15 +21,6 @@ This glossary applies only within the context of this document.
 If available, definitions were taken from IEC 63278-1 Edition 1.0 2023-12 or IEC 61360-1 Edition 4.0 2017-07.
 ====
 
-*application*::
-
-software functional element specific to the solution of a problem in industrial-process measurement and control
-
-====
-Note 1 to entry: an application can be distributed among resources and may communicate with other applications.
-====
-
-_[SOURCE: IEC TR 62390:2005-01, 3.1.2]_
 
 *attribute*::
 
@@ -52,24 +43,6 @@ _[SOURCE: IEC 63278-1:2023, note added]_
 description of a set of objects that share the same _attributes_, _operations_, methods, relationships, and semantics
 
 _[SOURCE: IEC TR 62390:2005-01, 3.1.4]_
-
-*capability*::
-
-implementation-independent potential of an Industrie 4.0 component to achieve an effect within a domain
-
-====
-Note 1 to entry: capabilities can be orchestrated and structured hierarchically.
-====
-
-====
-Note 2 to entry: capabilities can be made executable via services.
-====
-
-====
-Note 3 to entry: the impact manifests itself in a measurable effect within the physical world.
-====
-
-_[SOURCE: Glossary Industrie 4.0, minor changes]_
 
 
 *coded value*::

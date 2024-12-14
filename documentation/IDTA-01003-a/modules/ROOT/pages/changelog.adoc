@@ -42,7 +42,9 @@ Major changes:
 * Transfer of all UML figures to PlantUML (.puml) and maintenance in GitHub, no XMI presenation part of release any longer (https://github.com/admin-shell-io/aas-specs/issues/34[#34])
 
 * Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification 
+	- (Removed) application
 	- (Update Source) Asset Administration Shell
+	- (Removed) capability
 	- (Removed) class
 	- (New) coded value (from Part 1)
 	- (Removed) concept
