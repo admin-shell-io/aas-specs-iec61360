@@ -939,7 +939,7 @@ Max = true
 |===
 |*Attribute**^6^* |*ReferenceElement* |*File*footnote:[Template only used until explicit template is available for defining the corresponding types of elements.] |*Blob^9^* |*Capability^9^* |*RelationshipElement^9^* |*AnnotatedRelationshipElement^9^*
 h|Category of Concept Description h|REFERENCE h|DOCUMENT h|DOCUMENT h|CAPABILITY h|RELATIONSHIP h|RELATIONSHIP
-|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--* |*--*
+h|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--* |*--*
 |preferredName^7^ |m |m |m |m |m |m
 |shortName |(m) |(m) |(m) |(m) |(m) |(m)
 |unit |-- |-- |-- |-- |-- |--
@@ -963,7 +963,7 @@ h|Category of Concept Description h|REFERENCE h|DOCUMENT h|DOCUMENT h|CAPABILITY
 |===
 |*Attribute* |*SubmodelElementList^9^* |*SubmodelElementCollection^9^* |*Operation^9^* |*EventElement^9^* |*Entity^9^*
 h|Category of Concept Description h|COLLECTION h|ENTITY h|FUNCTION h|EVENT h|ENTITY
-|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--*
+h|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--*
 |preferredName^7^ |m |m |m |m |m
 |shortName |(m) |(m) |(m) |(m) |(m)
 |unit |-- |-- |-- |-- |--
@@ -987,7 +987,7 @@ h|Category of Concept Description h|COLLECTION h|ENTITY h|FUNCTION h|EVENT h|ENT
 |===
 |*Attribute* |*Submodel^9^* |*Qualifier^9^* |*SpecificAssetId*
 h|Category of Concept Description h|APPLICATION_CLASS h|QUALIFIER_TYPE h|PROPERTY
-|*Category of Element* |*--* |*--* |*--*
+h|*Category of Element* |*--* |*--* |*--*
 |preferredName |m |m |m
 |shortName |(m) |(m) |(m)
 |unit |-- |-- |
