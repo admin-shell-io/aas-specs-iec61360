@@ -99,7 +99,7 @@ h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationI
 h|Explanation h|Type h|Card.
 
 
-.2+e|[[data-specification-content-preferred-name]]preferredName 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/preferredName`
+.2+e|[[data-specification-content-preferred-name]]preferredName 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/preferredName`
 
 a|
 Preferred name in different languages
@@ -117,7 +117,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 
-.2+e|shortName 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/shortName`
+.2+e|shortName 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/shortName`
 a|
 Short name
 
@@ -129,7 +129,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 |xref:ShortNameTypeIec61360[ShortNameTypeIec61360] |0..1
 
-.2+e|unit 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unit`
+.2+e|unit 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unit`
 a|
 Unit in case of a quantitative property
 
@@ -147,7 +147,7 @@ Note 2: only the primary unit is supported.
 
 |string |0..1
 
-.2+e|unitId 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unitId`
+.2+e|unitId 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unitId`
 a|
 Unique unit ID
 
@@ -167,7 +167,7 @@ Note 2: it is recommended to use an external reference ID.
 
 |Reference |0..1
 
-.2+e|sourceOfDefinition 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/sourceOfDefinition`
+.2+e|sourceOfDefinition 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/sourceOfDefinition`
 a|
 Source of definition
 
@@ -179,7 +179,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 |string |0..1
 
-.2+e|symbol 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/symbol`
+.2+e|symbol 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/symbol`
 a|
 Symbol
 
@@ -192,7 +192,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 |string |0..1
 
-.2+e|dataType 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/dataType`
+.2+e|dataType 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/dataType`
 a|
 Data Type
 
@@ -204,7 +204,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 |xref:DataTypeIec61360[DataTypeIec61360] |0..1
 
-.2+e|definition 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/definition`
+.2+e|definition 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/definition`
 a|
 Definition in different languages
 
@@ -216,7 +216,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 |xref:DefinitionTypeIec61360[DefinitionTypeIec61360] |0..1
 
-.2+e|valueFormat 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueFormat`
+.2+e|valueFormat 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueFormat`
 a|
 Value Format
 
@@ -228,7 +228,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 |xref:ValueFormatTypeIec61360[ValueFormatTypeIec61360] |0..1
 
-.2+e|valueList 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueList`
+.2+e|valueList 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueList`
 a|
 Enumerated list of allowed values
 
@@ -246,7 +246,7 @@ Note 2: for ease of usage, the value list is modelled as value/valueId list in t
 
 |xref:ValueList[ValueList] |0..1
 
-.2+e|value  3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/value`
+.2+e|value  3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/value`
 a|
 Value (typically within a value list)
 
@@ -258,7 +258,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 |xref:ValueTypeIec61360[ValueTypeIec61360] |0..1
 
-.2+e|levelType  3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/levelType`
+.2+e|levelType  3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/levelType`
  a|
 Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP and MAX.
 
