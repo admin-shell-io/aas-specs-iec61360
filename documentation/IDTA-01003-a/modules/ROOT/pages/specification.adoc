@@ -1173,7 +1173,7 @@ Note 2: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]
 
 
 a|
-"max. rotation speed"@EN
+"max. rotation speed"@en
 
 ====
 Note: see xref:introduction.adoc#image-property-eclass[Figure 2. Example Property from ECLASS]
