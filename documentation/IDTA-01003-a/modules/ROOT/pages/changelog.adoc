@@ -61,6 +61,8 @@ Minor changes:
 
 * added note: This specification is only valid in combination with IDTA-01001-3-1.
 
+* updated bibliography
+
 * editorial (including (https://github.com/admin-shell-io/aas-specs-iec61360/issues/10[#10], https://github.com/admin-shell-io/aas-specs-iec61360/issues/3[#3])
 
 .Changes in Metamodel V3.1

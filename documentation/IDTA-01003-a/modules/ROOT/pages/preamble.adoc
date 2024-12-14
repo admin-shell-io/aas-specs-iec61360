@@ -27,7 +27,7 @@ This document assumes familiarity with the concept and specification of the Asse
 The main stakeholders addressed in this document are architects and software developers aiming to implement a digital twin using the Asset Administration Shell in an interoperable way.
 Additionally, the content can also be used as input for discussions with international standardization organizations and further collaborations.
 
-Please consult the continuously updated reading guide link:bibliography.adoc#bib15[[15\]] for an overview of documents on the Asset Administration Shell.
+Please consult the continuously updated reading guide xref:bibliography.adoc#bib15[[15\]] for an overview of documents on the Asset Administration Shell.
 The reading guide gives advice on which documents should be read depending on the role of the reader.
 
 === Normative References
