@@ -33,11 +33,8 @@ Each subclause consists of three parts:
 Major changes:
 
 * CHANGE ValueTypeIec61360: increase length from 2000 to 2048 (https://github.com/admin-shell-io/aas-specs/issues/306[#306 of IDTA-01001])
-
-////
-* increase version in metamodel semantic IDs to /3/1.
-Update all links to template ID in constraints
-////
+* CHANGE ValueReferencePair/valueId now optional (https://github.com/admin-shell-io/aas-specs/issues/28[#28])
+* Update all metamodel element IDs to V3.1 (https://github.com/admin-shell-io/aas-specs/issues/366[#366 of IDTA-01001])
 
 * Transfer from .docx to asciidoc
 
@@ -67,6 +64,8 @@ Minor changes:
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
 |*nc* |*V3.1 vs. V3.0.2* |*Comment*
+
+| |ValueReferencePair/valueId | changed from mandatory to optional
 | |ValueTypeIec61360 | Change length of data type from 2000 to 2048
 |===
 
