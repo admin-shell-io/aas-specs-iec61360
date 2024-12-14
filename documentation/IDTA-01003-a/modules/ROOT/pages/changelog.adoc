@@ -33,15 +33,25 @@ Each subclause consists of three parts:
 Major changes:
 
 * CHANGE ValueTypeIec61360: increase length from 2000 to 2048 (https://github.com/admin-shell-io/aas-specs/issues/306[#306 of IDTA-01001])
-
-////
-* increase version in metamodel semantic IDs to /3/1.
-Update all links to template ID in constraints
-////
+* CHANGE ValueReferencePair/valueId now optional (https://github.com/admin-shell-io/aas-specs/issues/28[#28])
+* Update all metamodel element IDs to V3.1 (https://github.com/admin-shell-io/aas-specs/issues/17[#17])
 
 * Transfer from .docx to asciidoc
+* Transfer of all UML figures to PlantUML (.puml) and maintenance in GitHub, no XMI presenation part of release any longer (https://github.com/admin-shell-io/aas-specs/issues/34[#34])
 
-* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification + add new term "coded value" (from Part 1)
+* Update Terms and Definitions to be compliant to IEC63278-1:2023 and other parts of specification 
+	- (Update Source) Asset Administration Shell
+	- (Removed) class
+	- (New) coded value (from Part 1)
+	- (Removed) concept
+	- (Removed) enumeration
+	- (Removed) qualifier
+	- (Update) Submodel
+	- (Update Source) SubmodelElement
+
+Bugfixes:
+
+* correct link to used XML Schema definition 1.0 (consistent to Part 1)
 
 Minor changes:
 
@@ -49,12 +59,14 @@ Minor changes:
 
 * added note: This specification is only valid in combination with IDTA-01001-3-1.
 
-* editorial
+* editorial (including (https://github.com/admin-shell-io/aas-specs-iec61360/issues/10[#10], https://github.com/admin-shell-io/aas-specs-iec61360/issues/3[#3])
 
 .Changes in Metamodel V3.1
 [width="100%",cols="7%,53%,40%",options="header",]
 |===
 |*nc* |*V3.1 vs. V3.0.2* |*Comment*
+
+| |ValueReferencePair/valueId | changed from mandatory to optional
 | |ValueTypeIec61360 | Change length of data type from 2000 to 2048
 |===
 
@@ -62,9 +74,8 @@ Minor changes:
 
 Bugfixes:
 
-* all constraints corrected that mention data specification template ID: instead of complete version "3/0" only major version "3"
-
-+ added note in Annex “Handling of Constraints”: If a constraint is mentioning the id of the Template, then the same constraints shall also be valid for deprecated data specification template IDs
+* all constraints corrected that mention data specification template ID: instead of complete version "3/0" only major version "3", additionally
+  added note in Annex “Handling of Constraints”: If a constraint is mentioning the id of the Template, then the same constraints shall also be valid for deprecated data specification template IDs
 
 * change numbering of constraints that do not yet had "-3a" in their name
 

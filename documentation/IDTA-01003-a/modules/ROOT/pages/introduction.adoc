@@ -105,12 +105,12 @@ For example, templates for concept descriptions differ from templates for operat
 More than one data specification template can be defined and used for an element instance.
 Which templates are used for an element instance is defined via _HasDataSpecification_.
 
-This specification template _DataSpecificationIec61360:_ supports concept definitions conformant to IEC 61360 xref:preamble.adoc#IEC61360-1[[IEC61360-1\]] for both properties and coded values.
+This specification template _DataSpecificationIec61360_ supports concept definitions conformant to IEC 61360 xref:preamble.adoc#IEC61360-1[[IEC61360-1\]] for both properties and coded values.
 
 
 <<image-rel-metamodel-iec61360>> gives an overview of the data specification template and how it is used in combination with the information model as defined in Part 1 of the document series, namely  _DataSpecification_, _DataSpecificationContent,_ and _ConceptDescription_.
 
-.Overview Relationship Metamodel Part 1 a & Data Specifications IEC 61360
+.Overview Relationship Metamodel Part 1 & Data Specification IEC 61360
 [[image-rel-metamodel-iec61360]]
 [plantuml, 65-inheritance, svg]
 ....

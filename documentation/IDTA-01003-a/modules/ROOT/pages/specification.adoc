@@ -65,7 +65,7 @@ include::partial$diagrams/dataspec-iec61360.puml[]
 
 [width="100%",cols="19%,47%,27%,7%"]
 |===
-h|Class: 3+e|DataSpecificationIec61360 \<<Template>>
+h|Class: 3+e|[[DataSpecificationIec61360]]DataSpecificationIec61360 \<<Template>>
 h|Explanation: 3+a|
 Content of data specification template for concept descriptions for properties, values, and value lists conformant to IEC 61360.
 
@@ -92,8 +92,16 @@ It is only possible to directly add a value list as data type to a specific sema
 
 h|Inherits from: 3+|DataSpecificationContent
 
-h|Attribute h|Explanation h|Type h|Card
-|preferredName a|
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360`
+
+
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card.
+
+
+.2+e|[[data-specification-content-preferred-name]]preferredName 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/preferredName`
+
+a|
 Preferred name in different languages
 
 
@@ -104,7 +112,13 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 {aasc3a002}
 
 |xref:PreferredNameTypeIec61360[PreferredNameTypeIec61360] |1
-|shortName a|
+
+
+
+
+
+.2+e|shortName 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/shortName`
+a|
 Short name
 
 
@@ -114,7 +128,9 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 |xref:ShortNameTypeIec61360[ShortNameTypeIec61360] |0..1
-|unit a|
+
+.2+e|unit 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unit`
+a|
 Unit in case of a quantitative property
 
 
@@ -130,7 +146,9 @@ Note 2: only the primary unit is supported.
 
 
 |string |0..1
-|unitId a|
+
+.2+e|unitId 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unitId`
+a|
 Unique unit ID
 
 Unit and unitId need to be consistent if both attributes are set
@@ -148,7 +166,9 @@ Note 2: it is recommended to use an external reference ID.
 
 
 |Reference |0..1
-|sourceOfDefinition a|
+
+.2+e|sourceOfDefinition 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/sourceOfDefinition`
+a|
 Source of definition
 
 
@@ -158,8 +178,11 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 |string |0..1
-|symbol a|
+
+.2+e|symbol 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/symbol`
+a|
 Symbol
+
 
 
 ====
@@ -168,7 +191,9 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 |string |0..1
-|dataType a|
+
+.2+e|dataType 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/dataType`
+a|
 Data Type
 
 
@@ -178,7 +203,9 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 |xref:DataTypeIec61360[DataTypeIec61360] |0..1
-|definition a|
+
+.2+e|definition 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/definition`
+a|
 Definition in different languages
 
 
@@ -188,7 +215,9 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 |xref:DefinitionTypeIec61360[DefinitionTypeIec61360] |0..1
-|valueFormat a|
+
+.2+e|valueFormat 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueFormat`
+a|
 Value Format
 
 
@@ -198,7 +227,9 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 |xref:ValueFormatTypeIec61360[ValueFormatTypeIec61360] |0..1
-|valueList a|
+
+.2+e|valueList 3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueList`
+a|
 Enumerated list of allowed values
 
 
@@ -214,7 +245,9 @@ Note 2: for ease of usage, the value list is modelled as value/valueId list in t
 
 
 |xref:ValueList[ValueList] |0..1
-|value a|
+
+.2+e|value  3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/value`
+a|
 Value (typically within a value list)
 
 
@@ -224,7 +257,9 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 |xref:ValueTypeIec61360[ValueTypeIec61360] |0..1
-|levelType a|
+
+.2+e|levelType  3+| \https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/levelType`
+ a|
 Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP and MAX.
 
 
@@ -277,8 +312,13 @@ include::partial$diagrams/datatype-iec61360.puml[]
 h|Enumeration: |[[DataTypeIec61360]]DataTypeIec61360
 h|Explanation: |Enumeration of simple data types for an IEC 61360 concept description using the data specification template _DataSpecificationIec61360_
 h|Set of: |--
-h|Literal h|Explanation
-e|DATE a|
+h|ID: | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360`
+
+.2+h|Literal h| ID
+h|Explanation
+
+.2+e|DATE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/DATE`
+a|
 values containing a calendar date, conformant to ISO 8601:2004
 
 Format yyyy-mm-dd
@@ -289,9 +329,10 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-Example from IEC 61360-1:2017: "1999-05-31" is the [DATE] representation of: "31 May 1999".
+Example from IEC 61360-1:2017: "1999-05-31" is the DATE representation of: "31 May 1999".
 
-e|STRING a|
+.2+e|STRING | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/STRING`
+a|
 values consisting of a sequence of characters, which cannot be translated into other languages
 
 
@@ -307,7 +348,8 @@ It is requested to use the more specific data types in the AAS, if applicablefoo
 ====
 
 
-e|STRING_TRANSLATABLE a|
+.2+e|STRING_TRANSLATABLE |`\https://admin-shell.io/aas/3/1/DataTypeIec61360/STRING_TRANSLATABLE`
+a|
 values containing string, but which shall be represented as different strings in different languages
 
 
@@ -316,7 +358,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|INTEGER_MEASURE a|
+.2+e|INTEGER_MEASURE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/INTEGER_MEASURE`
+a|
 values containing values that are a measure of the type INTEGER.
 In addition, such a value comes with a physical unit.
 
@@ -326,7 +369,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|INTEGER_COUNT a|
+.2+e|INTEGER_COUNT | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/INTEGER_COUNT`
+a|
 values containing values of the type INTEGER, but which are no currencies or measures
 
 
@@ -342,7 +386,8 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-e|INTEGER_CURRENCY a|
+.2+e|INTEGER_CURRENCY | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/INTEGER_CURRENCY`
+a|
 values containing values of the type INTEGER, which are currencies
 
 
@@ -351,9 +396,11 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|REAL_MEASURE a|
-values containing values that are measures of the type REAL.
-In addition, such a value comes with a physical unit.
+.2+e|REAL_MEASURE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/REAL_MEASURE`
+a|
+values containing values that are measures of the type REAL
+
+In addition, such a value comes with a physical unit
 
 
 ====
@@ -361,7 +408,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|REAL_COUNT a|
+.2+e|REAL_COUNT | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/REAL_COUNT`
+a|
 values containing numbers that can be written as a terminating or non-terminating decimal; i.e. a rational or irrational number, which is neither a currency nor a measures
 
 
@@ -377,7 +425,8 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-e|REAL_CURRENCY a|
+.2+e|REAL_CURRENCY | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/REAL_CURRENCY`
+a|
 values containing values of the type REAL, which are currencies
 
 
@@ -386,7 +435,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|BOOLEAN a|
+.2+e|BOOLEAN | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/BOOLEAN`
+a|
 values representing truth of logic or Boolean algebra (TRUE, FALSE)
 
 
@@ -402,7 +452,8 @@ In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
 ====
 
 
-e|IRI a|
+.2+e|IRI | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/IRI`
+a|
 values containing values of the type STRING conformant to https://datatracker.ietf.org/doc/html/rfc3987[Rfc 3987]
 
 
@@ -419,7 +470,8 @@ If the IRI represents an address to a file, FILE shall be used.
 ====
 
 
-e|IRDI a|
+.2+e|IRDI | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/IRDI`
+a|
 values conforming to ISO/IEC 11179 series global identifier sequences
 
 
@@ -448,7 +500,8 @@ The identifier shall fulfil the requirements specified in ISO/TS 29002-5 for an 
 ====
 
 
-e|RATIONAL a|
+.2+e|RATIONAL | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/RATIONAL`
+a|
 Values containing values of the type RATIONAL, which are no measures
 
 Examples: ½, ¾ or 7/2
@@ -465,7 +518,8 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-e|RATIONAL_MEASURE a|
+.2+e|RATIONAL_MEASURE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/RATIONAL_MEASURE`
+a|
 values containing values of the type RATIONAL.
 In addition, such a value comes with a physical unit.
 
@@ -475,7 +529,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|TIME a|
+.2+e|TIME | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/TIME`
+a|
 values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
 
 Format hh:mm (ECLASS)
@@ -488,7 +543,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|TIMESTAMP a|
+.2+e|TIMESTAMP | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/TIMESTAMP`
+a|
 values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
 
 Format yyyy-mm-dd hh:mm (ECLASS)
@@ -499,7 +555,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|FILE a|
+.2+e|FILE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/FILE`
+a|
 values containing an address to a file.
 The values are of the type URI and can represent an absolute or relative path.
 
@@ -510,7 +567,8 @@ It would map to the URI_TYPE.
 ====
 
 
-e|HTML a|
+.2+e|HTML | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/HTML`
+a| 
 Values containing string with any sequence of characters, using the syntax of HTML5 (see W3C Recommendation 28:2014)
 
 
@@ -519,7 +577,8 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-e|BLOB a|
+.2+e|BLOB | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/BLOB`
+a|
 values containing the content of a file.
 Values may be binaries.
 
@@ -569,19 +628,25 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 
-h|Inherits from: 3+|DataSpecificationContent
+h|Inherits from: 3+e|DataSpecificationContent
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType`
 
-h|Attribute h|Explanation h|Type h|Card.
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card.
 
-e|min a|Minimum of the value |boolean |1
-e|nom a|Nominal value (value as designated) |boolean |1
-e|typ a|Value as typically present |boolean |1
-e|max a|Maximum of the value |boolean |1
+.2+e|min 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/min`
+a|Minimum of the value |boolean |1
+.2+e|nom 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/nom`
+a|Nominal value (value as designated) |boolean |1
+.2+e|typ 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/typ`
+a|Value as typically present |boolean |1
+.2+e|max 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/max`
+a|Maximum of the value |boolean |1
 |===
 
 ====
 Note: This is how the AAS deals with the following combinations of level types:
-====
+
 
 * Case 1: If all attributes are false, the concept is mapped to a Property and level type is ignored.
 
@@ -596,11 +661,14 @@ The data type of both Properties is the same.
 
 In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type.
 Otherwise, the semantics is not described in a unique way.
-In link:bibliography.adoc#bib27[[27\]], IRDI paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
+In xref:bibliography.adoc#bib27[[27\]], IRDI-Paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
 
 It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max).
 This is considered to be a deprecated way of defining property sets.
-See also link:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+See also xref:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+
+====
+
 
 === Value List Attributes
 
@@ -626,8 +694,13 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 
 
 h|Inherits from: 3+|--
-h|Attribute h|Explanation h|Type h|Card.
-e|valueReferencePair |A pair of a value together with its global unique ID. |xref:ValueReferencePair[ValueReferencePair] |1..*
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueList`
+
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card
+
+.2+e|valueReferencePair 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueList/valueReferencePair`
+a|A pair of a value together with its global unique ID. |xref:ValueReferencePair[ValueReferencePair] |1..*
 |===
 
 {empty}
@@ -637,9 +710,15 @@ e|valueReferencePair |A pair of a value together with its global unique ID. |xre
 h|Class: 3+e|[[ValueReferencePair]]ValueReferencePair
 h|Explanation: |A value reference pair within a value list. Each value has a global unique ID defining its semantic. | |
 h|Inherits from: |-- | |
-h|Attribute h|Explanation h|Type h|Card.
-e|value |the value of the referenced concept definition of the value in _valueId._ |xref:ValueTypeIec61360[ValueTypeIec61360] |1
-e|valueId a|
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair`
+
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card
+
+.2+e|value 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair/value`
+a|the value of the referenced concept definition of the value in _valueId._ |xref:ValueTypeIec61360[ValueTypeIec61360] |1
+.2+e|valueId 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair/valueId`
+a|
 Global unique ID of the value
 
 
@@ -648,7 +727,7 @@ Note: it is recommended to use an external reference.
 ====
 
 
-|Reference |1
+|Reference | 0..1
 |===
 
 [#mapping-iec-61360-data-types-to-xsd-data-types]
@@ -657,6 +736,16 @@ Note: it is recommended to use an external reference.
 Using a concept description requires mapping the data type of the concept description to a conformant type in xsd (for example in _Property/valueType_).
 
 Examples for the different IEC 61360 data types can be found here: https://eclass.eu/support/technical-specification/structure-and-elements/value.
+
+====
+Note: ECLASS also proposes a mapping of IEC 61360 data types to XSD data types: https://eclass.eu/support/technical-specification/data-model/datatype-to-xsd-mapping. There are some deviations to the mapping defined in this document:
+
+* In this document REAL is mapped to either xs:double or xs:float whereas ECLASS proposes to map it to double, only.
+* In this document STRING_TRANSLATABLE is mapped to MultiLanguageText whereas ECLASS proposes to map it to a langstring. 
+* In this document IRI is mapped not only to xs:anyURI as proposed by ECLASS but it can also be mapped to _ReferenceElement_.
+* ECLASS does not define mappings for IRDI, HTML, FILE or BLOB
+
+====
 
 .Mapping IEC 61360 Data Types to xsd Data Types
 [width="100%",cols="31%,30%,39%",options="header",]
@@ -971,11 +1060,11 @@ Note: categories are deprecated since V3.0 of Part 1 of the document series "Ass
 
 === Predefined Simple Data Types
 
-The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  link:https://www.w3.org/XML/Core/[XML Schema Definition] (XSD) as its basic data types footnote:[https://www.w3.org/XML/Core/, former https://www.w3.org/XML/Schema].
+The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  XML Schema Definition (XSD) as its basic data types.
 For an overview of the types used in this document, see <<table-simple-data-types>>.
 Their definition is outside the scope of this document.
 
-The meaning and format of xsd types is specified in https://www.w3.org/XML/Schema.
+The meaning and format of xsd types is specified in XML Schema 1.0 (https://www.w3.org/TR/xmlschema-2).
 The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
 
 .Simple Data Types Used in Metamodel
@@ -983,8 +1072,8 @@ The simple type "langString" is specified in the Resource Description Framework 
 [width="100%",cols="12%,18%,40%,30%",options="header",]
 |===
 |*Source* |*Basic Data Type* |*Value Range* |*Sample Values*
-|xsd |boolean |true, false |true, false
-|xsd |string |Character string (but not all Unicode character strings) |"Hello world", "Καλημέρα κόσμε",ハローワールド"
+|xsd |https://www.w3.org/TR/xmlschema-2/#boolean[boolean] |true, false |true, false
+|xsd |https://www.w3.org/TR/xmlschema-2/#string[string] |Character string (but not all Unicode character strings) |"Hello world", "Καλημέρα κόσμε",ハローワールド"
 |rdf |langString |Strings with language tags |"Hello"@en, "Hallo"@de. Note that this is written in RDF/Turtle syntax, and that only "Hello" and "Hallo" are the actual values.
 |===
 
