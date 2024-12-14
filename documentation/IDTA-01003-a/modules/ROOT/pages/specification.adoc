@@ -567,7 +567,7 @@ Values containing string with any sequence of characters, using the syntax of HT
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the HTML5_TYPE.
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the HTML5_TYPE
 ====
 
 
@@ -683,7 +683,7 @@ A set of value reference pairs
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_list/enumerated_list_of_terms.
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_list/enumerated_list_of_terms
 ====
 
 
@@ -713,7 +713,7 @@ h|Explanation h|Type h|Card
 a| a value
 
 ====
-Note: if the _valueId_ is defined as well, then the value needs to be consistent with referenced concept definition of the value in _valueId_. 
+Note: if the _valueId_ is defined as well, then the value needs to be consistent with referenced concept definition of the value in _valueId_
  
 ====
  |xref:ValueTypeIec61360[ValueTypeIec61360] |1
@@ -748,10 +748,10 @@ Note: ECLASS also proposes a mapping of IEC 61360 data types to XSD data types: 
 [width="100%",cols="31%,30%,39%",options="header",]
 |===
 h|Data Type IEC 61360 
-h|xsd Value Typefootnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd._
+h|xsd Value Typefootnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd_
 
 Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute 
-because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_).
+because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_)
 
 ]
 
@@ -770,7 +770,7 @@ _Mapped to MultiLanguageProperty, i.e. type MultiLanguageText_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 
@@ -827,7 +827,7 @@ xs:string _or mapped to ReferenceElement_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 
@@ -849,7 +849,7 @@ _Mapped to submodel element File, i.e. type PathType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 
@@ -859,7 +859,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 
@@ -869,7 +869,7 @@ _Mapped to submodel element Blob, i.e. type BlobType_
 
 
 ====
-Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 
@@ -891,7 +891,7 @@ For the meaning of the content attributes of the IEC 61360 data specification te
 
 The data specification template can be used to describe both properties and values.
 
-See xref:introduction.adoc#image-rel-metamodel-iec61360[Overview Relationship Metamodel Part 1 & Data Specifications IEC 61360] on how data specification templates are related to concept descriptions. <<image-categories-cds>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category.].
+See xref:introduction.adoc#image-rel-metamodel-iec61360[Overview Relationship Metamodel Part 1 & Data Specifications IEC 61360] on how data specification templates are related to concept descriptions. <<image-categories-cds>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category].
 
 The following tables recommend using specific categories to distinguish which kind of concept is described.
 They also give advice on which attributes need to be filled for which category of concept description.
@@ -1015,7 +1015,7 @@ This clause documents constraints in the context of the predefined data specific
 https://sunye.github.io/ocl/[A class invariant is a constraint that must be true for all instances of a class at any time.]
 
 ====
-Note: these constraints include elements of Part 1 Metamodel, IDTA-01001.
+Note: these constraints include elements of Part 1 Metamodel, IDTA-01001
 ====
 
 {empty}
@@ -1025,25 +1025,25 @@ Note: these constraints include elements of Part 1 Metamodel, IDTA-01001.
 {aasc3a004}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 {aasc3a005}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 {aasc3a006}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell"
 ====
 
 {aasc3a007}
 
 ====
-Note: categories are deprecated since V3.0 of Part 1 of the document series "Asset Administration Shell Specification".
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Asset Administration Shell Specification"
 ====
 
 {aasc3a008}
@@ -1105,13 +1105,13 @@ _Array of elements of type langString_
 
 
 ====
-Note 1: langString is a RDF data type.
+Note 1: langString is a RDF data type
 ====
 
 
 
 ====
-Note 2: a langString is a string value tagged with a language code.
+Note 2: a langString is a string value tagged with a language code
 ====
 
 
@@ -1119,45 +1119,39 @@ The realization of a langString depends on the serialization rules for a technol
 
 
 ====
-Note: as defined in Part 1 Metamodel, IDTA-01001.
+Note: as defined in Part 1 Metamodel, IDTA-01001
 ====
 
 
 a|
 In xml:
 
+[source,xml]
+----
 <aas:langString lang="EN">This is a multi-language value in English</aas:langString>
-
-<aas:langString lang="DE"> Das ist ein Multi-Language-Wert in Deutsch </aas:langString>
+<aas:langString lang="DE">Das ist ein Multi-Language-Wert in Deutsch</aas:langString>
+----
 
 In rdf:
-
+[source,rdf]
+----
 "This is a multi-language value in English"@en ;
-
 "Das ist ein Multi-Language-Wert in Deutsch"@de
+----
 
 In JSON:
 
 [source,json,linenums]
 ----
 "description": [
-
-  {
-
-      "language":"en", 
-
-         "text": "This is a multi-language value in English."
-
-  },
-
-  {
-
-"language":"de",
-
-"text": "Das ist ein Multi-Language-Wert in Deutsch." 
-
-   }
-
+   {
+     "language":"en",
+     "text": "This is a multi-language value in English."
+   },
+   {
+     "language":"de",
+     "text": "Das ist ein Multi-Language-Wert in Deutsch."
+   }
 ]
 ----
 
