@@ -647,6 +647,16 @@ Using a concept description requires mapping the data type of the concept descri
 
 Examples for the different IEC 61360 data types can be found here: https://eclass.eu/support/technical-specification/structure-and-elements/value.
 
+====
+Note: ECLASS also proposes a mapping of IEC 61360 data types to XSD data types: https://eclass.eu/support/technical-specification/data-model/datatype-to-xsd-mapping. There are some deviations to the mapping defined in this document:
+
+* In this document REAL is mapped to either xs:double or xs:float whereas ECLASS proposes to map it to double, only.
+* In this document STRING_TRANSLATABLE is mapped to MultiLanguageText whereas ECLASS proposes to map it to a langstring. 
+* In this document IRI is mapped not only to xs:anyURI as proposed by ECLASS but it can also be mapped to _ReferenceElement_.
+* ECLASS does not define mappings for IRDI, HTML, FILE or BLOB
+
+====
+
 .Mapping IEC 61360 Data Types to xsd Data Types
 [width="100%",cols="31%,30%,39%",options="header",]
 |===
