@@ -1213,7 +1213,7 @@ a|
 
 
 ====
-Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[https://portal.bosch.com/]
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[]
 ====
 
 
