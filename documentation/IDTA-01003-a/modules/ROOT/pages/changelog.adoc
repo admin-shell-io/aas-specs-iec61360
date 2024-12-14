@@ -63,6 +63,8 @@ Minor changes:
 
 * updated bibliography
 
+* removed Subclause "Working Principles"
+
 * editorial (including (https://github.com/admin-shell-io/aas-specs-iec61360/issues/10[#10], https://github.com/admin-shell-io/aas-specs-iec61360/issues/3[#3])
 
 .Changes in Metamodel V3.1

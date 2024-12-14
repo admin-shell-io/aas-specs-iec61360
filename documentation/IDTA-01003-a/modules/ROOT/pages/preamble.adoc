@@ -70,7 +70,7 @@ xref:specification.adoc#category-of-concept-descriptions[Category of Concept Des
 The constraints as defined in xref:specification.adoc#cross-constraints-and-invariants-for-predefined-data-specifications-normative[Cross-Constraints and Invariants for Predefined Data Specifications (normative)] also mainly refer to the rules on how these categories should be applied.
 
 ====
-Note: since categories are deprecated since V3.0, xref:specification.adoc#category-of-concept-descriptions[Category of Concept Descriptions] can also be skipped.
+Note: since categories are deprecated since V3.0, Clause xref:specification.adoc#category-of-concept-descriptions[Category of Concept Descriptions] can also be skipped.
 ====
 
 xref:specification.adoc#primitive-and-simple-data-types-normative[Primitive and Simple Data Types (normative)] specifies the data types used in the data specification.
@@ -86,14 +86,5 @@ Metamodel changes compared to previous versions are described in xref:changelog.
 
 The bibliography can be found in xref:bibliography.adoc[].
 
-===  Working Principles
 
-The work is based on the following principle: keep it simple but do not simplify if it affects interoperability.
-
-The partners represented in the Industrial Digital Twin Association (IDTA), as well as in the Plattform Industrie 4.0 and associations such as ZVEI, VDMA, VDI/ VDE and Bitkom, ensure that there is broad sectoral coverage of process, hybrid, and factory automation and in terms of integrating information technology (IT) and operational technology (OT).
-
-Design alternatives were intensively discussed within the working group.
-An extensive feedback process of this document series is additionally performed within the working groups of Plattform Industrie 4.0 and IDTA.
-
-Guiding principle for the specification was to provide detailed information, which can be easily implemented also by small and medium-sized enterprises.
 
