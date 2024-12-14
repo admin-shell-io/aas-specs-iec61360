@@ -141,7 +141,7 @@ Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]
 
 
 ====
-Note 2: only the primary unit is supported.
+Note 2: only the primary unit is supported
 ====
 
 
@@ -156,12 +156,6 @@ Unit and unitId need to be consistent if both attributes are set
 
 ====
 Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], unit_of_measure
-====
-
-
-
-====
-Note 2: it is recommended to use an external reference ID.
 ====
 
 
@@ -234,13 +228,13 @@ Enumerated list of allowed values
 
 
 ====
-Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], enumerated_list_of_terms.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], enumerated_list_of_terms
 ====
 
 
 
 ====
-Note 2: for ease of usage, the value list is modelled as value/valueId list in this data specification template.
+Note 2: for ease of usage, the value list is modelled as value/valueId list in this data specification template
 ====
 
 
@@ -317,7 +311,7 @@ h|ID: | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec
 .2+h|Literal h| ID
 h|Explanation
 
-.2+e|DATE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/DATE`
+.2+e|DATE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/DATE`
 a|
 values containing a calendar date, conformant to ISO 8601:2004
 
@@ -325,19 +319,19 @@ Format yyyy-mm-dd
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the DATE_TYPE.
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the DATE_TYPE
 ====
 
 
 Example from IEC 61360-1:2017: "1999-05-31" is the DATE representation of: "31 May 1999".
 
-.2+e|STRING | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/STRING`
+.2+e|STRING | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/STRING`
 a|
 values consisting of a sequence of characters, which cannot be translated into other languages
 
 
 ====
-Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the NON_TRANSLATABLE_STRING_TYPE.
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the NON_TRANSLATABLE_STRING_TYPE
 ====
 
 
@@ -348,7 +342,7 @@ It is requested to use the more specific data types in the AAS, if applicablefoo
 ====
 
 
-.2+e|STRING_TRANSLATABLE |`\https://admin-shell.io/aas/3/1/DataTypeIec61360/STRING_TRANSLATABLE`
+.2+e|STRING_TRANSLATABLE |`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/STRING_TRANSLATABLE`
 a|
 values containing string, but which shall be represented as different strings in different languages
 
@@ -358,7 +352,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|INTEGER_MEASURE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/INTEGER_MEASURE`
+.2+e|INTEGER_MEASURE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/INTEGER_MEASURE`
 a|
 values containing values that are a measure of the type INTEGER.
 In addition, such a value comes with a physical unit.
@@ -369,7 +363,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|INTEGER_COUNT | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/INTEGER_COUNT`
+.2+e|INTEGER_COUNT | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/INTEGER_COUNT`
 a|
 values containing values of the type INTEGER, but which are no currencies or measures
 
@@ -386,7 +380,7 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-.2+e|INTEGER_CURRENCY | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/INTEGER_CURRENCY`
+.2+e|INTEGER_CURRENCY | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/INTEGER_CURRENCY`
 a|
 values containing values of the type INTEGER, which are currencies
 
@@ -396,7 +390,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|REAL_MEASURE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/REAL_MEASURE`
+.2+e|REAL_MEASURE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/REAL_MEASURE`
 a|
 values containing values that are measures of the type REAL
 
@@ -408,7 +402,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|REAL_COUNT | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/REAL_COUNT`
+.2+e|REAL_COUNT | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/REAL_COUNT`
 a|
 values containing numbers that can be written as a terminating or non-terminating decimal; i.e. a rational or irrational number, which is neither a currency nor a measures
 
@@ -425,7 +419,7 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-.2+e|REAL_CURRENCY | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/REAL_CURRENCY`
+.2+e|REAL_CURRENCY | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/REAL_CURRENCY`
 a|
 values containing values of the type REAL, which are currencies
 
@@ -435,7 +429,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|BOOLEAN | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/BOOLEAN`
+.2+e|BOOLEAN | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/BOOLEAN`
 a|
 values representing truth of logic or Boolean algebra (TRUE, FALSE)
 
@@ -452,7 +446,7 @@ In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
 ====
 
 
-.2+e|IRI | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/IRI`
+.2+e|IRI | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/IRI`
 a|
 values containing values of the type STRING conformant to https://datatracker.ietf.org/doc/html/rfc3987[Rfc 3987]
 
@@ -470,7 +464,7 @@ If the IRI represents an address to a file, FILE shall be used.
 ====
 
 
-.2+e|IRDI | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/IRDI`
+.2+e|IRDI | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/IRDI`
 a|
 values conforming to ISO/IEC 11179 series global identifier sequences
 
@@ -500,7 +494,7 @@ The identifier shall fulfil the requirements specified in ISO/TS 29002-5 for an 
 ====
 
 
-.2+e|RATIONAL | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/RATIONAL`
+.2+e|RATIONAL | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/RATIONAL`
 a|
 Values containing values of the type RATIONAL, which are no measures
 
@@ -518,7 +512,7 @@ Note 2: it is requested to use the more specific data types in the AAS, if appli
 ====
 
 
-.2+e|RATIONAL_MEASURE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/RATIONAL_MEASURE`
+.2+e|RATIONAL_MEASURE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/RATIONAL_MEASURE`
 a|
 values containing values of the type RATIONAL.
 In addition, such a value comes with a physical unit.
@@ -529,7 +523,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|TIME | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/TIME`
+.2+e|TIME | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/TIME`
 a|
 values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
 
@@ -543,7 +537,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|TIMESTAMP | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/TIMESTAMP`
+.2+e|TIMESTAMP | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/TIMESTAMP`
 a|
 values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
 
@@ -555,7 +549,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|FILE | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/FILE`
+.2+e|FILE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/FILE`
 a|
 values containing an address to a file.
 The values are of the type URI and can represent an absolute or relative path.
@@ -567,7 +561,7 @@ It would map to the URI_TYPE.
 ====
 
 
-.2+e|HTML | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/HTML`
+.2+e|HTML | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/HTML`
 a| 
 Values containing string with any sequence of characters, using the syntax of HTML5 (see W3C Recommendation 28:2014)
 
@@ -577,7 +571,7 @@ Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]],
 ====
 
 
-.2+e|BLOB | `\https://admin-shell.io/aas/3/1/DataTypeIec61360/BLOB`
+.2+e|BLOB | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/BLOB`
 a|
 values containing the content of a file.
 Values may be binaries.
@@ -700,7 +694,7 @@ h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationI
 h|Explanation h|Type h|Card
 
 .2+e|valueReferencePair 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueList/valueReferencePair`
-a|A pair of a value together with its global unique ID. |xref:ValueReferencePair[ValueReferencePair] |1..*
+a|A pair of a value together with its global unique ID, if available. |xref:ValueReferencePair[ValueReferencePair] |1..*
 |===
 
 {empty}
@@ -708,7 +702,7 @@ a|A pair of a value together with its global unique ID. |xref:ValueReferencePair
 [width="100%",cols="24%,42%,23%,11%"]
 |===
 h|Class: 3+e|[[ValueReferencePair]]ValueReferencePair
-h|Explanation: |A value reference pair within a value list. Each value has a global unique ID defining its semantic. | |
+h|Explanation: |A value reference pair within a value list. Each value may have a global unique ID defining its semantic. | |
 h|Inherits from: |-- | |
 h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair`
 
@@ -716,15 +710,18 @@ h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationI
 h|Explanation h|Type h|Card
 
 .2+e|value 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair/value`
-a|the value of the referenced concept definition of the value in _valueId._ |xref:ValueTypeIec61360[ValueTypeIec61360] |1
+a| a value
+
+====
+Note: if the _valueId_ is defined as well, then the value needs to be consistent with referenced concept definition of the value in _valueId_. 
+ 
+====
+ |xref:ValueTypeIec61360[ValueTypeIec61360] |1
 .2+e|valueId 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair/valueId`
 a|
 Global unique ID of the value
 
 
-====
-Note: it is recommended to use an external reference.
-====
 
 
 |Reference | 0..1

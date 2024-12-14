@@ -36,6 +36,8 @@ Major changes:
 * CHANGE ValueReferencePair/valueId now optional (https://github.com/admin-shell-io/aas-specs/issues/28[#28])
 * Update all metamodel element IDs to V3.1 (https://github.com/admin-shell-io/aas-specs/issues/17[#17])
 
+* remove recommendation to use external references for semantic identifiers, i.e. for _valueId_ and _unitId_ (https://github.com/admin-shell-io/aas-specs/issues/376[#376 of IDTA-01001]) 
+
 * Transfer from .docx to asciidoc
 * Transfer of all UML figures to PlantUML (.puml) and maintenance in GitHub, no XMI presenation part of release any longer (https://github.com/admin-shell-io/aas-specs/issues/34[#34])
 
