@@ -12,7 +12,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 :aasc3a002: pass:q[[underline]#Constraint AASc-3a-002:# _DataSpecificationIec61360/preferredName_ shall be provided at least in English.]
 
-:aasc3a003: pass:q[[underline]#Constraint AASc-3a-002:#For a _ConceptDescription_ referenced via _ValueList/valueId_ and using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3), _DataSpecificationIec61360/value_ shall be set.]
+:aasc3a003: pass:q[[underline]#Constraint AASc-3a-003:# For a _ConceptDescription_ referenced via _ValueList/valueId_ and using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3), _DataSpecificationIec61360/value_ shall be set.]
 
 :aasc3a004: pass:q[[underline]#Constraint AASc-3a-004:# For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`), _DataSpecificationIec61360/dataType_ is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.]
 
