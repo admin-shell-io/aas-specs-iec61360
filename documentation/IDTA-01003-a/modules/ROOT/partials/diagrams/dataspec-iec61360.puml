@@ -7,5 +7,5 @@
 DataSpecificationIec61360 ..> ValueList
 DataSpecificationIec61360 ..> LevelType
 ValueList *-- "1..*" ValueReferencePair
-DataSpecificationIec61360 ..> DataTypeIEC61360
+DataSpecificationIec61360 ..> DataTypeIec61360
 @enduml
