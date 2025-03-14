@@ -40,7 +40,7 @@ h|Explanation h|Type h|Card.
 a|<Explanatory text> |<Type> |<Card>
 |===
 
-_ID_ is the metamodel ID of the class or attribute, conformant to the grammar defined in link:  xref:mappings/mappings.adoc#reference-serialization[Text Serialization of Values of Type "Reference"].
+_ID_ is the metamodel ID of the class or attribute, conformant to the grammar defined in link:https://admin-shell-io.github.io/aas-specs-antora/IDTA-01001/v3.1/mappings/mappings.html#reference-serialization[Text Serialization of Values of Type "Reference"].
 A metamodel ID for a class attribute is concatenated by _<ID of metamodel element ID of class>/<relative metamodel element ID>_.
 
 The following stereotypes can be used:
