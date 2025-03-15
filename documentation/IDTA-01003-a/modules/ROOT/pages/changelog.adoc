@@ -8,25 +8,31 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ////
 
-= Metamodel Changes
+= Change Notes
 
 == General
 
-This Annex lists the changes from version to version of the metamodel together with major changes in the overall document.
+The change notes list the notable changes made to the document.
+
 Non-backward compatible changes (nc) are marked as such.
 
-nc="x" means not backward compatible, if no value is added in the table, the change is backward compatible.
+* nc="x" means not backward compatible, if no value is added in the table, the change is backward compatible.
 
-nc="(x)" means that the change made was implicitly contained or stated in the document before and is now being formalized.
+* nc="(x)" means that the change made was implicitly contained or stated in the document before and is now being formalized.
 Therefore, the change is considered to be backward compatible.
 
-Changes for the data specification templates of the metamodel are listed in separate tables each.
-
-Each subclause consists of three parts:
+The change notes for a version consist of three parts:
 
 * changes w.r.t. previous version,
-* new elements in metamodel w.r..t previous version,
+* new elements in metamodel w.r.t previous version,
 * new, changed, or removed Constraints w.r.t previous version.
+
+If there are no changes the corresponding tables are omitted.
+
+====
+Note: before V3.0, the data specification template IEC61360 was covered in Part 1, IDTA-01001. 
+For details see change notes in IDTA-01001.
+====
 
 == Changes V3.1 vs. V3.0.2
 

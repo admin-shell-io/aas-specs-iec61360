@@ -1,5 +1,5 @@
 @startuml
-enum DataTypeIEC61360 <<enumeration>> {
+enum DataTypeIec61360 <<enumeration>> {
   DATE
   STRING
   STRING_TRANSLATABLE
