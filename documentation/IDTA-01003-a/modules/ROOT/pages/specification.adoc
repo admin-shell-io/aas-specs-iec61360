@@ -58,6 +58,7 @@ include::partial$diagrams/dataspec-iec61360.puml[]
 
 {empty}
 
+[[data-specification-iec621360-attributes]]
 === Data Specification IEC61360 Attributes
 
 {empty}
@@ -70,7 +71,7 @@ Content of data specification template for concept descriptions for properties, 
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], property, value_list and term
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *property*, *value_list* and *term*
 ====
 
 {aasc3a010}
@@ -105,7 +106,7 @@ Preferred name in different languages
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], preferred_name
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *preferred_name*
 ====
 
 {aasc3a002}
@@ -122,7 +123,7 @@ Short name
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], short_name
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *short_name*
 ====
 
 
@@ -134,7 +135,7 @@ Unit in case of a quantitative property
 
 
 ====
-Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], unit_in_text
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *unit_in_text*
 ====
 
 
@@ -154,7 +155,7 @@ Unit and unitId need to be consistent if both attributes are set
 
 
 ====
-Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], unit_of_measure
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *unit_of_measure*
 ====
 
 
@@ -166,7 +167,7 @@ Source of definition
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], source_document_of_definition
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *source_document_of_definition*
 ====
 
 
@@ -179,7 +180,7 @@ Symbol
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], preferred_letter_symbol
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *preferred_letter_symbol*
 ====
 
 
@@ -191,7 +192,7 @@ Data Type
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], data_type
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *data_type*
 ====
 
 
@@ -203,7 +204,7 @@ Definition in different languages
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], definition
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *definition*
 ====
 
 
@@ -215,7 +216,7 @@ Value Format
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *value_format*
 ====
 
 
@@ -227,7 +228,7 @@ Enumerated list of allowed values
 
 
 ====
-Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], enumerated_list_of_terms
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *enumerated_list_of_terms*
 ====
 
 
@@ -245,7 +246,7 @@ Value (typically within a value list)
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], term/preferred_letter_symbol_in_text
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *term/preferred_letter_symbol_in_text*
 ====
 
 
@@ -257,7 +258,7 @@ Value represented by up to four variants of a numeric value in a specific role: 
 
 
 ====
-Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], LEVEL_TYPE
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *LEVEL_TYPE*
 ====
 
 
@@ -662,7 +663,7 @@ See also xref:bibliography.adoc#bib27[[27\]], where one proposal on how to deal 
 
 ====
 
-
+[[value-list-attributes]]
 === Value List Attributes
 
 "_ValueList_" allows to define an enumeration type for a property.
@@ -696,7 +697,8 @@ h|Explanation h|Type h|Card
 a|A pair of a value together with its global unique ID, if available. |xref:ValueReferencePair[ValueReferencePair] |1..*
 |===
 
-{empty}
+[[value-reference-pair-attributes]]
+=== Value Reference Pair Attributes
 
 [width="100%",cols="24%,42%,23%,11%"]
 |===
