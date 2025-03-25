@@ -12,6 +12,13 @@ This is version 3.1 of the specification IDTA-01003-a.
 
 Previous version: 3.0.2
 
+[#metamodel-versions]
+== Metamodel Versions
+
+This document (version 3.1) uses the following parts of the “Specification of the Asset Administration Shell” series:
+
+* IDTA-01001 Part 1: Metamodel in version 3.1 xref:bibliography.adoc#bib22[[22\]]
+
 == Notice
 
 Publisher and Copyright: Industrial Digital Twin Association e.V. (IDTA)
