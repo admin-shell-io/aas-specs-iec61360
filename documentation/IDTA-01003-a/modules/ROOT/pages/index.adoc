@@ -25,6 +25,8 @@ Publisher and Copyright: Industrial Digital Twin Association e.V. (IDTA)
 
 IDTA Document Number: IDTA-01003-a-3-1
 
+DOI: <add DOI>
+
 This work is licensed under a
 https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License].
 
