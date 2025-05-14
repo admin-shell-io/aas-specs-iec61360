@@ -46,8 +46,7 @@ Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-S
 Discussion Paper.
 Plattform Industrie 4.0 
 [Online]. 
-Available: https://www.plattform-i40.de/IP/Redaktion/DE
-/Downloads/Publikation/hm-2018-sprache.html
+Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
 
 
 [#bib24]
