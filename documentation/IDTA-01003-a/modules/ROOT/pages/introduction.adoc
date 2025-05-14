@@ -24,7 +24,7 @@ This part of the "Specification of the Asset Administration Shell" series is the
 
 .Types of Information Exchange via Asset Administration Shells
 [[image-types-of-info-exchange-aas]]
-image::image2.jpeg[align=center]
+image::image2.jpg[align=center]
 
 File exchange (1) is described in Part 5 of this document series (IDTA-01005).
 
