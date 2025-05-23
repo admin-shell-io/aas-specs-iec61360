@@ -25,6 +25,7 @@ containing the normative schemas for the published document
 *Use this release if you want to work with the latest specified AAS version.*
 
 Note: The schema for this data specification is included as embedded data specification in the release of [IDTA-01001-3-1](https://github.com/admin-shell-io/aas-specs-metamodel) or its bugfix releases
+
 ## Contributing
 
 Feature requests, reports about inconsistencies, mistakes *etc.* are highly
