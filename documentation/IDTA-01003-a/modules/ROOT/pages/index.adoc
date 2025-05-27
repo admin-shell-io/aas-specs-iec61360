@@ -8,31 +8,31 @@ This specification is part of the https://industrialdigitaltwin.org/en/content-h
 
 == Version
 
-This is version 3.1 of the specification IDTA-01003-a.
+This is version 3.2 of the specification IDTA-01003-a.
 
-Previous version: 3.0.2
+Previous version: 3.1
 
 [#metamodel-versions]
 == Metamodel Versions
 
-This document (version 3.1) uses the following parts of the “Specification of the Asset Administration Shell” series:
+This document uses the following parts of the “Specification of the Asset Administration Shell” series:
 
-* IDTA-01001 Part 1: Metamodel in version 3.1 xref:bibliography.adoc#bib22[[22\]]
+* IDTA-01001 Part 1: Metamodel in version 3.2 xref:bibliography.adoc#bib22[[22\]]
 
 == Notice
 
 Copyright: Industrial Digital Twin Association e.V. (IDTA)
 
-IDTA Document Number: IDTA-01003-a-3-1
+IDTA Document Number: IDTA-01003-a-3-2
 
-DOI: https://doi.org/10.62628/IDTA.01003-a-3.1
+DOI: **TO BE ADDED**
 
 This work is licensed under a
 https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License].
 
 SPDX-License-Identifier: CC-BY-4.0
 
-May 2025
+** DATE TO BE ADDED **
 
 == How to Get in Contact
 
@@ -50,7 +50,9 @@ Feedback:
 
 === History
 
-This document, version 3.1, was produced from Dec. 2022 on by the Workstream "Asset Administration Shell Specifications" of the working group "Open Technology" of the Industrial Digital Twin Association (IDTA).
+This document, version 3.1, was produced from June 2025 on by the Workstream "Asset Administration Shell Specifications" of the working group "Open Technology" of the Industrial Digital Twin Association (IDTA).
+
+This document, version 3.1, was finalized in May 2025 by the Workstream "Asset Administration Shell Specifications" of the working group "Open Technology" of the Industrial Digital Twin Association (IDTA).
 
 The document "Details of the Asset Administration Shell – Part 1 – The exchange of information between partners in the value chain of Industrie 4.0, V3.0RC02" was split into several parts.
 One of them is this document, which represents Part 3a and describes a data specification that is defined to be used with the core model as specified in Part 1.
