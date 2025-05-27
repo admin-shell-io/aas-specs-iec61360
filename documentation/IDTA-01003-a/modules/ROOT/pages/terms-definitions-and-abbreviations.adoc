@@ -1,0 +1,210 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+[[terms-and-definitions]]
+= Terms, Definitions and Abbreviations
+
+== Terms and Definitions
+
+====
+[.underline]#Please note#: the definitions of terms are only valid in a certain context.
+This glossary applies only within the context of this document.
+
+
+If available, definitions were taken from IEC 63278-1 Edition 1.0 2023-12 or IEC 61360-1 Edition 4.0 2017-07.
+====
+
+
+*attribute*::
+
+data element of a _property_, a relation, or a class in information technology
+
+_[SOURCE: IEC 63278-1:2023; ISO/IEC Guide 77-2; ISO/IEC 27460; IEC 61360]_
+
+*Asset Administration Shell (AAS)*::
+
+standardized digital representation of an asset
+
+====
+Note 1 to entry: Asset Administration Shell and Administration Shell are used synonymously.
+====
+
+_[SOURCE: IEC 63278-1:2023, note added]_
+
+*class*::
+
+description of a set of objects that share the same _attributes_, _operations_, methods, relationships, and semantics
+
+_[SOURCE: IEC TR 62390:2005-01, 3.1.4]_
+
+
+*coded value*::
+
+value that can be looked up in a dictionary and can be translated
+
+_[SOURCE: link:https://eclass.eu/support/technical-specification/data-model/conceptual-data-model[ECLASS] footnote:[In IEC61360:2017, this refers to a "term" of a value list]]_
+
+
+*identifier (ID)*::
+
+identity information that unambiguously distinguishes one entity from another one in a given domain
+
+====
+Note 1 to entry: there are specific identifiers, e.g. UUID Universal unique identifier, IEC 15418 (GS1).
+====
+
+_[SOURCE: Glossary Industrie 4.0]_
+
+*minimum value*::
+
+lower bound of a range of values in which the said value is meaningful
+
+====
+EXAMPLE 1: lowest value specified of a quantity, established for a specified set of operating conditions at which a component, device, equipment, or system can operate and perform according to specified requirements.
+====
+
+====
+Note 1 to entry: additional information about the nature of the value can be obtained from the definition of the
+_Property_ information object to which the value belongs.
+====
+
+_[SOURCE: IEC 61360-1:2017]_
+
+*maximum value*::
+
+upper bound of a range of values in which the said value is meaningful
+
+====
+EXAMPLE 1: highest value specified of a quantity, established for a specified set of operating conditions at which a component, device, equipment, or system can operate and perform according to specified requirements.
+====
+
+====
+Note 1 to entry: additional information about the nature of the value can be obtained from the definition of the
+_Property_ information object to which the value belongs.
+====
+
+_[SOURCE: IEC 61360-1:2017]_
+
+*nominal value*::
+
+value of a quantity used to designate or identify an item with its value, and not necessarily corresponding to the real value of the property
+
+====
+Note 1 to entry: additional information about the nature of the value can be obtained from the definition of the
+_Property_ information object to which the value belongs.
+====
+
+_[SOURCE: IEC 61360-1:2017]_
+
+*non-quantitative property*::
+
+property that identifies or describes an object by means of codes, abbreviations, names, references or descriptions
+
+====
+EXAMPLE 1: typical information content of non-quantitative properties is items such as codes, abbreviations, names, references, or descriptions.
+====
+
+_[SOURCE: IEC 61360-2:201 7– based on IEC 61360-2:2012, 3.28, modified – "data element type" is replaced by "property" in the term and definition.]_
+
+*property*::
+
+defined characteristic suitable for the description and differentiation of products or components
+
+====
+Note 1 to entry: the concept of type and instance applies to properties.
+====
+
+====
+Note 2 to entry: this definition applies to properties as described in IEC 61360/ ISO 13584-42.
+====
+
+====
+Note 3 to entry: the property types are defined in dictionaries (like IEC component data dictionary or ECLASS), they do not have a value.
+The property type is also called data element type in some standards.
+====
+
+====
+Note 4 to entry: the property instances have a value and are provided by the manufacturers.
+A property instance is also called property-value pair in certain standards.
+====
+
+====
+Note 5 to entry: properties include nominal value, actual value, runtime variables, measurement values, etc.
+====
+
+====
+Note 6 to entry: a property describes one characteristic of a given object.
+====
+
+====
+Note 7 to entry: a property can have attributes such as code, version, and revision.
+====
+
+====
+Note 8 to entry: the specification of a property can include predefined choices of values.
+====
+
+_[SOURCE: according to ISO/IEC Guide 77-2] as well as [SOURCE: according to Glossary Industrie 4.0]_
+
+*quantitative property*::
+
+property with a numerical value representing a physical quantity, a quantity of information or a count of objects
+
+_[SOURCE: IEC 61360-1:2017 – based on IEC 61360-2:2012, 3.40, modified – "data element type" is replaced by "property"]_
+
+*Submodel*::
+
+representation of an aspect of an _asset_
+
+_[SOURCE: IEC 63278-1:2023]_
+
+*SubmodelElement*::
+
+element of a _Submodel_
+
+_[SOURCE: IEC 63278-1:2023]_
+
+
+==  Abbreviations Used in Document
+
+[width="100%",cols="21%,79%",options="header",]
+|===
+|*Abbreviation* |*Description*
+|AAS |Asset Administration Shell
+|AASX |Package file format for the Asset Administration Shell
+|API |Application Programming Interface
+|BLOB |Binary Large Object
+|CDD |Common Data Dictionary
+|GUID |Globally unique identifier
+|ID |Identifier
+|IDTA |Industrial Digital Twin Association
+|IEC |International Electrotechnical Commission
+|IRDI |International Registration Data Identifier
+|IRI |Internationalized Resource Identifier
+|ISO |International Organization for Standardization
+|JSON |JavaScript Object Notation
+|MIME |Multipurpose Internet Mail Extensions
+|PDF |Portable Document Format
+|RDF |Resource Description Framework
+|RFC |Request for Comment
+|UML |Unified Modelling Language
+|URI |Uniform Resource Identifier
+|URL |Uniform Resource Locator
+|URN |Uniform Resource Name
+|UTC |Universal Time Coordinated
+|VDE |Verband der Elektrotechnik, Elektronik und Informationstechnik e.V.
+|VDI |Verein Deutscher Ingenieure e.V.
+|VDMA |Verband Deutscher Maschinen- und Anlagenbau e.V.
+|W3C |World Wide Web Consortium
+|XML |eXtensible Markup Language
+|ZIP |archive file format that supports lossless data compression
+|ZVEI |Zentralverband Elektrotechnik- und Elektronikindustrie e. V.
+|===
+

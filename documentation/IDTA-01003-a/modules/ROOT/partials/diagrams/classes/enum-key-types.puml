@@ -1,0 +1,29 @@
+@startuml
+enum KeyTypes <<enumeration>> {
+  AnnotatedRelationshipElement
+  AssetAdministrationShell
+  BasicEventElement
+  Blob
+  Capability
+  ConceptDescription
+  ContainerElement
+  DataElement
+  Entity
+  EventElement
+  File
+  FragmentReference
+  GlobalReference
+  Identifiable
+  MultiLanguageProperty
+  Operation
+  Property
+  Range
+  Referable
+  ReferenceElement
+  RelationshipElement
+  Submodel
+  SubmodelElement
+  SubmodelElementCollection
+  SubmodelElementList
+}
+@enduml

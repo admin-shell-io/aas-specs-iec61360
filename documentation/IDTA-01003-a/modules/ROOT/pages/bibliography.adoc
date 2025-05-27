@@ -1,0 +1,76 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+////
+
+[bibliography]
+= Bibliography
+
+[#bib12]
+[12] "OMG Unified Modelling Language (OMG UML)".
+Version 2.5.1. December 2017. 
+[Online]. 
+Available: https://www.omg.org/spec/UML/2.5.1
+
+[#bib13]
+[13] T. Preston-Werner "Semantic Versioning".
+Version 2.0.0. Accessed: 2020-11-13. 
+[Online] Available: https://semver.org/spec/v2.0.0.html
+
+[#bib14]
+[14] IDTA-01002 "Specification of the Asset Administration Shell Part 2 – Application Programming Interfaces".
+See xref:bibliography.adoc#bib22[[22\]].
+
+[#bib15]
+[15] "Asset Administration Shell. Reading Guide".
+Industrial Digital Twin Association.
+November 2024. 
+[Online].
+Available: https://industrialdigitaltwin.org/wp-content/uploads/2024/11/2024-11_IDTA_AAS-Reading-Guide.pdf
+
+[#bib16]
+[16] Top Level Project "Eclipse Digital Twin" Available: https://projects.eclipse.org/projects/dt
+
+[#bib22]
+[22] "Asset Administration Shell Specifications". 
+[Online].
+Available: https://industrialdigitaltwin.org/en/content-hub/aasspecifications
+
+[#bib23]
+[23] (German) "I4.0-Sprache.
+Vokabular, Nachrichtenstruktur und semantische Interaktionsprotokolle der I4.0-Sprache". 
+Discussion Paper.
+Plattform Industrie 4.0 
+[Online]. 
+Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/hm-2018-sprache.html
+
+
+[#bib24]
+[24] "How to create a submodel template specification".
+Dec. 2022. Industrial Digital Twin Association.
+[Online].
+Available: https://industrialdigitaltwin.org/wp-content/uploads/2022/12/I40-IDTA-WS-Process-How-to-write-a-SMT-FINAL-.pdf
+
+[#bib27]
+[27] "Modelling the Semantics of Data of an Asset Administration Shell with Elements of ECLASS".
+June 2021. 
+[Online].
+Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/Whitepaper_Plattform-Eclass.pdf
+
+[#bib28]
+[28] "How to transport ECLASS in the Asset Administration Shell".
+Guideline. 
+October 2024. 
+Publisher: Industrial Digital Twin Association & ECLASS 
+[Online]. 
+Available: https://industrialdigitaltwin.org/en/content-hub/downloads
+
+
+
+
+
+

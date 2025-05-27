@@ -1,0 +1,8 @@
+name: IDTA-01003-a
+title: 'Part 3a: Data Specification - IEC61360'
+version: 'v3.1'
+display_version: 'in progress'
+prerelease: true
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc

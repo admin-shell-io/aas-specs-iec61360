@@ -1,0 +1,31 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+////
+
+// Constraints
+
+
+:aasc3a002: pass:q[[underline]#Constraint AASc-3a-002:# xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/preferredName] shall be provided at least in English.]
+
+:aasc3a003: pass:q[[underline]#Constraint AASc-3a-003:# For a _ConceptDescription_ referenced via xref:ROOT:specification.adoc#ValueList[ValueList/valueId] and using data specification template IEC61360 (\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3), xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/value] shall be set.]
+
+:aasc3a004: pass:q[[underline]#Constraint AASc-3a-004:# For a _ConceptDescription_ with _category_ _PROPERTY_ or _VALUE_ using data specification template IEC61360 (`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`), xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/dataType] is mandatory and shall be one of _DATE, STRING, STRING_TRANSLATABLE, INTEGER_MEASURE, INTEGER_COUNT, INTEGER_CURRENCY, REAL_MEASURE, REAL_COUNT, REAL_CURRENCY, BOOLEAN, RATIONAL, RATIONAL_MEASURE, TIME, TIMESTAMP_.]
+
+:aasc3a005: pass:q[[underline]#Constraint AASc-3a-005:# For a _ConceptDescription_ with _category_ _REFERENCE_ using data specification template IEC61360 (`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`), xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/dataType] shall be one of STRING, IRI, IRDI.]
+
+:aasc3a006: pass:q[[underline]#Constraint AASc-3a-006:# For a _ConceptDescription_ with _category_ DOCUMENT using data specification template IEC61360 (`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`), xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/dataType] shall be one of _FILE, BLOB, HTML_.]
+
+:aasc3a007: pass:q[[underline]#Constraint AASc-3a-007:# For a _ConceptDescription_ with _category_ QUALIFIER_TYPE using data specification template IEC61360 (`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`), xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/dataType] is mandatory and shall be defined.]
+
+:aasc3a008: pass:q[[underline]#Constraint AASc-3a-008:# For a _ConceptDescription_ using data specification template IEC61360 (`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`),  xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/definition] is mandatory and shall be defined at least in English. Exception: the concept description describes a value, i.e. _DataSpecificationIec61360/value_ is defined.]
+
+:aasc3a009: pass:q[[underline]#Constraint AASc-3a-009:# If _DataSpecificationIec61360/dataType_ is one of _INTEGER_MEASURE, REAL_MEASURE, RATIONAL_MEASURE, INTEGER_CURRENCY,_ _REAL_CURRENCY_, then xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/unit] or xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/unitId] shall be defined.]
+
+:aasc3a010: pass:q[[underline]#Constraint AASc-3a-010:# If xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/value] is not empty, xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360/valueList] shall be empty, and vice versa.]
+
+:aasc3a050: pass:q[[underline]#Constraint AASc-3a-050:# If the _DataSpecificationContent_ xref:ROOT:specification.adoc#DataSpecificationIec61360[DataSpecificationIec61360] is used for an element, the value of _HasDataSpecification/dataSpecification_ shall contain the external reference to the IRI of the corresponding data specification template `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`.]

@@ -1,0 +1,21 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+
+////
+:page-partial:
+
+[appendix]
+* xref:./Annex/IDTA-01003-a_Background.adoc[Background]
+* xref:./sharedAnnex/IDTA-01xxx_BackusNaurForm.adoc[Backus Naur Form]
+* xref:./sharedAnnex/IDTA-01xxx_UML.adoc[UML]
+* xref:./sharedAnnex/IDTA-01xxx_UMLTemplates.adoc[UML Table Templates]
+
+////

@@ -1,0 +1,1238 @@
+////
+Copyright (c) 2023 Industrial Digital Twin Association
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](
+https://creativecommons.org/licenses/by/4.0/). 
+
+SPDX-License-Identifier: CC-BY-4.0
+
+////
+
+include::includes/constraints.adoc[]
+
+= Specification
+
+== Predefined Template for IEC61360 Properties, Value Lists, and Values (normative)
+
+=== Data Specification IEC61360 Template Specification 
+
+This specification is only valid in combination with IDTA-01001-3-1.
+
+{empty}
+
+[width="100%",cols="20%,20%,20%,40%"]
+|===
+h|*Template:* 3+|IEC61360
+h|*administration:* |version: 3 |revision: 1 |creator: IDTA
+
+h|*id:* 3+a|`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3`
+
+
+\<<deprecated>>
+`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+
+\<<deprecated>>
+`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0`
+
+\<<deprecated>>
+`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
+
+\<<deprecated>>
+`\http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0`
+
+
+h|*dataSpecificationContent:* 3+|DataSpecificationIec61360 
+h|*Description (EN):* 3+a|Data specification template for concept descriptions for properties and values conformant to IEC 61360.
+|===
+
+The ID of the data specification template was derived conformant to the grammar for semantic IDs for data specifications as defined in Part 1 of the document series, IDTA-01001, with the exception that the minor version was excluded because this ID is also part of the instances of Asset Administration Shells: 
+This ID is used in _hasDataSpecification/dataSpecification_.
+
+This namespace has the qualifier "IEC:" Examples: `IEC:DataSpecificationIec61360/preferredName` or `IEC:DataSpecificationIec61360/levelType/min` or `IEC:LevelType/min`.
+
+.Metamodel of Data Specification IEC61360
+[plantuml, svg]
+....
+include::partial$diagrams/dataspec-iec61360.puml[]
+....
+
+{empty}
+
+[[data-specification-iec621360-attributes]]
+=== Data Specification IEC61360 Attributes
+
+{empty}
+
+[width="100%",cols="19%,47%,27%,7%"]
+|===
+h|Class: 3+e|[[DataSpecificationIec61360]]DataSpecificationIec61360 \<<Template>>
+h|Explanation: 3+a|
+Content of data specification template for concept descriptions for properties, values, and value lists conformant to IEC 61360.
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *property*, *value_list* and *term*
+====
+
+{aasc3a010}
+
+====
+Note 1: it is also possible that both _DataSpecificationIec61360/value_ and _SpecificationIec61360/valueList_ are empty.
+This is the case for concept descriptions that define the semantics of a property but do not have an enumeration (_valueList)_ as data type.
+====
+
+
+
+====
+Note 2: although it is possible to define a concept description for a value list, it is not possible to reuse this value list.
+It is only possible to directly add a value list as data type to a specific semantic definition of a property.
+====
+
+{aasc3a009}
+
+h|Inherits from: 3+|DataSpecificationContent
+
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360`
+
+
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card.
+
+
+.2+e|[[data-specification-content-preferred-name]]preferredName 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/preferredName`
+
+a|
+Preferred name in different languages
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *preferred_name*
+====
+
+{aasc3a002}
+
+|xref:PreferredNameTypeIec61360[PreferredNameTypeIec61360] |1
+
+
+
+
+
+.2+e|shortName 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/shortName`
+a|
+Short name
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *short_name*
+====
+
+
+|xref:ShortNameTypeIec61360[ShortNameTypeIec61360] |0..1
+
+.2+e|unit 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unit`
+a|
+Unit in case of a quantitative property
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *unit_in_text*
+====
+
+
+
+====
+Note 2: only the primary unit is supported
+====
+
+
+|string |0..1
+
+.2+e|unitId 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/unitId`
+a|
+Unique unit ID
+
+Unit and unitId need to be consistent if both attributes are set
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *unit_of_measure*
+====
+
+
+|Reference |0..1
+
+.2+e|sourceOfDefinition 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/sourceOfDefinition`
+a|
+Source of definition
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *source_document_of_definition*
+====
+
+
+|string |0..1
+
+.2+e|symbol 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/symbol`
+a|
+Symbol
+
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *preferred_letter_symbol*
+====
+
+
+|string |0..1
+
+.2+e|dataType 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/dataType`
+a|
+Data Type
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *data_type*
+====
+
+
+|xref:DataTypeIec61360[DataTypeIec61360] |0..1
+
+.2+e|definition 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/definition`
+a|
+Definition in different languages
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *definition*
+====
+
+
+|xref:DefinitionTypeIec61360[DefinitionTypeIec61360] |0..1
+
+.2+e|valueFormat 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueFormat`
+a|
+Value Format
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *value_format*
+====
+
+
+|xref:ValueFormatTypeIec61360[ValueFormatTypeIec61360] |0..1
+
+.2+e|valueList 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/valueList`
+a|
+Enumerated list of allowed values
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *enumerated_list_of_terms*
+====
+
+
+
+====
+Note 2: for ease of usage, the value list is modelled as value/valueId list in this data specification template
+====
+
+
+|xref:ValueList[ValueList] |0..1
+
+.2+e|value  3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/value`
+a|
+Value (typically within a value list)
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *term/preferred_letter_symbol_in_text*
+====
+
+
+|xref:ValueTypeIec61360[ValueTypeIec61360] |0..1
+
+.2+e|levelType  3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataSpecificationIec61360/levelType`
+ a|
+Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP and MAX.
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], *LEVEL_TYPE*
+====
+
+
+|xref:LevelType[LevelType] |0..1
+|===
+
+{empty}
+
+====
+Note 1: IEC 61360 also requires a globally unique identifier for a concept description.
+This ID is not part of the data specification template.
+Instead, the _ConceptDescription/id_ as inherited via _Identifiable_ is used.
+The same applies to administrative information like the version and revision.
+====
+
+====
+Note 2: _ConceptDescription/idShort_ and _DataSpecificationIec61360/shortName_ are very similar.
+However, in this case, _shortName_ is explicitly added to the data specification.
+====
+
+====
+Note 3: _ConceptDescription/displayName_ and _DataSpecificationIec61360/preferredName_ are very similar.
+However, in this case, _preferredName_ is explicitly added to the data specification.
+====
+
+====
+Note 4: _ConceptDescription/description_ and _DataSpecificationIec61360/definition_ are very similar.
+However, in this case, _definition_ is explicitly added to the data specification.
+====
+
+{empty}
+
+=== Enumeration Data Type IEC61360
+
+{empty}
+
+.Metamodel of Data Type IEC 61360
+[plantuml, svg]
+....
+include::partial$diagrams/datatype-iec61360.puml[]
+....
+
+[width="100%",cols="30%,70%",]
+|===
+h|Enumeration: |[[DataTypeIec61360]]DataTypeIec61360
+h|Explanation: |Enumeration of simple data types for an IEC 61360 concept description using the data specification template _DataSpecificationIec61360_
+h|Set of: |--
+h|ID: | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360`
+
+.2+h|Literal h| ID
+h|Explanation
+
+.2+e|DATE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/DATE`
+a|
+values containing a calendar date, conformant to ISO 8601:2004
+
+Format yyyy-mm-dd
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the DATE_TYPE
+====
+
+
+Example from IEC 61360-1:2017: "1999-05-31" is the DATE representation of: "31 May 1999".
+
+.2+e|STRING | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/STRING`
+a|
+values consisting of a sequence of characters, which cannot be translated into other languages
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the NON_TRANSLATABLE_STRING_TYPE
+====
+
+
+
+====
+Note 2: IEC61360 does not request to use more specific string types like TRANSLATABLE_STRING_TYPE, NON_TRANSLATABLE_STRING_TYPE, DATE_TIME_TYPE, DATE_TYPE, TIME_TYPE, IRDI_STRING, URI_TYPE, and HTML5_TYPE.
+It is requested to use the more specific data types in the AAS, if applicablefootnote:[This is also requested in ECLASS, see https://eclass.eu/support/technical-specification/structure-and-elements/value].
+====
+
+
+.2+e|STRING_TRANSLATABLE |`\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/STRING_TRANSLATABLE`
+a|
+values containing string, but which shall be represented as different strings in different languages
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the TRANSLATABLE_STRING_TYPE
+====
+
+
+.2+e|INTEGER_MEASURE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/INTEGER_MEASURE`
+a|
+values containing values that are a measure of the type INTEGER.
+In addition, such a value comes with a physical unit.
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific INTEGER (or INT_TYPE) NUMBER_TYPE, the INT_MEASURE_TYPE
+====
+
+
+.2+e|INTEGER_COUNT | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/INTEGER_COUNT`
+a|
+values containing values of the type INTEGER, but which are no currencies or measures
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific NUMBER_TYPE, the INT_TYPE (or just INTEGER).
+For more specific data types, INTEGER_MEASURE_TYPE or INTEGER_CURRENCY_TYPE may be used.
+====
+
+
+
+====
+Note 2: it is requested to use the more specific data types in the AAS, if applicable.
+====
+
+
+.2+e|INTEGER_CURRENCY | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/INTEGER_CURRENCY`
+a|
+values containing values of the type INTEGER, which are currencies
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific INTEGER NUMBER_TYPE, the INT_CURRENCY_TYPE
+====
+
+
+.2+e|REAL_MEASURE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/REAL_MEASURE`
+a|
+values containing values that are measures of the type REAL
+
+In addition, such a value comes with a physical unit
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific REAL NUMBER_TYPE, the REAL_MEASURE_TYPE
+====
+
+
+.2+e|REAL_COUNT | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/REAL_COUNT`
+a|
+values containing numbers that can be written as a terminating or non-terminating decimal; i.e. a rational or irrational number, which is neither a currency nor a measures
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific NUMBER_TYPE, the REAL_TYPE.
+For more specific data types REAL_MEASURE_TYPE or REAL_CURRENCY_TYPE may be used.
+====
+
+
+
+====
+Note 2: it is requested to use the more specific data types in the AAS, if applicable.
+====
+
+
+.2+e|REAL_CURRENCY | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/REAL_CURRENCY`
+a|
+values containing values of the type REAL, which are currencies
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific REAL NUMBER_TYPE, the REAL_CURRENCY_TYPE
+====
+
+
+.2+e|BOOLEAN | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/BOOLEAN`
+a|
+values representing truth of logic or Boolean algebra (TRUE, FALSE)
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], BOOLEAN_TYPE.
+====
+
+
+
+====
+Note 2: in IEC 61360, the values are Yes and No.
+In the AAS, the values are TRUE (for "Yes") and FALSE (for "No").
+====
+
+
+.2+e|IRI | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/IRI`
+a|
+values containing values of the type STRING conformant to https://datatracker.ietf.org/doc/html/rfc3987[Rfc 3987]
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the URI_TYPE.
+====
+
+
+
+====
+Note 2: However, the AAS supports the more generic IRI.
+An IRI type particularly allows to express a URL or a URI.
+If the IRI represents an address to a file, FILE shall be used.
+====
+
+
+.2+e|IRDI | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/IRDI`
+a|
+values conforming to ISO/IEC 11179 series global identifier sequences
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the IRDI_STRING.
+====
+
+
+
+====
+Note 2: IRDI can be used instead of the more specific data types ICID or ISO29002_IRDI.
+====
+
+
+
+====
+Note 3: ICID values are values conformant to an IRDI, where the delimiter between RAI and ID is "\#", while the delimiter between DI and VI is confined to "##".
+====
+
+
+
+====
+Note 4: ISO29002_IRDI values are values containing a global identifier that identifies an administrated item in a registry.
+The structure of this identifier complies with the identifier syntax defined in ISO/TS 29002-5.
+The identifier shall fulfil the requirements specified in ISO/TS 29002-5 for an “international registration data identifier” (IRDI).
+====
+
+
+.2+e|RATIONAL | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/RATIONAL`
+a|
+Values containing values of the type RATIONAL, which are no measures
+
+Examples: ½, ¾ or 7/2
+
+
+====
+Note 1: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific NUMBER_TYPE, the RATIONAL_TYPE.
+====
+
+
+
+====
+Note 2: it is requested to use the more specific data types in the AAS, if applicable.
+====
+
+
+.2+e|RATIONAL_MEASURE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/RATIONAL_MEASURE`
+a|
+values containing values of the type RATIONAL.
+In addition, such a value comes with a physical unit.
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific RATIONAL NUMBER_TYPE, the RATIONAL_MEASURE_TYPE
+====
+
+
+.2+e|TIME | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/TIME`
+a|
+values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
+
+Format hh:mm (ECLASS)
+
+Example from IEC 61360-1:2017: "13:20:00-05:00" is the [TIME] representation of: 1.20 p.m. for Eastern Standard Time, which is 5 hours behind Coordinated Universal Time (UTC).
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the TIME_TYPE
+====
+
+
+.2+e|TIMESTAMP | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/TIMESTAMP`
+a|
+values containing a time conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml.
+
+Format yyyy-mm-dd hh:mm (ECLASS)
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the DATE_TIME_TYPE.
+====
+
+
+.2+e|FILE | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/FILE`
+a|
+values containing an address to a file.
+The values are of the type URI and can represent an absolute or relative path.
+
+
+====
+Note: xref:preamble.adoc#IEC61360-1[[IEC61360-1\]] does not explicitly support the file type.
+It would map to the URI_TYPE.
+====
+
+
+.2+e|HTML | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/HTML`
+a| 
+Values containing string with any sequence of characters, using the syntax of HTML5 (see W3C Recommendation 28:2014)
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], specific STRING_TYPE, the HTML5_TYPE
+====
+
+
+.2+e|BLOB | `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/DataTypeIec61360/BLOB`
+a|
+values containing the content of a file.
+Values may be binaries.
+
+_HTML conformant to HTML5_ is a special blob.
+
+In IEC61360, _binary_ is a sequence of bits, each bit being represented by "0" and "1" only.
+A binary is a blob.
+However, a blob may also contain other source code.
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], BINARY_TYPE
+====
+
+
+|===
+
+{empty}
+
+=== Level Type
+
+{empty}
+
+.Metamodel of Level Type
+[plantuml, svg]
+....
+include::partial$diagrams/level-type.puml[]
+....
+
+[width="100%",cols="20%,47%,24%,9%]
+|===
+h|Class: 3+e|[[LevelType]]LevelType
+h|Explanation: 3+a|
+Value represented by up to four variants of a numeric value in a specific role: MIN, NOM, TYP, and MAX.
+True means that the value is available, false means the value is not available.
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], LEVEL_TYPE
+====
+
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], LEVEL_TYPE
+====
+
+
+
+h|Inherits from: 3+e|DataSpecificationContent
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType`
+
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card.
+
+.2+e|min 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/min`
+a|Minimum of the value |boolean |1
+.2+e|nom 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/nom`
+a|Nominal value (value as designated) |boolean |1
+.2+e|typ 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/typ`
+a|Value as typically present |boolean |1
+.2+e|max 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/LevelType/max`
+a|Maximum of the value |boolean |1
+|===
+
+====
+Note: This is how the AAS deals with the following combinations of level types:
+
+
+* Case 1: If all attributes are false, the concept is mapped to a Property and level type is ignored.
+
+* Case2: If a maximum of one attribute is set to true, the concept is mapped to a Property.
+
+* Case 3: If min and max are set to true, the concept is mapped to a Range.
+
+
+* Case 4: If more than one attribute is set to true, does not include min and max only (see second case), the concept is mapped to a _SubmodelElementCollection_ with the corresponding number of Properties.
+Example: If the attributes min and nom are set to true, the concept is mapped to a _SubmodelElementCollection_ with two Properties: min and nom.
+The data type of both Properties is the same.
+
+In the cases 2 and 4, the _semanticId_ of the Property or Properties within the _SubmodelElementCollection_ needs to include information about the level type.
+Otherwise, the semantics is not described in a unique way.
+In xref:bibliography.adoc#bib27[[27\]], IRDI-Paths are introducedfootnote:[see also https://eclass.eu/support/technical-specification/data-model/irdi-path].
+
+It is not recommended to use level type when defining concept descriptions for Properties, except for ranges (i.e. min and max).
+This is considered to be a deprecated way of defining property sets.
+See also xref:bibliography.adoc#bib27[[27\]], where one proposal on how to deal with level type is to remove the level type and to define several properties instead.
+
+====
+
+[[value-list-attributes]]
+=== Value List Attributes
+
+"_ValueList_" allows to define an enumeration type for a property.
+The value list is a set of value reference pairs.
+
+.Metamodel of Value List
+[plantuml, svg]
+....
+include::partial$diagrams/value-list.puml[]
+....
+
+[width="100%",cols="22%,44%,23%,11%"]
+|===
+h|Class: 3+e|[[ValueList]]ValueList
+h|Explanation: 3+a|
+A set of value reference pairs
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_list/enumerated_list_of_terms
+====
+
+
+h|Inherits from: 3+|--
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueList`
+
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card
+
+.2+e|valueReferencePair 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueList/valueReferencePair`
+a|A pair of a value together with its global unique ID, if available. |xref:ValueReferencePair[ValueReferencePair] |1..*
+|===
+
+[[value-reference-pair-attributes]]
+=== Value Reference Pair Attributes
+
+[width="100%",cols="24%,42%,23%,11%"]
+|===
+h|Class: 3+e|[[ValueReferencePair]]ValueReferencePair
+h|Explanation: |A value reference pair within a value list. Each value may have a global unique ID defining its semantic. | |
+h|Inherits from: |-- | |
+h|ID: 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair`
+
+.2+h|Attribute 3+h| ID
+h|Explanation h|Type h|Card
+
+.2+e|value 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair/value`
+a| a value
+
+====
+Note: if the _valueId_ is defined as well, then the value needs to be consistent with referenced concept definition of the value in _valueId_
+ 
+====
+ |xref:ValueTypeIec61360[ValueTypeIec61360] |1
+.2+e|valueId 3+| `\https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1/ValueReferencePair/valueId`
+a|
+Global unique ID of the value
+
+
+
+
+|Reference | 0..1
+|===
+
+[#mapping-iec-61360-data-types-to-xsd-data-types]
+== Mapping IEC 61360 Data Types to XSD Data Types
+
+Using a concept description requires mapping the data type of the concept description to a conformant type in xsd (for example in _Property/valueType_).
+
+Examples for the different IEC 61360 data types can be found here: https://eclass.eu/support/technical-specification/structure-and-elements/value.
+
+====
+Note: ECLASS also proposes a mapping of IEC 61360 data types to XSD data types: https://eclass.eu/support/technical-specification/data-model/datatype-to-xsd-mapping. There are some deviations to the mapping defined in this document:
+
+* In this document REAL is mapped to either xs:double or xs:float whereas ECLASS proposes to map it to double, only.
+* In this document STRING_TRANSLATABLE is mapped to MultiLanguageText whereas ECLASS proposes to map it to a langstring. 
+* In this document IRI is mapped not only to xs:anyURI as proposed by ECLASS but it can also be mapped to _ReferenceElement_.
+* ECLASS does not define mappings for IRDI, HTML, FILE or BLOB
+
+====
+
+.Mapping IEC 61360 Data Types to xsd Data Types
+[width="100%",cols="31%,30%,39%",options="header",]
+|===
+h|Data Type IEC 61360 
+h|xsd Value Typefootnote:[_Property/valueType_, _Range/valueType,_ etc. are each of type _DataTypeDefXsd_
+
+Note: for submodel elements like _Blob_ and _File_ or _MultiLanguageProperty and ReferenceElement,_ there is no explicitly defined _valueType_ attribute 
+because the data type is implicitly defined and fix (_BlobType_, _PathType_ or _MultiLanguageTextType, Reference_)
+
+]
+
+h|Example Values IEC 61360footnote:[Source for most examples for the different IEC 61360 data types: https://eclass.eu/support/technical-specification/structure-and-elements/value.
+The IRDI example for STRING was moved to IRDI.]
+
+
+|DATE |xs:date |1979-01-15
+|STRING |xs:string a|
+"DN 700"
+
+"10 Mbps"
+
+|STRING_TRANSLATABLE a|
+_Mapped to MultiLanguageProperty, i.e. type MultiLanguageText_
+
+
+====
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+
+|
+|INTEGER_MEASURE |xs:integer a|
+1
+
+10
+
+111
+
+|INTEGER_COUNT |xs:integer a|
+1
+
+10
+
+111
+
+|INTEGER_CURRENCY |xs:integer a|
+1
+
+10
+
+111
+
+|REAL_MEASURE |xs:double or xs:float (depending on needed precision) a|
+1.5
+
+102.35
+
+|REAL_COUNT |xs:double or xs:float (depending on needed precision) a|
+1.5
+
+102.35
+
+|REAL_CURRENCY |xs:double or xs:float (depending on needed precision) a|
+1.5
+
+102.35
+
+|BOOLEAN a|
+xs:boolean
+
+with "Yes" mapped to "true" and "No" mapped to "false"
+
+a|
+Yes
+
+No
+
+|IRI |xs: anyURI or mapped to ReferenceElement |http://www.eclass-cdp.com
+|IRDI a|
+xs:string _or mapped to ReferenceElement_
+
+
+====
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+
+|0173-1#01-ADG629#001
+|RATIONAL |xs:string a|
+1/3
+
+1 2/3
+
+|RATIONAL_MEASURE |xs:string a|
+1/3
+
+1 2/3
+
+|TIME |xs:time |12:45
+|TIMESTAMP |xs:dateTime |1979-01-15T12:45:00Z
+|FILE a|
+_Mapped to submodel element File, i.e. type PathType_
+
+
+====
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+
+|./documents/example.pdf
+|HTML a|
+_Mapped to submodel element Blob, i.e. type BlobType_
+
+
+====
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+
+|
+|BLOB a|
+_Mapped to submodel element Blob, i.e. type BlobType_
+
+
+====
+Note: for details, please see Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+
+|
+|===
+
+[#category-of-concept-descriptions]
+== Category of Concept Descriptions 
+
+====
+Note: the attribute category of referables was set to deprecated in V3.0 of Part 1.
+Hence, this clause informs about the meaning, in case applications are still using the attribute category.
+====
+
+Although the IEC 61360 attributes listed in this template are defined for properties and values only, it is also possible to use the template for other definitions as long as no specific data specifications for concept descriptions for these elements are available.
+This is shown in <<table-iec61360-properties-ranges>>, <<table-iec61360-other-data-elements>> and <<table-other-elements-with-semid>>.
+
+For the meaning of the content attributes of the IEC 61360 data specification template, please refer to IEC 61360 and/or ECLASS.
+
+The data specification template can be used to describe both properties and values.
+
+See xref:introduction.adoc#image-rel-metamodel-iec61360[Overview Relationship Metamodel Part 1 & Data Specifications IEC 61360] on how data specification templates are related to concept descriptions. <<image-categories-cds>> lists all categories used for concept descriptionsfootnote:[Note: although the possible categories are listed as enumeration, no enumeration has been defined for Referable/category].
+
+The following tables recommend using specific categories to distinguish which kind of concept is described.
+They also give advice on which attributes need to be filled for which category of concept description.
+
+{empty}
+
+.Categories of Concept Descriptions (non-normative)
+[[image-categories-cds]]
+[plantuml, svg]
+....
+include::partial$diagrams/concept-description-categories.puml[]
+....
+
+.IEC61360 Data Specification Template for Properties and Ranges
+[[table-iec61360-properties-ranges]]
+[width="100%",cols="31%,13%,13%,9%,18%,16%"]
+|===
+h|Attribute footnote:[m = mandatory, o = optional, (m) = conditionally mandatory or recommended to be added] h|Property h|Property h|Property h|MultiLanguageProperty h|Range
+h|Category of Concept Description h|VALUE h|PROPERTY h|PROPERTY h|PROPERTY h|PROPERTY
+h|Category of SubmodelElement h|CONSTANT h|VARIABLE h|PARAMETER h|-- h|--
+e|preferredNamefootnote:[Mandatory in at least one language. Preferably, an English preferred name should always be defined.] |m |m |m |m |m
+e|shortName |(m) |(m) |(m) |(m) |(m)
+e|unit |(m) |(m) |(m) |-- |(m)
+e|unitId |(m) |(m) |(m) |-- |(m)
+e|sourceOfDefinition |o |o |o |o |o
+e|symbol |o |o |o |-- |--
+e|dataType |mfootnote:[All IEC 61360 data types except STRING_TRANSLATABLE, IRI, IRDI, HTML, FILE, BLOB.] |m^8^ |m^8^ |STRING_TRANSLATABLE |INTEGER_* or REAL_*
+e|definition |(m) |m |m |m |m
+e|valueFormat |o |o |o |-- |o
+e|valueList |-- |o |o |-- |--
+e|value |m |-- |-- |-- |--
+e|valueId |o |-- |-- |-- |--
+e|levelType |-- |-- |-- |-- a|
+Min = true
+
+Max = true
+
+|===
+
+{empty}
+
+.IEC61360 Data Spec. Template for Other Data Elements,Relationships Elements and Capabilities
+[[table-iec61360-other-data-elements]]
+[width="99%",cols="22%,13%,13%,13%,13%,13%,13%",options="header",]
+|===
+|*Attribute**^6^* |*ReferenceElement* |*File*footnote:[Template only used until explicit template is available for defining the corresponding types of elements.] |*Blob^9^* |*Capability^9^* |*RelationshipElement^9^* |*AnnotatedRelationshipElement^9^*
+h|Category of Concept Description h|REFERENCE h|DOCUMENT h|DOCUMENT h|CAPABILITY h|RELATIONSHIP h|RELATIONSHIP
+h|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--* |*--*
+|preferredName^7^ |m |m |m |m |m |m
+|shortName |(m) |(m) |(m) |(m) |(m) |(m)
+|unit |-- |-- |-- |-- |-- |--
+|unitId |-- |-- |-- |-- |-- |--
+|sourceOfDefinition |o |o |o |o |o |o
+|symbol |-- |-- |-- |-- |-- |--
+|dataType |string or Iri or Irdi or Icid or iso29002Irdi |file |blob or html5 |-- |-- |--
+|definition |m |m |m |m |m |m
+|valueFormat |-- |-- |-- |-- |-- |--
+|valueList |-- |-- |-- |-- |-- |--
+|value |-- |-- |-- |-- |-- |--
+|valueId |-- |-- |-- |-- |-- |--
+|levelType |-- |-- |-- |-- |-- |--
+|===
+
+{empty}
+
+.IEC612360 Data Specification Template for Other Submodel Elements
+[[table-iec61360-other-submodel-elements]]
+[width="99%",cols="25%,19%,12%,16%,12%,16%",options="header",]
+|===
+|*Attribute* |*SubmodelElementList^9^* |*SubmodelElementCollection^9^* |*Operation^9^* |*EventElement^9^* |*Entity^9^*
+h|Category of Concept Description h|COLLECTION h|ENTITY h|FUNCTION h|EVENT h|ENTITY
+h|*Category of SubmodelElement* |*--* |*--* |*--* |*--* |*--*
+|preferredName^7^ |m |m |m |m |m
+|shortName |(m) |(m) |(m) |(m) |(m)
+|unit |-- |-- |-- |-- |--
+|unitId |-- |-- |-- |-- |--
+|sourceOfDefinition |o |o |o |o |o
+|symbol |-- |-- |-- |-- |--
+|dataType |-- |-- |-- |-- |--
+|definition |m |m |m |m |m
+|valueFormat |-- |-- |-- |-- |--
+|valueList |-- |-- |-- |-- |--
+|value |-- |-- |-- |-- |--
+|valueId |-- |-- |-- |-- |--
+|levelType |-- |-- |-- |-- |--
+|===
+
+{empty}
+
+.Other Elements with semanticId
+[[table-other-elements-with-semid]]
+[width="100%",cols="32%,24%,22%,22%",options="header",]
+|===
+|*Attribute* |*Submodel^9^* |*Qualifier^9^* |*SpecificAssetId*
+h|Category of Concept Description h|APPLICATION_CLASS h|QUALIFIER_TYPE h|PROPERTY
+h|*Category of Element* |*--* |*--* |*--*
+|preferredName |m |m |m
+|shortName |(m) |(m) |(m)
+|unit |-- |-- |
+|unitId |-- |-- |--
+|sourceOfDefinition |o |o |o
+|symbol |-- |-- |--
+|dataType |-- |m |m
+|definition |m |m |m
+|valueFormat |-- |o |o
+|valueList |-- |o |--
+|value |-- |-- |--
+|valueId |-- |-- |--
+|levelType |-- |-- |--
+|===
+
+{empty}
+
+[#cross-constraints-and-invariants-for-predefined-data-specifications-normative]
+== Cross-Constraints and Invariants for Predefined Data Specifications (normative)
+
+=== General
+
+This clause documents constraints in the context of the predefined data specifications that cannot be assigned to a single class, i.e. that are no class invariants.
+
+https://sunye.github.io/ocl/[A class invariant is a constraint that must be true for all instances of a class at any time.]
+
+====
+Note: these constraints include elements of Part 1 Metamodel, IDTA-01001
+====
+
+{empty}
+
+=== Constraints for Data Specification IEC61360
+
+{aasc3a004}
+
+====
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+{aasc3a005}
+
+====
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+{aasc3a006}
+
+====
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Specification of the Asset Administration Shell"
+====
+
+{aasc3a007}
+
+====
+Note: categories are deprecated since V3.0 of Part 1 of the document series "Asset Administration Shell Specification"
+====
+
+{aasc3a008}
+
+{aasc3a003}
+
+{aasc3a050}
+
+[#primitive-and-simple-data-types-normative]
+== Primitive and Simple Data Types (normative)
+
+=== Predefined Simple Data Types
+
+The metamodel of the Asset Administration Shell uses some of the predefined simple data types of the  XML Schema Definition (XSD) as its basic data types.
+For an overview of the types used in this document, see <<table-simple-data-types>>.
+Their definition is outside the scope of this document.
+
+The meaning and format of xsd types is specified in XML Schema 1.0 (https://www.w3.org/TR/xmlschema-2).
+The simple type "langString" is specified in the Resource Description Framework (RDF)footnote:[see: https://www.w3.org/TR/rdf11-concepts/].
+
+.Simple Data Types Used in Metamodel
+[[table-simple-data-types]]
+[width="100%",cols="12%,18%,40%,30%",options="header",]
+|===
+|*Source* |*Basic Data Type* |*Value Range* |*Sample Values*
+|xsd |https://www.w3.org/TR/xmlschema-2/#boolean[boolean] |true, false |true, false
+|xsd |https://www.w3.org/TR/xmlschema-2/#string[string] |Character string (but not all Unicode character strings) |"Hello world", "Καλημέρα κόσμε",ハローワールド"
+|rdf |langString |Strings with language tags |"Hello"@en, "Hallo"@de. Note that this is written in RDF/Turtle syntax, and that only "Hello" and "Hallo" are the actual values.
+|===
+
+Simple data types start with a small letter.
+
+=== Basic and Primitive Data Types
+
+<<table-primitive-data-types>> lists the Primitives used in the metamodel.
+Primitive data types start with a capital letter.
+
+.Primitive DataTypes Used in Metamodel
+[[table-primitive-data-types]]
+[width="100%",cols="27%,31%,42%",options="header",]
+|===
+|*Primitive* |*Definition* |*Value Examples*
+|[[DefinitionTypeIec61360]]DefinitionTypeIec61360 a|
+_LangStringSet_
+
+Each langString within the array of strings has a length of maximum 1023 and a minimum of 1 characters.
+
+a|
+"Greatest permissible rotation speed with which the motor or feeding unit may be operated."
+
+
+====
+Note: see xref:introduction.adoc#image-property-eclass[Figure 2. Example Property from ECLASS]
+====
+
+
+|LangStringSet a|
+_Array of elements of type langString_
+
+
+====
+Note 1: langString is a RDF data type
+====
+
+
+
+====
+Note 2: a langString is a string value tagged with a language code
+====
+
+
+The realization of a langString depends on the serialization rules for a technology.
+
+
+====
+Note: as defined in Part 1 Metamodel, IDTA-01001
+====
+
+
+a|
+In xml:
+
+[source,xml]
+----
+<aas:langString lang="EN">This is a multi-language value in English</aas:langString>
+<aas:langString lang="DE">Das ist ein Multi-Language-Wert in Deutsch</aas:langString>
+----
+
+In rdf:
+[source,rdf]
+----
+"This is a multi-language value in English"@en ;
+"Das ist ein Multi-Language-Wert in Deutsch"@de
+----
+
+In JSON:
+
+[source,json,linenums]
+----
+"description": [
+   {
+     "language":"en",
+     "text": "This is a multi-language value in English."
+   },
+   {
+     "language":"de",
+     "text": "Das ist ein Multi-Language-Wert in Deutsch."
+   }
+]
+----
+
+|[[PreferredNameTypeIec61360]]PreferredNameTypeIec61360 a|
+_LangStringSet_
+
+Each _string_ with a length of maximum 255 and minimum of 1 characters.
+
+
+====
+Note 1: it is advised to keep the length of the name limited to 35 characters.
+====
+
+
+
+====
+Note 2: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], preferred_name
+====
+
+
+a|
+"max. rotation speed"@en
+
+====
+Note: see xref:introduction.adoc#image-property-eclass[Figure 2. Example Property from ECLASS]
+====
+
+|[[ShortNameTypeIec61360]]ShortNameTypeIec61360 a|
+_LangStringSet_
+
+Each _string_ with a length of maximum 18 and a minimum of 1 characters.
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], short_name
+====
+
+
+a|
+"d_out"
+
+
+====
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[Figure 6. Example for Property with Level Type from IEC CDD]
+====
+
+
+|[[ValueFormatTypeIec61360]]ValueFormatTypeIec61360 a|
+_string_
+
+
+====
+Note: for details, please refer to xref:preamble.adoc#IEC61360-1[[IEC61360-1\]], value_format.
+The value format is based on ISO 13584-42 and IEC 61360-2.
+====
+
+a|
+"NR3..3.3ES2"
+
+
+====
+Note: See xref:introduction.adoc#image-property-level-type-iec-cdd[]
+====
+
+
+|[[ValueTypeIec61360]]ValueTypeIec61360 |_string_ with a length of maximum 2048 and minimum of 1 characters. a|
+"Blue"
+
+"1000"
+
+|===
+
+[#mappings-to-data-formats-to-share-i40-compliant-information-normative]
+== Mappings to Data Formats to Share I4.0-Compliant Information (normative)
+
+=== General
+
+Part 1 of this document series (IDTA-01001) introduces different serialization formats: XML, JSON and RDF.
+Part 1 also introduces the implementation guide for embedded data specifications.
+This is why the different formats are described in IDTA-01001.
+
+
+

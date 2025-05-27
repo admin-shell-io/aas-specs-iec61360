@@ -1,0 +1,17 @@
+@startuml
+enum ConceptDescriptionCategories <<enumeration>> {
+  APPLICATION_CLASS
+  CAPABILITY
+  COLLECTION
+  DOCUMENT
+  ENTITY
+  EVENT
+  FUNCTION
+  PROPERTY
+  VALUE
+  RANGE
+  QUALIFIER_TYPE
+  REFERENCE
+  RELATIONSHIP
+}
+@enduml
