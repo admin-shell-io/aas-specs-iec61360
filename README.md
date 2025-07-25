@@ -24,7 +24,7 @@ containing the normative schemas for the published document
  "Specification of the Asset Administration Shell: Part 3a - **Version 3.1.1**". 
 *Use this release if you want to work with the latest specified AAS version.*
 
-Note: The schema for this data specification is included as embedded data specification in the release of [IDTA-01001-3-1-1](https://github.com/admin-shell-io/aas-specs-metamodel) or its bugfix releases
+Note: The schema for this data specification is included as embedded data specification in the release of [IDTA-01001 v3.1.1](https://github.com/admin-shell-io/aas-specs-metamodel) or its bugfix releases
 
 Previous releases:
 
