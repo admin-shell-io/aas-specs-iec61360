@@ -34,6 +34,12 @@ Note: before V3.0, the data specification template IEC61360 was covered in Part 
 For details see change notes in IDTA-01001.
 ====
 
+== Changes V3.1.1 vs. V3.1
+
+Minor changes:
+* corrected links in PUML files
+
+
 == Changes V3.1 vs. V3.0.2
 
 Major changes:

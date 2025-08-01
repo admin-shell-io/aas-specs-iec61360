@@ -18,13 +18,18 @@ The following release contains the latest version of the AAS schemas
  (see also the [releases](https://github.com/admin-shell-io/aas-specs-iec61360/releases) 
 section of this repository):
 
-* [3.1.0](https://github.com/admin-shell-io/aas-specs-iec61360/releases/tag/v3.1.0)
-is the latest release for the `V3.1.0` version of the AAS Specification IDTA-01003-a Data Specification IEC61360, 
+* [3.1.1](https://github.com/admin-shell-io/aas-specs-iec61360/releases/tag/v3.1.1)
+is the latest release for the `V3.1.1` version of the AAS Specification IDTA-01003-a Data Specification IEC61360, 
 containing the normative schemas for the published document
- "Specification of the Asset Administration Shell: Part 3a - **Version 3.1.0**". 
+ "Specification of the Asset Administration Shell: Part 3a - **Version 3.1.1**". 
 *Use this release if you want to work with the latest specified AAS version.*
 
-Note: The schema for this data specification is included as embedded data specification in the release of [IDTA-01001-3-1](https://github.com/admin-shell-io/aas-specs-metamodel) or its bugfix releases
+Note: The schema for this data specification is included as embedded data specification in the release of [IDTA-01001 v3.1](https://github.com/admin-shell-io/aas-specs-metamodel) or its bugfix releases
+
+Previous releases:
+
+* [3.1.0](https://github.com/admin-shell-io/aas-specs-iec61360/releases/tag/v3.1.0)
+is the release for the V3.1 version of the AAS Specification IDTA-01003-a Data Specification IEC61360 as published in May 2025
 
 ## Contributing
 
