@@ -79,12 +79,18 @@ Note: since categories are deprecated since V3.0, Clause xref:specification.adoc
 
 xref:specification.adoc#primitive-and-simple-data-types-normative[Primitive and Simple Data Types (normative)] specifies the data types used in the data specification.
 
-xref:specification.adoc#mappings-to-data-formats-to-share-i40-compliant-information-normative[Mappings to Data Formats to Share I4.0-Compliant Information (normative)] provides information on the exchange of information compliant to this specification in existing data formats like XML, AutomationML, OPC UA information models, JSON or RDF.
+xref:specification.adoc#mappings-to-data-formats-to-share-i40-compliant-information-normative[Mappings to Data Formats to Share I4.0-Compliant Information (normative)] provides information on the exchange of information compliant to this specification in existing data formats like XML, JSON or RDF.
 
 Finally, xref:summary-and-outlook.adoc[] summarizes the content and gives an outlook on future work.
 
-The Annex contains additional background information on the Asset Administration Shell (xref:annex/background.adoc[]).
-It also provides information about UML (xref:annex/uml.adoc[]) and the tables used to specify UML classes as used in this specification (xref:annex/uml-templates.adoc[]). xref:annex/backus-naur-form.adoc[] introduces the Backus-Naur-Form used in the document series.
+The Annex contains additional background information on the Asset Administration Shell (Annex xref:annex/background.adoc[]).
+
+It also provides information about UML (Annex xref:annex/uml.adoc[]) and the tables used to specify UML classes as used in this specification (Annex xref:annex/uml-templates.adoc[]). 
+
+Annex xref:annex/backus-naur-form.adoc[] introduces the Backus-Naur-Form used in the document series. 
+
+Annex xref:annex/handling-constraints.adoc[] explains the handling of constraint. 
+An overview of all constraints in the specification is given in Annex xref:annex/overview-constraints.adoc[]
 
 Metamodel changes compared to previous versions are described in xref:changelog.adoc[].
 
