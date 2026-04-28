@@ -1,4 +1,4 @@
-= Part 3a: Data Specification Template IEC 61360 (IDTA-01003-a)
+= Part 3a: Data Specification Template IEC 61360 (IDTA-01003-a) - IN PROGRESS
 
 *Specification of the Asset Administration Shell*
 
@@ -8,9 +8,9 @@ This specification is part of the https://industrialdigitaltwin.org/en/content-h
 
 == Version
 
-This is version 3.1 of the specification IDTA-01003-a.
+This is version 3.2 of the specification IDTA-01003-a.
 
-Previous version: 3.0.2
+Previous version: 3.1.1
 
 [#metamodel-versions]
 == Metamodel Versions
@@ -25,14 +25,14 @@ Copyright: Industrial Digital Twin Association e.V. (IDTA)
 
 IDTA Document Number: IDTA-01003-a-3-1
 
-DOI: https://doi.org/10.62628/IDTA.01003-a-3.1
+DOI: tbd
 
 This work is licensed under a
 https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International License].
 
 SPDX-License-Identifier: CC-BY-4.0
 
-May 2025
+<DATE TBD>
 
 == How to Get in Contact
 
@@ -49,6 +49,8 @@ Feedback:
 ==  Editorial Notes
 
 === History
+
+TBD
 
 This document, version 3.1, was produced from Dec. 2022 on by the Workstream "Asset Administration Shell Specifications" of the working group "Open Technology" of the Industrial Digital Twin Association (IDTA).
 
