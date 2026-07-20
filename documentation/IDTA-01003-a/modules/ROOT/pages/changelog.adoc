@@ -34,6 +34,15 @@ Note: before V3.0, the data specification template IEC61360 was covered in Part 
 For details see change notes in IDTA-01001.
 ====
 
+== Changes V3.2 vs. V3.1
+
+Minor Changes:
+
+* ADDED overview of constraints to Annex like in Part 1
+* CHANGE remove mentioning of AML or OPC serialization, they are handled separately
+* CHANGE section hierarchy and order
+* CHANGE editorial changes
+
 == Changes V3.1 vs. V3.0.2
 
 Major changes:
